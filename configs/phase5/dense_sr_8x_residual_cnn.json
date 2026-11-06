@@ -1,0 +1,22 @@
+{
+  "manifest": "../../data/nyu/converted/manifest_development.json",
+  "pipeline_config": "dense_sr_8x_pipeline.json",
+  "dataset": "Official NYU labelled release; audited development partition",
+  "model": "residual_cnn",
+  "initializer": "bicubic",
+  "output": "../../artifacts/training/dense_sr_8x_residual_cnn_seed69",
+  "epochs": 20,
+  "batch_size": 1,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "device": "cuda",
+  "seed": 69,
+  "loss_weights": {
+    "depth": 1.0,
+    "gradient": 0.2,
+    "edge": 0.1,
+    "uncertainty": 0.05,
+    "measurement": 0.2
+  },
+  "decoder_upsampling": "nearest"
+}

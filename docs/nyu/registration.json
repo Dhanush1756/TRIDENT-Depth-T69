@@ -1,0 +1,9 @@
+{
+  "panels": [
+    "registration_1.png",
+    "registration_2.png"
+  ],
+  "source_registration_preserved": true,
+  "all_exports_roundtrip_exact": true,
+  "review": "Representative panels require visual inspection; no automatic subpixel registration guarantee"
+}

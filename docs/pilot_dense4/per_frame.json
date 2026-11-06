@@ -1,0 +1,4430 @@
+[
+  {
+    "id": "nyu_00050",
+    "scene_id": "living_room_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "232a85c37c5d40ea4558ae2c46909402f10c0210a12fea6d7a27b1ee8fe16325",
+      "depth": "9ba056398cd607e9f7f162522c0b0d90006b44ad91cc4aea33104db75088174d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 83.83775258130537,
+      "sum_absolute_error_m": 1895.6719983816147,
+      "pixels": 307200,
+      "rmse_m": 0.01651996824605312,
+      "mae_m": 0.006170807286398485
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 84.02040366373852,
+      "sum_absolute_error_m": 2008.6271158456802,
+      "pixels": 307200,
+      "rmse_m": 0.016537953869092518,
+      "mae_m": 0.006538499726060157
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 81.76160861161223,
+      "sum_absolute_error_m": 1902.4240163564682,
+      "pixels": 307200,
+      "rmse_m": 0.016314137111697283,
+      "mae_m": 0.006192786511577045
+    }
+  },
+  {
+    "id": "nyu_00051",
+    "scene_id": "living_room_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "e8671a791482e222423fe421cbe442b6962be972253704cc2e8edc0b10f087e4",
+      "depth": "a3e3e7f47b1d6c6f8b3c63b3a2ae4a8fee2d4afc06237892acf36171cd1fc4fa",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 60.29941780969611,
+      "sum_absolute_error_m": 1681.4890928268433,
+      "pixels": 307200,
+      "rmse_m": 0.014010252222899887,
+      "mae_m": 0.005473597307379047
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 61.11335103948912,
+      "sum_absolute_error_m": 1809.2266914844513,
+      "pixels": 307200,
+      "rmse_m": 0.014104491822879345,
+      "mae_m": 0.005889409803009281
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 59.43411440782208,
+      "sum_absolute_error_m": 1704.3416330814362,
+      "pixels": 307200,
+      "rmse_m": 0.01390936463339103,
+      "mae_m": 0.0055479870868536335
+    }
+  },
+  {
+    "id": "nyu_00052",
+    "scene_id": "living_room_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "7c71c8412edec77ad515f8d475b92d2a83888c629230102c7671bfef81c974db",
+      "depth": "a893b230b099c63366acfa5e537a7e083886c5f46cebe4cccd0c14de3ccafe95",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 558.4391658370973,
+      "sum_absolute_error_m": 3881.0910350084305,
+      "pixels": 307200,
+      "rmse_m": 0.04263608596356653,
+      "mae_m": 0.012633759879584735
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 558.927815576877,
+      "sum_absolute_error_m": 3962.847686767578,
+      "pixels": 307200,
+      "rmse_m": 0.04265473576283935,
+      "mae_m": 0.012899894813696543
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 554.517944306075,
+      "sum_absolute_error_m": 3882.484178185463,
+      "pixels": 307200,
+      "rmse_m": 0.04248613224674617,
+      "mae_m": 0.012638294850864137
+    }
+  },
+  {
+    "id": "nyu_00053",
+    "scene_id": "living_room_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "b60380fb50e1b111072fb494344e756e7b1e4e9ed290861d60683269380aaf52",
+      "depth": "192691fdce707c4eb5f8029df6ab4ff29142dd1db829e1dd9ef3ae0f12679b8e",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 803.8522886266688,
+      "sum_absolute_error_m": 5669.48400580883,
+      "pixels": 307200,
+      "rmse_m": 0.05115375517698192,
+      "mae_m": 0.018455351581408954
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 801.6329147504055,
+      "sum_absolute_error_m": 5708.31678378582,
+      "pixels": 307200,
+      "rmse_m": 0.051083090591406165,
+      "mae_m": 0.018581760363886132
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 793.886979564485,
+      "sum_absolute_error_m": 5626.157684147358,
+      "pixels": 307200,
+      "rmse_m": 0.05083569131627051,
+      "mae_m": 0.018314315378083847
+    }
+  },
+  {
+    "id": "nyu_00054",
+    "scene_id": "living_room_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "c793ae9aafe42ff8d49ca0303165394710e8b94b1622e8c606e02103df661634",
+      "depth": "080c0fa97dc1ea780b33e669b51af7cca7e4c767580e482a7f4bdfc602282162",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 660.1886343862885,
+      "sum_absolute_error_m": 4780.502591729164,
+      "pixels": 307200,
+      "rmse_m": 0.0463578638876534,
+      "mae_m": 0.015561531874118373
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 655.2979874061971,
+      "sum_absolute_error_m": 4827.577076673508,
+      "pixels": 307200,
+      "rmse_m": 0.04618583624252369,
+      "mae_m": 0.015714769129796576
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 649.1269969525644,
+      "sum_absolute_error_m": 4748.073959469795,
+      "pixels": 307200,
+      "rmse_m": 0.04596785409252458,
+      "mae_m": 0.015455969920149073
+    }
+  },
+  {
+    "id": "nyu_00055",
+    "scene_id": "living_room_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "2cbba8fc154e887e88670f3b81472610babf0ced03bd52cc3d735be2519b0d4b",
+      "depth": "3701a225049803605acbb76312aec0f7de7bf9e6201e71a46136b508db4b94cc",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 150.6261368511482,
+      "sum_absolute_error_m": 2399.8613424301147,
+      "pixels": 307200,
+      "rmse_m": 0.02214315821863866,
+      "mae_m": 0.00781204864072303
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 149.6610468351792,
+      "sum_absolute_error_m": 2472.816459774971,
+      "pixels": 307200,
+      "rmse_m": 0.022072106533660662,
+      "mae_m": 0.008049532746663318
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 146.80548876480202,
+      "sum_absolute_error_m": 2391.0252361297607,
+      "pixels": 307200,
+      "rmse_m": 0.021860522647143103,
+      "mae_m": 0.007783285273859898
+    }
+  },
+  {
+    "id": "nyu_00104",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "4d7bcd7d7fe58a25bc49eca3fb3de11c6ef9979203cd17e3b62d280996e2d866",
+      "depth": "8b3c88123b360f5dabf34f7ffa7175744f7cc8e9007f9276e13f9090df9f751c",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2883.3427087048553,
+      "sum_absolute_error_m": 10503.859609127045,
+      "pixels": 307200,
+      "rmse_m": 0.09688075770364284,
+      "mae_m": 0.034192251331793766
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2878.7934812086105,
+      "sum_absolute_error_m": 10601.600489497185,
+      "pixels": 307200,
+      "rmse_m": 0.0968043001626268,
+      "mae_m": 0.034510418260081985
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2862.1543719387246,
+      "sum_absolute_error_m": 10501.670642256737,
+      "pixels": 307200,
+      "rmse_m": 0.09652413564918035,
+      "mae_m": 0.03418512578859615
+    }
+  },
+  {
+    "id": "nyu_00105",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "3a8f6c5a40bee5f4cde45addfa16cf3af394d0dd15bfed083b325d1b2357d20f",
+      "depth": "b899136b1d0f0d51462e0ba1b2a2b4668331a7e9b3a926ffbafebe8534824a52",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2811.0402442400327,
+      "sum_absolute_error_m": 10992.228590607643,
+      "pixels": 307200,
+      "rmse_m": 0.09565835890493586,
+      "mae_m": 0.035781994110050924
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2807.917652361704,
+      "sum_absolute_error_m": 11071.502975344658,
+      "pixels": 307200,
+      "rmse_m": 0.09560521398585742,
+      "mae_m": 0.036040048747866725
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2791.5807102218732,
+      "sum_absolute_error_m": 10961.570900678635,
+      "pixels": 307200,
+      "rmse_m": 0.0953266845698875,
+      "mae_m": 0.03568219694231326
+    }
+  },
+  {
+    "id": "nyu_00106",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "bce808b5f593354a941e90f177ae55cdeba5da34bd82cfa76f2aa6a51fead386",
+      "depth": "09212176782598bd9b49a63b1d128858645180592e8a0355ab0b7a139eb1da99",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 5319.860823422486,
+      "sum_absolute_error_m": 12847.169668078423,
+      "pixels": 307200,
+      "rmse_m": 0.13159504278117168,
+      "mae_m": 0.04182021376327612
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 5325.826526140116,
+      "sum_absolute_error_m": 12933.610809445381,
+      "pixels": 307200,
+      "rmse_m": 0.1316688075809112,
+      "mae_m": 0.042101597686996686
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 5294.400520543875,
+      "sum_absolute_error_m": 12824.34765958786,
+      "pixels": 307200,
+      "rmse_m": 0.131279764984855,
+      "mae_m": 0.04174592337105423
+    }
+  },
+  {
+    "id": "nyu_00107",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "d834fff34194017a8cd1599632a70661b124e237715e0855c58afb01fc202acf",
+      "depth": "d6dd4f831e2574e033d4f8113af1ae7ca68d988ed972f02dae81cb01061b479a",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 7189.43441427704,
+      "sum_absolute_error_m": 14722.288608908653,
+      "pixels": 307200,
+      "rmse_m": 0.15298074002078849,
+      "mae_m": 0.04792411656545786
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 7154.985614564039,
+      "sum_absolute_error_m": 14789.586023330688,
+      "pixels": 307200,
+      "rmse_m": 0.15261378966990166,
+      "mae_m": 0.04814318366969625
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 7136.954711225351,
+      "sum_absolute_error_m": 14708.43180680275,
+      "pixels": 307200,
+      "rmse_m": 0.15242137137095754,
+      "mae_m": 0.04787900978776937
+    }
+  },
+  {
+    "id": "nyu_00108",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "bd9a7ca0013ae2e5479b95485bdc74f86f6ef63136204b3a4db1c0fb16d621c4",
+      "depth": "8666d249a6686cb44330a12731962572e7e298acf50f128fbdb49f3b905a3ceb",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 5702.920692674076,
+      "sum_absolute_error_m": 12351.88651394844,
+      "pixels": 307200,
+      "rmse_m": 0.13625048610236867,
+      "mae_m": 0.04020796391259258
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 5703.019974626721,
+      "sum_absolute_error_m": 12449.030088186264,
+      "pixels": 307200,
+      "rmse_m": 0.13625167208724948,
+      "mae_m": 0.04052418648498133
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 5684.47754384474,
+      "sum_absolute_error_m": 12334.115643262863,
+      "pixels": 307200,
+      "rmse_m": 0.1360299918083126,
+      "mae_m": 0.040150116026246296
+    }
+  },
+  {
+    "id": "nyu_00109",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "dd76391c782aefacad4cf351ac9f74ec1b6ad64c997ba467fd542bc002ed5113",
+      "depth": "34fbc71dee10ab75adcc0e5f2941af9e87fc54347f23a262c65f58adbd1da30e",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 5397.614923122022,
+      "sum_absolute_error_m": 14570.52198445797,
+      "pixels": 307200,
+      "rmse_m": 0.1325532386547804,
+      "mae_m": 0.04743008458482412
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 5396.235906446589,
+      "sum_absolute_error_m": 14641.55860310793,
+      "pixels": 307200,
+      "rmse_m": 0.1325363048047496,
+      "mae_m": 0.04766132357782529
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 5376.5549068721375,
+      "sum_absolute_error_m": 14571.210122346878,
+      "pixels": 307200,
+      "rmse_m": 0.1322943926909769,
+      "mae_m": 0.047432324617014576
+    }
+  },
+  {
+    "id": "nyu_00110",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "5735d3e55d51ea3a109e30fec84a555ac5b9a5d5d89ae4dd5540997e717ac9f0",
+      "depth": "8ad9740779d4f98562e7bbb0fb9769387d54a85b968eea6bc389758d75e4cbeb",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 9305.699363547827,
+      "sum_absolute_error_m": 18420.447566986084,
+      "pixels": 307200,
+      "rmse_m": 0.1740459425430986,
+      "mae_m": 0.059962394423782824
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 9307.787138264695,
+      "sum_absolute_error_m": 18506.05830669403,
+      "pixels": 307200,
+      "rmse_m": 0.17406546543577234,
+      "mae_m": 0.060241075217102966
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 9281.45484696189,
+      "sum_absolute_error_m": 18436.59005868435,
+      "pixels": 307200,
+      "rmse_m": 0.17381907019451978,
+      "mae_m": 0.06001494159727978
+    }
+  },
+  {
+    "id": "nyu_00111",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "eb5fb5c8367a4d9a6042434d8e2d995e18c94390d113dbe5cf1a9912117beb02",
+      "depth": "128188d2c509b8273ba1c5599db778a00f2f04f9df44247001429e79e4ab07fe",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 4672.418521039801,
+      "sum_absolute_error_m": 14389.730001330376,
+      "pixels": 307200,
+      "rmse_m": 0.12332759507308073,
+      "mae_m": 0.046841569014747314
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 4674.290428572965,
+      "sum_absolute_error_m": 14488.58810210228,
+      "pixels": 307200,
+      "rmse_m": 0.12335229692028823,
+      "mae_m": 0.047163372728197525
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 4657.223667251934,
+      "sum_absolute_error_m": 14382.538729310036,
+      "pixels": 307200,
+      "rmse_m": 0.1231268991400162,
+      "mae_m": 0.04681815992613944
+    }
+  },
+  {
+    "id": "nyu_00112",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "8117958921e1a24ac0aac822f59c302b9ad5f47b2c967a5348fd92ee444fdfde",
+      "depth": "db770504f0ed53a14400f8e6a48dd0a09eb4d7c47e8e47be0ec08cd7ecb3cae2",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 3705.2695769182947,
+      "sum_absolute_error_m": 12567.658190011978,
+      "pixels": 307200,
+      "rmse_m": 0.1098245164069977,
+      "mae_m": 0.04091034567061191
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 3710.139382051772,
+      "sum_absolute_error_m": 12654.040671467781,
+      "pixels": 307200,
+      "rmse_m": 0.10989666343562535,
+      "mae_m": 0.04119153864410085
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 3694.8809107439156,
+      "sum_absolute_error_m": 12577.301129698753,
+      "pixels": 307200,
+      "rmse_m": 0.10967044784867001,
+      "mae_m": 0.04094173544823813
+    }
+  },
+  {
+    "id": "nyu_00113",
+    "scene_id": "bookstore_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "03da94bae9959737fe4fc0108143cb8a9d05d64b95775281b8a13159e56e58b6",
+      "depth": "beeccaf66ed7fd03d1bfe6de2fb3a39d33deb28d4ffe019f7dc8970b3eb1f25b",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 790.9066010079362,
+      "sum_absolute_error_m": 5554.63527405262,
+      "pixels": 307200,
+      "rmse_m": 0.0507401789363161,
+      "mae_m": 0.018081495032723372
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 793.28087022254,
+      "sum_absolute_error_m": 5647.64753139019,
+      "pixels": 307200,
+      "rmse_m": 0.05081628183389976,
+      "mae_m": 0.018384269307910775
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 784.5858391705879,
+      "sum_absolute_error_m": 5542.665639281273,
+      "pixels": 307200,
+      "rmse_m": 0.05053701971706903,
+      "mae_m": 0.018042531377868726
+    }
+  },
+  {
+    "id": "nyu_00170",
+    "scene_id": "bathroom_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "3518236b74e722db001c8479457e18f9cce8223e37ebd2c6b053e9ed0fb7097f",
+      "depth": "b2f838194d37e148ee3e0053a430f0b86faf8372b3caa04466668d9a755d87c6",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1304.792015877305,
+      "sum_absolute_error_m": 3745.2244079709053,
+      "pixels": 307200,
+      "rmse_m": 0.06517184854943583,
+      "mae_m": 0.01219148570303029
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1305.439248743449,
+      "sum_absolute_error_m": 3810.6877198815346,
+      "pixels": 307200,
+      "rmse_m": 0.06518801056306352,
+      "mae_m": 0.01240458242148937
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1301.0970423452059,
+      "sum_absolute_error_m": 3746.3855504989624,
+      "pixels": 307200,
+      "rmse_m": 0.06507950472089863,
+      "mae_m": 0.01219526546386381
+    }
+  },
+  {
+    "id": "nyu_00177",
+    "scene_id": "bedroom_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "88dc2102902f126a22f3832ca558e366c4f291fcb163276d285c55691f7f1da7",
+      "depth": "1a3ee7c420cd54a5a966c3a4d471161073affb1b9988a158a16da29870696776",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 25.924152529141907,
+      "sum_absolute_error_m": 950.6949050426483,
+      "pixels": 307200,
+      "rmse_m": 0.009186322297169152,
+      "mae_m": 0.0030947099773523707
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 26.801384492728786,
+      "sum_absolute_error_m": 1101.71930539608,
+      "pixels": 307200,
+      "rmse_m": 0.009340454493524473,
+      "mae_m": 0.0035863258639195314
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 26.083313334154695,
+      "sum_absolute_error_m": 989.7105801105499,
+      "pixels": 307200,
+      "rmse_m": 0.009214478765849146,
+      "mae_m": 0.0032217141279640297
+    }
+  },
+  {
+    "id": "nyu_00178",
+    "scene_id": "bedroom_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "fef0482b290b3884defa4b1633735ee68dd623fe5bde08f69b3843e58b49b155",
+      "depth": "f2668cd26ec94244ffb90d54e6f6134e72ab0f904c7cf991a31452bacfb3f14b",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 236.3570009177132,
+      "sum_absolute_error_m": 2717.0698251128197,
+      "pixels": 307200,
+      "rmse_m": 0.027737903291867868,
+      "mae_m": 0.008844628336955793
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 234.3158029597266,
+      "sum_absolute_error_m": 2749.121481657028,
+      "pixels": 307200,
+      "rmse_m": 0.027617870200763006,
+      "mae_m": 0.00894896315643564
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 231.17798020127617,
+      "sum_absolute_error_m": 2677.6594585180283,
+      "pixels": 307200,
+      "rmse_m": 0.02743232559653597,
+      "mae_m": 0.008716339383196707
+    }
+  },
+  {
+    "id": "nyu_00179",
+    "scene_id": "bedroom_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "ad255bbc3ef2506576ce7d4690187e5783086a5816d94bcc809fbb5286a75333",
+      "depth": "8433f9895fd69f671aa1c6594669c498b86b3dafcafa5ff882b2cb93ac8db95e",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 37.71797416847171,
+      "sum_absolute_error_m": 1133.4899191856384,
+      "pixels": 307200,
+      "rmse_m": 0.011080607556883355,
+      "mae_m": 0.003689745830682417
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 38.00013070531145,
+      "sum_absolute_error_m": 1270.299377322197,
+      "pixels": 307200,
+      "rmse_m": 0.011121975640131825,
+      "mae_m": 0.00413508911888736
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 36.923121891538266,
+      "sum_absolute_error_m": 1174.12020611763,
+      "pixels": 307200,
+      "rmse_m": 0.010963231917368975,
+      "mae_m": 0.00382200587928916
+    }
+  },
+  {
+    "id": "nyu_00203",
+    "scene_id": "kitchen_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "05bffd7e6fe44b7bbdb3c8ea11a9bae542e66d9037c44c7a0ddd3124e2bee8fd",
+      "depth": "bded2d4abda8556e0a9725f4d35c851669ce15aa3d2a916fb5879e06f989a7d0",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 27.19525556191195,
+      "sum_absolute_error_m": 1007.1947786808014,
+      "pixels": 307200,
+      "rmse_m": 0.009408837469754988,
+      "mae_m": 0.0032786288368515672
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 27.786398799642512,
+      "sum_absolute_error_m": 1125.786618232727,
+      "pixels": 307200,
+      "rmse_m": 0.0095105476669811,
+      "mae_m": 0.003664669981226325
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 27.761272816665468,
+      "sum_absolute_error_m": 1069.794108390808,
+      "pixels": 307200,
+      "rmse_m": 0.009506246715541816,
+      "mae_m": 0.003482402696584662
+    }
+  },
+  {
+    "id": "nyu_00204",
+    "scene_id": "kitchen_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "b7773017dd227d027a26dcfb8cfa9124c39a1220089a1be1c5a3ed8ed25d0d7e",
+      "depth": "9337412acdf0cbcd12bc73dc53015083da5275e761d94da9761bf3694ca19705",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 31.20446446178511,
+      "sum_absolute_error_m": 1149.4438534379005,
+      "pixels": 307200,
+      "rmse_m": 0.010078543186056542,
+      "mae_m": 0.0037416792104098327
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 31.1368657517392,
+      "sum_absolute_error_m": 1287.0713999271393,
+      "pixels": 307200,
+      "rmse_m": 0.01006762061606131,
+      "mae_m": 0.004189685546637823
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 31.202738704231443,
+      "sum_absolute_error_m": 1182.6666159629822,
+      "pixels": 307200,
+      "rmse_m": 0.010078264486152204,
+      "mae_m": 0.0038498262238378326
+    }
+  },
+  {
+    "id": "nyu_00205",
+    "scene_id": "kitchen_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "aa0897b50920c67afc5199a0f7d0f731b2df52c5ca38621ac21c17d8fbd9c45b",
+      "depth": "635220fe7354a7199e651ba7b25ec34d7b7ab4a7050ef3463a91d96803332840",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 45.33249982280681,
+      "sum_absolute_error_m": 1287.5564841628075,
+      "pixels": 307200,
+      "rmse_m": 0.012147704770615417,
+      "mae_m": 0.004191264596884139
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 45.55419276672012,
+      "sum_absolute_error_m": 1375.4598861336708,
+      "pixels": 307200,
+      "rmse_m": 0.012177371962476155,
+      "mae_m": 0.004477408483508043
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 44.745166127236224,
+      "sum_absolute_error_m": 1323.7950990200043,
+      "pixels": 307200,
+      "rmse_m": 0.012068754602433665,
+      "mae_m": 0.004309228837955743
+    }
+  },
+  {
+    "id": "nyu_00206",
+    "scene_id": "kitchen_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "f523c0ea4504a8f5bc5989e74863236c342ec815bbeaac890834aaa8c889c6de",
+      "depth": "ff91251b5a7d38d31863e296e66fb3ffa50eff13ed2e6ba080d6e886322a28bf",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 163.48981381534563,
+      "sum_absolute_error_m": 1835.6785022616386,
+      "pixels": 307200,
+      "rmse_m": 0.02306931737929903,
+      "mae_m": 0.005975515957882939
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 163.0437981888432,
+      "sum_absolute_error_m": 1907.924705862999,
+      "pixels": 307200,
+      "rmse_m": 0.02303782825186959,
+      "mae_m": 0.006210692401897783
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 161.2080141998963,
+      "sum_absolute_error_m": 1854.4396803379059,
+      "pixels": 307200,
+      "rmse_m": 0.02290776443094395,
+      "mae_m": 0.0060365875010999544
+    }
+  },
+  {
+    "id": "nyu_00213",
+    "scene_id": "office_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "e03e65142dc622cde8c53cb38fd6ae8fb0333d88b6b739b42c9df36b4a5e3d57",
+      "depth": "8b80b5e8bd5d8dbe5f38d04086c8142c48fd282017967d6f4537c500d954cc84",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 615.8081609713277,
+      "sum_absolute_error_m": 4863.239149212837,
+      "pixels": 307200,
+      "rmse_m": 0.04477257930171703,
+      "mae_m": 0.01583085660551054
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 614.3948142070426,
+      "sum_absolute_error_m": 4933.185039699078,
+      "pixels": 307200,
+      "rmse_m": 0.04472117081610845,
+      "mae_m": 0.016058545051103768
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 606.0495855762034,
+      "sum_absolute_error_m": 4853.867107748985,
+      "pixels": 307200,
+      "rmse_m": 0.04441641207235081,
+      "mae_m": 0.01580034865803706
+    }
+  },
+  {
+    "id": "nyu_00214",
+    "scene_id": "office_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "9036f65eace20986e7ffc340505483510008fe668fa68e29cc8ccd010854d675",
+      "depth": "5f7f31e3ce34eb1cc761ea574c3a49f244bd7cf23c29860410d8e4c3de118da8",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 118.86987790088432,
+      "sum_absolute_error_m": 2134.3567157387733,
+      "pixels": 307200,
+      "rmse_m": 0.019670948556825482,
+      "mae_m": 0.006947775767378819
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 117.67622470687365,
+      "sum_absolute_error_m": 2261.876099228859,
+      "pixels": 307200,
+      "rmse_m": 0.01957193468467083,
+      "mae_m": 0.007362877927177275
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 115.78297128165677,
+      "sum_absolute_error_m": 2140.780670940876,
+      "pixels": 307200,
+      "rmse_m": 0.019413853120237187,
+      "mae_m": 0.006968687079885664
+    }
+  },
+  {
+    "id": "nyu_00215",
+    "scene_id": "office_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "1806fb924f388ff6383c5622d1e645aafc0a7caaaba97d74a5d015ad32756e87",
+      "depth": "8a5bfa422258a1a451d35e8106c2006867c569d212b492374a15e5ba4e57e920",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 451.78616510178307,
+      "sum_absolute_error_m": 3782.095762014389,
+      "pixels": 307200,
+      "rmse_m": 0.03834916021928034,
+      "mae_m": 0.012311509641973922
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 453.0187811147971,
+      "sum_absolute_error_m": 3897.0867463350296,
+      "pixels": 307200,
+      "rmse_m": 0.03840143892410019,
+      "mae_m": 0.012685829252392674
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 449.7472435884488,
+      "sum_absolute_error_m": 3807.7922788858414,
+      "pixels": 307200,
+      "rmse_m": 0.038262527036551246,
+      "mae_m": 0.012395157157831516
+    }
+  },
+  {
+    "id": "nyu_00216",
+    "scene_id": "office_0000",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "59dfb2a22d8859dbed53aeaadc5691b46ec8756bd8e31aada1f73738a102ef15",
+      "depth": "cb2711235cb193df13ca327dc1f7628556d3f4826dc3cb7b187107998b94bc9e",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 202.17741904738278,
+      "sum_absolute_error_m": 2625.0556471943855,
+      "pixels": 307200,
+      "rmse_m": 0.02565403709545275,
+      "mae_m": 0.008545103018210891
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 200.31466773881954,
+      "sum_absolute_error_m": 2733.6429238319397,
+      "pixels": 307200,
+      "rmse_m": 0.025535582541079873,
+      "mae_m": 0.008898577226015428
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 197.3934435009907,
+      "sum_absolute_error_m": 2627.2127496004105,
+      "pixels": 307200,
+      "rmse_m": 0.025348703758373673,
+      "mae_m": 0.008552124835938837
+    }
+  },
+  {
+    "id": "nyu_00223",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "3bbe42d66e620ba1f2f62db54389018be5abff2f30d047440687eabded35d6b9",
+      "depth": "31752c5f85924ae168e4eaa83a66d6e7386814ad79a573cf67a352d2a88374e3",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1364.8378518966765,
+      "sum_absolute_error_m": 7609.58084744215,
+      "pixels": 307200,
+      "rmse_m": 0.06665456885422655,
+      "mae_m": 0.024770770987767417
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1361.7352769407494,
+      "sum_absolute_error_m": 7717.680770933628,
+      "pixels": 307200,
+      "rmse_m": 0.06657876554346365,
+      "mae_m": 0.02512265875954957
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1351.4307100640422,
+      "sum_absolute_error_m": 7616.844585120678,
+      "pixels": 307200,
+      "rmse_m": 0.06632637868392224,
+      "mae_m": 0.024794415967189707
+    }
+  },
+  {
+    "id": "nyu_00224",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "0d7a602242941da110cdd95d5ecfd533ee369c3aef18a49a3bfb58b37cec0b29",
+      "depth": "f2069bce740a44d23b0aee621dd615f126a1b8175ab486c75200bd1d5e1fe7eb",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 271.1590157063596,
+      "sum_absolute_error_m": 3560.2796882390976,
+      "pixels": 307200,
+      "rmse_m": 0.029709915644205488,
+      "mae_m": 0.011589452110153312
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 270.17216817660614,
+      "sum_absolute_error_m": 3717.968675017357,
+      "pixels": 307200,
+      "rmse_m": 0.0296558037032083,
+      "mae_m": 0.012102762613988792
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 266.0699183148538,
+      "sum_absolute_error_m": 3605.315708041191,
+      "pixels": 307200,
+      "rmse_m": 0.029429798085407098,
+      "mae_m": 0.011736053737113252
+    }
+  },
+  {
+    "id": "nyu_00225",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "39eb4680026a9df083fa162c28ab3f326f5ee3c118378b3df0ff0380668d6c44",
+      "depth": "b7d68a55fe1d2db1fc57cafe8d283c83d3148fc7276a0a1e922f08487ac17802",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2041.8735050343744,
+      "sum_absolute_error_m": 9680.272308886051,
+      "pixels": 307200,
+      "rmse_m": 0.08152744108090501,
+      "mae_m": 0.03151130308882178
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2036.830025276781,
+      "sum_absolute_error_m": 9751.846826970577,
+      "pixels": 307200,
+      "rmse_m": 0.0814266913970138,
+      "mae_m": 0.031744293056544845
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2023.8789279965185,
+      "sum_absolute_error_m": 9651.793633639812,
+      "pixels": 307200,
+      "rmse_m": 0.08116740449264101,
+      "mae_m": 0.03141859906783793
+    }
+  },
+  {
+    "id": "nyu_00226",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "f1f8bc6d39503b2e1d6f9d6e6c3bcda1b293cf0ae94fe6172437a3dba8a5e1eb",
+      "depth": "4607dfdf1d7bbf9cb9c8004246afaca83e7b2d8ef469900d8a82eada1740ae7d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 3352.038339648286,
+      "sum_absolute_error_m": 11629.087678730488,
+      "pixels": 307200,
+      "rmse_m": 0.10445852352429615,
+      "mae_m": 0.03785510312086748
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 3345.7169270178356,
+      "sum_absolute_error_m": 11669.636651098728,
+      "pixels": 307200,
+      "rmse_m": 0.10435998094002726,
+      "mae_m": 0.037987098473628675
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 3330.1246859969383,
+      "sum_absolute_error_m": 11580.530063807964,
+      "pixels": 307200,
+      "rmse_m": 0.10411651948128253,
+      "mae_m": 0.03769703796812488
+    }
+  },
+  {
+    "id": "nyu_00227",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "be049e20a94cafab99b886c6918e2fffa0ae1948eba653210a2f8707dd026efc",
+      "depth": "28b64ab6eea84e2fa658aba0d3ba96744fbe6c8578278dc32aaf454c289c9fdd",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2205.684091737835,
+      "sum_absolute_error_m": 7665.354354858398,
+      "pixels": 307200,
+      "rmse_m": 0.0847346519207211,
+      "mae_m": 0.024952325373888015
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2202.035158450625,
+      "sum_absolute_error_m": 7755.138038635254,
+      "pixels": 307200,
+      "rmse_m": 0.08466453329512579,
+      "mae_m": 0.0252445899695158
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2191.618292297569,
+      "sum_absolute_error_m": 7665.927124619484,
+      "pixels": 307200,
+      "rmse_m": 0.08446404044664697,
+      "mae_m": 0.024954189858787383
+    }
+  },
+  {
+    "id": "nyu_00228",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "20ddd4b65d8cb469851f18b7d78f0021cd2e6608a5ad018a23d8c7d38e9fa107",
+      "depth": "b0216976c0f314b01e6201e1b789d215203f28727763b6f4e8fc9fc53a4837dd",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 3480.858387813095,
+      "sum_absolute_error_m": 10932.05366885662,
+      "pixels": 307200,
+      "rmse_m": 0.10644679060996821,
+      "mae_m": 0.03558611220330931
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 3480.2122079461674,
+      "sum_absolute_error_m": 11026.312045097351,
+      "pixels": 307200,
+      "rmse_m": 0.10643690986248502,
+      "mae_m": 0.035892942855134606
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 3464.1716332152973,
+      "sum_absolute_error_m": 10929.954725384712,
+      "pixels": 307200,
+      "rmse_m": 0.10619133848172072,
+      "mae_m": 0.03557927970502836
+    }
+  },
+  {
+    "id": "nyu_00229",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "a6ba18aa7270296fd3c0017e935487a0127541362fea086e2a295923a068f64b",
+      "depth": "ce35c3469acd14fc194ee11820798bf9f908bb0c00c4acb255722e1545421e7c",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1416.4187702972222,
+      "sum_absolute_error_m": 8816.813233613968,
+      "pixels": 307200,
+      "rmse_m": 0.06790241663270366,
+      "mae_m": 0.0287005639115038
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1416.1821086683797,
+      "sum_absolute_error_m": 8938.292799115181,
+      "pixels": 307200,
+      "rmse_m": 0.06789674367489859,
+      "mae_m": 0.029096005205453062
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1404.6977037091747,
+      "sum_absolute_error_m": 8803.291288673878,
+      "pixels": 307200,
+      "rmse_m": 0.06762088191474808,
+      "mae_m": 0.028656547163651947
+    }
+  },
+  {
+    "id": "nyu_00230",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "7cc2f9bbf77c227c3975cdaabe92e3726bf38f9d0a33bf5664d93cf77fccad2b",
+      "depth": "de5db4f579528d3057c219f0ff16e36d5f20369c175901829065c1a7db85efe1",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2685.798137545681,
+      "sum_absolute_error_m": 9313.196541011333,
+      "pixels": 307200,
+      "rmse_m": 0.09350311480902573,
+      "mae_m": 0.030316394990271268
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2679.7558207424154,
+      "sum_absolute_error_m": 9397.877126932144,
+      "pixels": 307200,
+      "rmse_m": 0.09339787727234071,
+      "mae_m": 0.03059204793923224
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2658.8521159446614,
+      "sum_absolute_error_m": 9265.96028238535,
+      "pixels": 307200,
+      "rmse_m": 0.09303288432013719,
+      "mae_m": 0.030162631127556475
+    }
+  },
+  {
+    "id": "nyu_00231",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "bbc47d77c219e9565c8aa77b0186a69129f5199213d710f806bdb1fc9c88117c",
+      "depth": "fb2723c4ae9b6c5cbdebe4b4d04a84a3f5f6c0157e006745edf21805b7ccd7de",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1879.5796385824237,
+      "sum_absolute_error_m": 9628.027155399323,
+      "pixels": 307200,
+      "rmse_m": 0.07822035094959087,
+      "mae_m": 0.0313412342298155
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1882.878826398144,
+      "sum_absolute_error_m": 9758.994412899017,
+      "pixels": 307200,
+      "rmse_m": 0.07828897014489414,
+      "mae_m": 0.03176755993782232
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1871.4794214203766,
+      "sum_absolute_error_m": 9644.91554915905,
+      "pixels": 307200,
+      "rmse_m": 0.07805162015147063,
+      "mae_m": 0.031396209469918786
+    }
+  },
+  {
+    "id": "nyu_00232",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "11c682ea3be7e6172378c128b5d10bbc599c2cd36584dbac9bacc366cc846559",
+      "depth": "2696b65b5654509d12d3fe7c4f9e89d7714855e79deb933d9e784cd1e7b47e5a",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2426.0235689742904,
+      "sum_absolute_error_m": 11044.901742577553,
+      "pixels": 307200,
+      "rmse_m": 0.08886625984358847,
+      "mae_m": 0.035953456193286305
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2425.3065041744567,
+      "sum_absolute_error_m": 11107.918397545815,
+      "pixels": 307200,
+      "rmse_m": 0.08885312568095861,
+      "mae_m": 0.03615858853367778
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2411.173177320479,
+      "sum_absolute_error_m": 11024.754648685455,
+      "pixels": 307200,
+      "rmse_m": 0.08859385430109379,
+      "mae_m": 0.0358878732053563
+    }
+  },
+  {
+    "id": "nyu_00233",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "78ab03b7c269b5f6073c073d75184f41d5c48fdca16ab5860d62c7dbfdc7530a",
+      "depth": "92c7583c77cf0cac77929b44e1a0e45ebb6bc74c3f38b9704017795c873f999c",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2856.939114968785,
+      "sum_absolute_error_m": 11294.077803134918,
+      "pixels": 307200,
+      "rmse_m": 0.09643615512281868,
+      "mae_m": 0.03676457618207981
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2855.7536621735617,
+      "sum_absolute_error_m": 11366.7523624897,
+      "pixels": 307200,
+      "rmse_m": 0.09641614553099788,
+      "mae_m": 0.03700114701331283
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2830.8308947849246,
+      "sum_absolute_error_m": 11252.391713500023,
+      "pixels": 307200,
+      "rmse_m": 0.09599450150379105,
+      "mae_m": 0.036628879275716224
+    }
+  },
+  {
+    "id": "nyu_00234",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "0b3a0ca9581029eaff143350b54c3324a0e72757c8edcbbbfbe7fbb4359fd019",
+      "depth": "772156f00ef3e67844784ff773468b03dde07e6132add88376ba2395bc28b535",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 2027.5134841728295,
+      "sum_absolute_error_m": 9309.68625998497,
+      "pixels": 307200,
+      "rmse_m": 0.08124025350542118,
+      "mae_m": 0.03030496829422191
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 2026.4825034259145,
+      "sum_absolute_error_m": 9370.701345086098,
+      "pixels": 307200,
+      "rmse_m": 0.08121959574207589,
+      "mae_m": 0.030503585107702142
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 2013.8253631079324,
+      "sum_absolute_error_m": 9282.560786128044,
+      "pixels": 307200,
+      "rmse_m": 0.08096555504575367,
+      "mae_m": 0.03021666922567723
+    }
+  },
+  {
+    "id": "nyu_00235",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "1055622be05cc334cf9e8b977029a7bbb0b271ddb0b61680df5cdd5e2a704445",
+      "depth": "c9dec98d7faaffc5fc7ec6cb393d85a7a91306c55774e5b4636e52ff78158b43",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 648.0380079025649,
+      "sum_absolute_error_m": 5085.51029843092,
+      "pixels": 307200,
+      "rmse_m": 0.04592927958983421,
+      "mae_m": 0.01655439550270482
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 649.9303157128331,
+      "sum_absolute_error_m": 5185.578187406063,
+      "pixels": 307200,
+      "rmse_m": 0.04599628876109874,
+      "mae_m": 0.01688013732879578
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 643.4928373358521,
+      "sum_absolute_error_m": 5093.781657338142,
+      "pixels": 307200,
+      "rmse_m": 0.04576792814336232,
+      "mae_m": 0.0165813204991476
+    }
+  },
+  {
+    "id": "nyu_00236",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "03bb4c589c5064a00d04447762ed21b25f824758f12f6afb601ebc2f48f7ff43",
+      "depth": "5885752b1f66c28a6940695c1fc29924b5d1fe18b402927faf40f039db04a1e5",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 853.5659521273233,
+      "sum_absolute_error_m": 6933.427776098251,
+      "pixels": 307200,
+      "rmse_m": 0.052711810824657354,
+      "mae_m": 0.02256975187531983
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 854.6501361160579,
+      "sum_absolute_error_m": 7083.899828195572,
+      "pixels": 307200,
+      "rmse_m": 0.052745276993958985,
+      "mae_m": 0.023059569753240795
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 848.731105786126,
+      "sum_absolute_error_m": 6963.674426078796,
+      "pixels": 307200,
+      "rmse_m": 0.052562311291591925,
+      "mae_m": 0.022668211022391915
+    }
+  },
+  {
+    "id": "nyu_00237",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "e10e48e8520d1976f6d75a99b40acec03745c6e5d5bac8df4f3b65418857be66",
+      "depth": "e2a0ca815901f5db5e921f43f72464aa29d1cef8350133ecd20558d90e2863a4",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 550.0460566921078,
+      "sum_absolute_error_m": 4670.87374663353,
+      "pixels": 307200,
+      "rmse_m": 0.04231447160796514,
+      "mae_m": 0.015204667143989355
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 548.9483447699388,
+      "sum_absolute_error_m": 4802.803891301155,
+      "pixels": 307200,
+      "rmse_m": 0.0422722276023472,
+      "mae_m": 0.01563412725032928
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 542.6623569233668,
+      "sum_absolute_error_m": 4694.20825278759,
+      "pixels": 307200,
+      "rmse_m": 0.04202950185813831,
+      "mae_m": 0.01528062582287627
+    }
+  },
+  {
+    "id": "nyu_00238",
+    "scene_id": "furniture_store_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "549675b9bf520f9b6f5418a0b4e28ca9adb36a9c961859e5953592610e9123c6",
+      "depth": "bac3aca82f212316ae4078d0b700a2ef90d07c1eb112f1988d006fb1a77408a7",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1142.15805468488,
+      "sum_absolute_error_m": 7961.777261018753,
+      "pixels": 307200,
+      "rmse_m": 0.060975096700161206,
+      "mae_m": 0.025917243688212088
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1141.8814117447453,
+      "sum_absolute_error_m": 8072.615751981735,
+      "pixels": 307200,
+      "rmse_m": 0.060967711841514324,
+      "mae_m": 0.02627804606764888
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1135.9670437659515,
+      "sum_absolute_error_m": 7969.413760662079,
+      "pixels": 307200,
+      "rmse_m": 0.06080961591112837,
+      "mae_m": 0.025942102085488538
+    }
+  },
+  {
+    "id": "nyu_00274",
+    "scene_id": "study_room_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "cb28a8d061a4f5a1497a10e2bb3dc58a64450fb642365bddbaaecc6c3faa3b83",
+      "depth": "f3ba89af0fb3241b50c20f506ba1fb28d1080e84b20edebb5988f9b58a8deefd",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 4010.0894998301546,
+      "sum_absolute_error_m": 13600.733850598335,
+      "pixels": 307200,
+      "rmse_m": 0.11425268818395311,
+      "mae_m": 0.04427322216991646
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 4008.4814034258798,
+      "sum_absolute_error_m": 13764.365161061287,
+      "pixels": 307200,
+      "rmse_m": 0.1142297775032571,
+      "mae_m": 0.04480587617532971
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 3984.6028550588426,
+      "sum_absolute_error_m": 13605.666385173798,
+      "pixels": 307200,
+      "rmse_m": 0.11388903555132661,
+      "mae_m": 0.04428927859757095
+    }
+  },
+  {
+    "id": "nyu_00275",
+    "scene_id": "study_room_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "4a4acfcc14009469f5a6575f54ba4c13bcdf064613a4874c0577ad1a963891ce",
+      "depth": "51b139244a8ab59e399a23ee2bb7aaff194e5c978ea47599dbc9fb3031d930e9",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1584.5342360955667,
+      "sum_absolute_error_m": 8641.99779266119,
+      "pixels": 307200,
+      "rmse_m": 0.07181914124932333,
+      "mae_m": 0.028131503231318977
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1585.0203513277738,
+      "sum_absolute_error_m": 8741.86662721634,
+      "pixels": 307200,
+      "rmse_m": 0.07183015701044441,
+      "mae_m": 0.028456597093803188
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1574.0653731984169,
+      "sum_absolute_error_m": 8656.66727745533,
+      "pixels": 307200,
+      "rmse_m": 0.07158149705089249,
+      "mae_m": 0.028179255460466568
+    }
+  },
+  {
+    "id": "nyu_00286",
+    "scene_id": "classroom_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "b6fef6828d7d657f519b3abeb057c09dce2cef569362889a41cba0a4c14615e9",
+      "depth": "0fcefe3cf6a4ea44728cba45f6f7fd1c121d02f29c56bf5c74fcf0940c63b52a",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 534.1147672725263,
+      "sum_absolute_error_m": 5215.267123222351,
+      "pixels": 307200,
+      "rmse_m": 0.041697180256966074,
+      "mae_m": 0.016976781000072758
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 533.7208889402306,
+      "sum_absolute_error_m": 5303.680708646774,
+      "pixels": 307200,
+      "rmse_m": 0.04168180280832768,
+      "mae_m": 0.01726458564012622
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 528.7240112785589,
+      "sum_absolute_error_m": 5223.781321406364,
+      "pixels": 307200,
+      "rmse_m": 0.04148622431057558,
+      "mae_m": 0.01700449648895301
+    }
+  },
+  {
+    "id": "nyu_00287",
+    "scene_id": "classroom_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "6dec59fde4af9019a056ae2ed0c0fd1e6ab82c4e294b9b796e81bee4ae6a6b26",
+      "depth": "7cc477ab9f7a309da7d4122ce313b24358e10213cb6167ced48da70bcf4828bf",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 687.522452620916,
+      "sum_absolute_error_m": 5675.4882835149765,
+      "pixels": 307200,
+      "rmse_m": 0.04730780926153078,
+      "mae_m": 0.018474896756233646
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 688.825954490713,
+      "sum_absolute_error_m": 5761.220276355743,
+      "pixels": 307200,
+      "rmse_m": 0.04735263442802793,
+      "mae_m": 0.018753972253762186
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 683.2550186257727,
+      "sum_absolute_error_m": 5688.712471604347,
+      "pixels": 307200,
+      "rmse_m": 0.04716076155473358,
+      "mae_m": 0.018517944243503736
+    }
+  },
+  {
+    "id": "nyu_00339",
+    "scene_id": "conference_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "a245e79e05498402d415419e12ca7ef4cf8734d51725e688245caa72fe58a241",
+      "depth": "ff4dc852adecf2b4f947099fbe352a12183a90ffa714904d082a79fdbbf5bdc0",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 459.9111324391566,
+      "sum_absolute_error_m": 4153.633277654648,
+      "pixels": 307200,
+      "rmse_m": 0.038692461163755305,
+      "mae_m": 0.013520941659032056
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 457.8935395403872,
+      "sum_absolute_error_m": 4251.644490242004,
+      "pixels": 307200,
+      "rmse_m": 0.03860749753210333,
+      "mae_m": 0.013839988575006524
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 452.3990393263565,
+      "sum_absolute_error_m": 4144.45328772068,
+      "pixels": 307200,
+      "rmse_m": 0.03837516283753269,
+      "mae_m": 0.013491058879299089
+    }
+  },
+  {
+    "id": "nyu_00340",
+    "scene_id": "conference_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "46ffa916c106c2ad6f5932b95a0c0a1003f32fec7ca3d7233bf02dc8a505212c",
+      "depth": "e9fe99928982c34fe01a9dd0c6eed82e9864cd3a7b275e9e3cb8c9b5b5966514",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 887.2939597275127,
+      "sum_absolute_error_m": 5338.317913413048,
+      "pixels": 307200,
+      "rmse_m": 0.053743154836884396,
+      "mae_m": 0.017377336957724764
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 887.9782111493096,
+      "sum_absolute_error_m": 5449.04310798645,
+      "pixels": 307200,
+      "rmse_m": 0.05376387330495878,
+      "mae_m": 0.01773777053381006
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 883.0538185447458,
+      "sum_absolute_error_m": 5361.21374809742,
+      "pixels": 307200,
+      "rmse_m": 0.053614588955886604,
+      "mae_m": 0.017451867669587954
+    }
+  },
+  {
+    "id": "nyu_00341",
+    "scene_id": "conference_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "db375be598d78db250766dc28a24ebf080666ddd3295dc724aef6d1a70a7d3d0",
+      "depth": "2d59a4fe41c1e78a661894505b4405bd37b1d98a296a24bb1194316cf54ee241",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 576.9985925971962,
+      "sum_absolute_error_m": 3458.379383146763,
+      "pixels": 307200,
+      "rmse_m": 0.043338788941824365,
+      "mae_m": 0.011257745387847535
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 575.7649136810716,
+      "sum_absolute_error_m": 3514.763023376465,
+      "pixels": 307200,
+      "rmse_m": 0.04329243288446113,
+      "mae_m": 0.01144128588338693
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 570.6065125142651,
+      "sum_absolute_error_m": 3456.0249022841454,
+      "pixels": 307200,
+      "rmse_m": 0.04309806346682768,
+      "mae_m": 0.01125008106212287
+    }
+  },
+  {
+    "id": "nyu_00365",
+    "scene_id": "home_office_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "029104be67b924422a71a0a937a3c0e39d724d015fc10bf9c0c9e78e76e3837f",
+      "depth": "0b6d285fbd42327a02792b197300d9b70786c3c542c34e260b0ff6baedcb9d78",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 307.91175650075553,
+      "sum_absolute_error_m": 3813.4422694444656,
+      "pixels": 307200,
+      "rmse_m": 0.03165938906063355,
+      "mae_m": 0.012413549054181204
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 309.40580452898917,
+      "sum_absolute_error_m": 3894.723896563053,
+      "pixels": 307200,
+      "rmse_m": 0.03173610488520086,
+      "mae_m": 0.012678137684124522
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 304.89519962076656,
+      "sum_absolute_error_m": 3826.0090212225914,
+      "pixels": 307200,
+      "rmse_m": 0.03150392665365461,
+      "mae_m": 0.01245445644929229
+    }
+  },
+  {
+    "id": "nyu_00366",
+    "scene_id": "home_office_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "f6f17a82effb691593423d73446d49e981ed361db5641fbbe4cecab5db22015e",
+      "depth": "22adb66716cea8a5604c63655d28199a89d34d76cd1ed23fc5e72ba5aa58bc10",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 152.19234703601356,
+      "sum_absolute_error_m": 2783.5672874450684,
+      "pixels": 307200,
+      "rmse_m": 0.022257982755433836,
+      "mae_m": 0.009061091430485248
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 152.35157881390484,
+      "sum_absolute_error_m": 2851.688207387924,
+      "pixels": 307200,
+      "rmse_m": 0.02226962345778467,
+      "mae_m": 0.009282839216757566
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 150.7304544632377,
+      "sum_absolute_error_m": 2792.1177814006805,
+      "pixels": 307200,
+      "rmse_m": 0.022150824622479675,
+      "mae_m": 0.009088925069663674
+    }
+  },
+  {
+    "id": "nyu_00367",
+    "scene_id": "home_office_0004",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "34961807900a6e9abfaa5442f7b6785e6e4913719476221ee923722cf4c98d6a",
+      "depth": "7f89b378c91b31b0edf2d59cbcaf5b809af6f4cecc05b451c4e8de9a28fda65b",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 74.88038267410381,
+      "sum_absolute_error_m": 2286.8754786252975,
+      "pixels": 307200,
+      "rmse_m": 0.015612534889758667,
+      "mae_m": 0.007444256115316724
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 75.45558516466275,
+      "sum_absolute_error_m": 2372.3231592178345,
+      "pixels": 307200,
+      "rmse_m": 0.015672384937352492,
+      "mae_m": 0.007722406117245555
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 73.89751808743254,
+      "sum_absolute_error_m": 2294.753784298897,
+      "pixels": 307200,
+      "rmse_m": 0.015509732966458873,
+      "mae_m": 0.007469901641597971
+    }
+  },
+  {
+    "id": "nyu_00408",
+    "scene_id": "office_kitchen_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "03a06f68e2341c113c578fcc5c9fb0d976e171909a223ad68e3710e102a486ae",
+      "depth": "e2cdbaee3afc22983aa66906c3b0f7652c9b6ae5b9872a9226c51ab624b59ff4",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 196.94404697119285,
+      "sum_absolute_error_m": 2826.6424926519394,
+      "pixels": 307200,
+      "rmse_m": 0.02531983220523032,
+      "mae_m": 0.009201310197434698
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 197.9220590492194,
+      "sum_absolute_error_m": 2897.6774483919144,
+      "pixels": 307200,
+      "rmse_m": 0.025382622716486787,
+      "mae_m": 0.009432543777317429
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 196.52865063732003,
+      "sum_absolute_error_m": 2838.2594052553177,
+      "pixels": 307200,
+      "rmse_m": 0.025293115689716036,
+      "mae_m": 0.00923912566814882
+    }
+  },
+  {
+    "id": "nyu_00409",
+    "scene_id": "office_kitchen_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "d7e67abf2690ba5103fcfb8d9a72068582fcfc28ef97f38814ccb4ed9cc9fd53",
+      "depth": "86af0f6dd524a9188dbb8e8d4369cef2b7e280121bebb280f1ef818d7fa7c5d0",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 187.15678562854401,
+      "sum_absolute_error_m": 2339.52249366045,
+      "pixels": 307200,
+      "rmse_m": 0.024682672631178265,
+      "mae_m": 0.007615633117384277
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 187.44397443114156,
+      "sum_absolute_error_m": 2417.439631640911,
+      "pixels": 307200,
+      "rmse_m": 0.024701602935869815,
+      "mae_m": 0.007869269634247757
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 185.71442967583724,
+      "sum_absolute_error_m": 2351.0347893238068,
+      "pixels": 307200,
+      "rmse_m": 0.024587378044456727,
+      "mae_m": 0.007653108038163434
+    }
+  },
+  {
+    "id": "nyu_00410",
+    "scene_id": "office_kitchen_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "6e5d1d004915f8e5e952cfef9e23f56127d3b1c9541e36581f0b534d598fd138",
+      "depth": "a4731b140c4ce2ce1edcf8cfd17e78601866139376f1caa56dde3604c3aa58e1",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 53.32776570175878,
+      "sum_absolute_error_m": 1535.4264121055603,
+      "pixels": 307200,
+      "rmse_m": 0.013175469149537435,
+      "mae_m": 0.004998132851906121
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 53.799049124408725,
+      "sum_absolute_error_m": 1603.231576681137,
+      "pixels": 307200,
+      "rmse_m": 0.013233560104340202,
+      "mae_m": 0.005218852788675577
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 52.86436736604634,
+      "sum_absolute_error_m": 1551.2563874721527,
+      "pixels": 307200,
+      "rmse_m": 0.013118099297777432,
+      "mae_m": 0.005049662719635914
+    }
+  },
+  {
+    "id": "nyu_00418",
+    "scene_id": "playroom_0002",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "d3d161b2e39840c752d2947d96ebf9d74524a80cd36f0996a6778d6cf3fe3795",
+      "depth": "f36d54fbf050832845a9714b3b00d6d41e694474752db1d7f01ebd36807bcefd",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 311.54384196839436,
+      "sum_absolute_error_m": 3832.337512731552,
+      "pixels": 307200,
+      "rmse_m": 0.03184556657643573,
+      "mae_m": 0.012475057007589689
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 311.98804220128,
+      "sum_absolute_error_m": 3913.469733119011,
+      "pixels": 307200,
+      "rmse_m": 0.03186826124648093,
+      "mae_m": 0.01273915928749678
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 308.8504870463966,
+      "sum_absolute_error_m": 3835.2704050540924,
+      "pixels": 307200,
+      "rmse_m": 0.031707612322398056,
+      "mae_m": 0.01248460418311879
+    }
+  },
+  {
+    "id": "nyu_00419",
+    "scene_id": "playroom_0002",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "be9204dcac6aacc4f4954e1251c6a3f1b2dd2a53c8b17a191ebc8b17560896d5",
+      "depth": "0d15df302597df8bff3dacb9b2729de6de59358f362faea3afe42e17b7ab7a1d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 417.9383137249205,
+      "sum_absolute_error_m": 4443.21891951561,
+      "pixels": 307200,
+      "rmse_m": 0.036884634763769075,
+      "mae_m": 0.014463603253631541
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 418.0141630753755,
+      "sum_absolute_error_m": 4515.34489274025,
+      "pixels": 307200,
+      "rmse_m": 0.03688798160775839,
+      "mae_m": 0.014698388322722166
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 413.95930557152496,
+      "sum_absolute_error_m": 4440.525598168373,
+      "pixels": 307200,
+      "rmse_m": 0.03670863360515218,
+      "mae_m": 0.014454835931537673
+    }
+  },
+  {
+    "id": "nyu_00420",
+    "scene_id": "playroom_0002",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "7365dec2b3ee9ae22c81bf1279d96685c6cf61d5e3d6d4eafe91b01a2555506e",
+      "depth": "b2bd386de102057b8aade055d544390c81d1e95edcada2c5f2cea09e2a56b21a",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 649.360382590891,
+      "sum_absolute_error_m": 4726.387870669365,
+      "pixels": 307200,
+      "rmse_m": 0.04597611693854093,
+      "mae_m": 0.015385377183168505
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 651.4340938652165,
+      "sum_absolute_error_m": 4828.660312414169,
+      "pixels": 307200,
+      "rmse_m": 0.046049470040028705,
+      "mae_m": 0.01571829528780654
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 646.2976282844575,
+      "sum_absolute_error_m": 4727.506751418114,
+      "pixels": 307200,
+      "rmse_m": 0.045867563979408534,
+      "mae_m": 0.015389019373105838
+    }
+  },
+  {
+    "id": "nyu_00452",
+    "scene_id": "reception_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "a91fcd11ee8363c88740ac925541b5c94c0d10f3247d611e587ca6d0889a8ee2",
+      "depth": "c13dd669e260743393dbcb85a1516c37bb2d42ea4fd78b7e2d55c2d31e18af58",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 328.59042363958974,
+      "sum_absolute_error_m": 3070.4588649868965,
+      "pixels": 307200,
+      "rmse_m": 0.032705202725027145,
+      "mae_m": 0.009994983284462553
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 327.8043198510442,
+      "sum_absolute_error_m": 3116.350236058235,
+      "pixels": 307200,
+      "rmse_m": 0.032666058128917,
+      "mae_m": 0.010144369258002068
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 325.3619356206495,
+      "sum_absolute_error_m": 3079.9394679665565,
+      "pixels": 307200,
+      "rmse_m": 0.03254413747792068,
+      "mae_m": 0.010025844622286968
+    }
+  },
+  {
+    "id": "nyu_00453",
+    "scene_id": "reception_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "9526a30cc8a51fbbc0d3d9b309e85273ebf6c1096b929c81c694dd22799d4ef0",
+      "depth": "46cb63de77dae6b7be899c36f3378c13803c36d06a28a323c91e7607a5275d46",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1935.4706355722378,
+      "sum_absolute_error_m": 6305.578616142273,
+      "pixels": 307200,
+      "rmse_m": 0.0793748079798415,
+      "mae_m": 0.020525972057754794
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1934.2990699959537,
+      "sum_absolute_error_m": 6368.817373752594,
+      "pixels": 307200,
+      "rmse_m": 0.07935078104095601,
+      "mae_m": 0.02073182738851756
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1915.2750615924142,
+      "sum_absolute_error_m": 6259.60859143734,
+      "pixels": 307200,
+      "rmse_m": 0.0789596057558619,
+      "mae_m": 0.020376330050251756
+    }
+  },
+  {
+    "id": "nyu_00454",
+    "scene_id": "reception_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "09244413ccf7a32bf919cbaf4d72b8cee2ba8967ea74b8fdd641f2294a63833d",
+      "depth": "fdcf845c8f10b3fdbb390cb2fb5529cd8d9c77faa545db0f455103c83fd984fd",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 196.50071082277728,
+      "sum_absolute_error_m": 2687.001927256584,
+      "pixels": 307200,
+      "rmse_m": 0.025291317707391764,
+      "mae_m": 0.00874675106528836
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 196.12438293005007,
+      "sum_absolute_error_m": 2778.57636654377,
+      "pixels": 307200,
+      "rmse_m": 0.025267087795861176,
+      "mae_m": 0.009044844943176334
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 192.7873808653224,
+      "sum_absolute_error_m": 2684.61650288105,
+      "pixels": 307200,
+      "rmse_m": 0.025051209327182286,
+      "mae_m": 0.008738986011982586
+    }
+  },
+  {
+    "id": "nyu_00455",
+    "scene_id": "reception_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "08d50a75d2da586e2a24cae2d5fc599a6646b48104b7d53e8f529901d1164093",
+      "depth": "76e106ff54addf2303d028863894a56ac8d4933e383dc9206ea0d8a815b6547e",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 792.3567892329278,
+      "sum_absolute_error_m": 4974.206650137901,
+      "pixels": 307200,
+      "rmse_m": 0.05078667564710522,
+      "mae_m": 0.01619207893925098
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 792.0768488617932,
+      "sum_absolute_error_m": 5052.284198582172,
+      "pixels": 307200,
+      "rmse_m": 0.05077770336530903,
+      "mae_m": 0.01644623762559301
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 784.7433827876491,
+      "sum_absolute_error_m": 4971.524363100529,
+      "pixels": 307200,
+      "rmse_m": 0.05054209333989388,
+      "mae_m": 0.016183347536134533
+    }
+  },
+  {
+    "id": "nyu_00456",
+    "scene_id": "reception_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "235b8b7ec457b32ac5ce06af388e87b5f9780d198e8b7cec824b4189dfa83419",
+      "depth": "c79b4503c70bfa1ae2b200467540f2c4e7f1530bea737981dd12b3d0d8ac89d8",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1736.0210271687683,
+      "sum_absolute_error_m": 6218.374835193157,
+      "pixels": 307200,
+      "rmse_m": 0.07517386590086789,
+      "mae_m": 0.02024210558331106
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1739.2206639198605,
+      "sum_absolute_error_m": 6425.001005887985,
+      "pixels": 307200,
+      "rmse_m": 0.07524310997491705,
+      "mae_m": 0.02091471681604162
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1728.2895965766093,
+      "sum_absolute_error_m": 6268.825686335564,
+      "pixels": 307200,
+      "rmse_m": 0.07500628438463995,
+      "mae_m": 0.02040633361437358
+    }
+  },
+  {
+    "id": "nyu_00457",
+    "scene_id": "reception_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "1307b55af061c8ff3ab0aaa0d22ecad7fb45d1792c309623b5c23a59dc9418c0",
+      "depth": "ce323e4c43fd4f3c2d0e84d356ad93127e432591164d41d586eaa003f1cd2d4f",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 109.50862543753276,
+      "sum_absolute_error_m": 1828.4857723116875,
+      "pixels": 307200,
+      "rmse_m": 0.018880502908983524,
+      "mae_m": 0.005952102123410441
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 107.90662085297896,
+      "sum_absolute_error_m": 1896.931285560131,
+      "pixels": 307200,
+      "rmse_m": 0.018741892418388747,
+      "mae_m": 0.006174906528516052
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 105.36203325843681,
+      "sum_absolute_error_m": 1825.1838980317116,
+      "pixels": 307200,
+      "rmse_m": 0.018519594182373634,
+      "mae_m": 0.0059413538347386444
+    }
+  },
+  {
+    "id": "nyu_00478",
+    "scene_id": "study_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "0ba28859e0a651ebb418878bbfbe9fbd2a2fdc1223076eca4b34ec06eec64d26",
+      "depth": "f5e701c3dbaf1606bcd917a49bc31aaff2431599f4ba05c412a48f66444a2772",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 779.5886581987727,
+      "sum_absolute_error_m": 4860.868545234203,
+      "pixels": 307200,
+      "rmse_m": 0.050375822541580365,
+      "mae_m": 0.015823139795684255
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 776.1486234012068,
+      "sum_absolute_error_m": 4952.350467443466,
+      "pixels": 307200,
+      "rmse_m": 0.0502645547757145,
+      "mae_m": 0.0161209325112092
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 769.4720502637367,
+      "sum_absolute_error_m": 4861.264404535294,
+      "pixels": 307200,
+      "rmse_m": 0.050047895363197856,
+      "mae_m": 0.01582442840017999
+    }
+  },
+  {
+    "id": "nyu_00479",
+    "scene_id": "study_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "6bcacc43ba203a05462575cc95498a9304bee068af8d23bfc7c0becc87bce18e",
+      "depth": "6572c8d0843bbb66dcb98e969d6f9b7a53bd1102bece63385034e9cf7a5737a8",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 416.3289336584215,
+      "sum_absolute_error_m": 3775.33538043499,
+      "pixels": 307200,
+      "rmse_m": 0.03681354932973285,
+      "mae_m": 0.012289503191520149
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 416.5218352925783,
+      "sum_absolute_error_m": 3844.3431005477905,
+      "pixels": 307200,
+      "rmse_m": 0.03682207692756745,
+      "mae_m": 0.012514137697095673
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 412.77694581294475,
+      "sum_absolute_error_m": 3775.940605163574,
+      "pixels": 307200,
+      "rmse_m": 0.03665617211082166,
+      "mae_m": 0.012291473324100176
+    }
+  },
+  {
+    "id": "nyu_00480",
+    "scene_id": "study_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "10db9507e274659fd9e6a4d24c5d411a2a1861d25d7e729e0994e3f5d0b0a209",
+      "depth": "fcf4e55edbc00348804604ef2543f1bf8d3aa33e76694d5b0b0f4ab800ed4a37",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 24.303660379204388,
+      "sum_absolute_error_m": 1022.4384582042694,
+      "pixels": 307200,
+      "rmse_m": 0.00889457575137169,
+      "mae_m": 0.003328250189467023
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 25.064657566940724,
+      "sum_absolute_error_m": 1128.790265083313,
+      "pixels": 307200,
+      "rmse_m": 0.009032756068003378,
+      "mae_m": 0.0036744474774847427
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 24.369588960509034,
+      "sum_absolute_error_m": 1043.8434196710587,
+      "pixels": 307200,
+      "rmse_m": 0.008906631746297643,
+      "mae_m": 0.003397927798408394
+    }
+  },
+  {
+    "id": "nyu_00481",
+    "scene_id": "study_0003",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "39e31dea43017e89fd42312169ffe605e63c7ec92c24a872c282a8295af08846",
+      "depth": "87e4fb99dcccfed75b19ac8c4c5bb58a06a792de3356a1f38973db1ec3073500",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 31.264115264740056,
+      "sum_absolute_error_m": 1202.4326745271683,
+      "pixels": 307200,
+      "rmse_m": 0.01008817171464065,
+      "mae_m": 0.003914168862393126
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 33.37251729335907,
+      "sum_absolute_error_m": 1473.419452905655,
+      "pixels": 307200,
+      "rmse_m": 0.010422787362200824,
+      "mae_m": 0.0047962872815939285
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 32.118987244603304,
+      "sum_absolute_error_m": 1320.5008264780045,
+      "pixels": 307200,
+      "rmse_m": 0.01022516478776062,
+      "mae_m": 0.004298505294524754
+    }
+  },
+  {
+    "id": "nyu_00506",
+    "scene_id": "bathroom_0057",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "d259f41cfdabaca7f5e171edd19438de636367d902e1062467fdaf14d0b06721",
+      "depth": "297a5e449aa734f7957610a80c372f22bec4e0b7a79ec4048a603990de2c89b5",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 31.264330430942824,
+      "sum_absolute_error_m": 1013.7588666081429,
+      "pixels": 307200,
+      "rmse_m": 0.010088206429038415,
+      "mae_m": 0.0032999963105733816
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 31.207224100733086,
+      "sum_absolute_error_m": 1153.961351633072,
+      "pixels": 307200,
+      "rmse_m": 0.010078988835836022,
+      "mae_m": 0.0037563846081805725
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 30.839936648084596,
+      "sum_absolute_error_m": 1057.1256639957428,
+      "pixels": 307200,
+      "rmse_m": 0.010019501922566662,
+      "mae_m": 0.0034411642708194754
+    }
+  },
+  {
+    "id": "nyu_00507",
+    "scene_id": "bathroom_0057",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "26b1549bfe312218dd798285b9d800b167e1f83720fd45c813c6d7b89cd2718f",
+      "depth": "a38c87efca1cf1fca0a64d9a0e1261e576ba398eb368cd6e42242933be18ec90",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 26.334101926504697,
+      "sum_absolute_error_m": 744.5767896771431,
+      "pixels": 307200,
+      "rmse_m": 0.00925867096520918,
+      "mae_m": 0.0024237525705636167
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 27.388514280224435,
+      "sum_absolute_error_m": 1007.7101600170135,
+      "pixels": 307200,
+      "rmse_m": 0.009442209483092693,
+      "mae_m": 0.0032803065104720494
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 26.915144451713868,
+      "sum_absolute_error_m": 830.2028284668922,
+      "pixels": 307200,
+      "rmse_m": 0.009360256540933556,
+      "mae_m": 0.0027024831655823316
+    }
+  },
+  {
+    "id": "nyu_00540",
+    "scene_id": "bedroom_0140",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "159dc510d64293361bfd30e2b2ebfc8d6f024a748a1dba3a768d580e95d6b4da",
+      "depth": "89909fad3206c031e4b7c6dc2259bf9665a4f3b1b15921c5a8fef8930ae74158",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 735.8902798636775,
+      "sum_absolute_error_m": 4448.213598668575,
+      "pixels": 307200,
+      "rmse_m": 0.04894360194582374,
+      "mae_m": 0.014479861974832602
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 730.1404263747849,
+      "sum_absolute_error_m": 4474.634084105492,
+      "pixels": 307200,
+      "rmse_m": 0.04875201739865493,
+      "mae_m": 0.014565866159197563
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 721.4407237973611,
+      "sum_absolute_error_m": 4389.3606813549995,
+      "pixels": 307200,
+      "rmse_m": 0.048460704246958704,
+      "mae_m": 0.014288283467952472
+    }
+  },
+  {
+    "id": "nyu_00541",
+    "scene_id": "bedroom_0140",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "cbb8dfa8c31819a07a4304d6714b0d951543e57e79a764c6296bff4b2b326376",
+      "depth": "5a85e49e817c66ce4a6b7ed6207b6908bf9124121a333a9d8272a2c07668ed9d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 98.87680895051447,
+      "sum_absolute_error_m": 2110.752071738243,
+      "pixels": 307200,
+      "rmse_m": 0.017940585622245517,
+      "mae_m": 0.006870937733522927
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 98.86545315476042,
+      "sum_absolute_error_m": 2195.5358951091766,
+      "pixels": 307200,
+      "rmse_m": 0.01793955537320121,
+      "mae_m": 0.007146926741891851
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 97.4220707779258,
+      "sum_absolute_error_m": 2113.1904361248016,
+      "pixels": 307200,
+      "rmse_m": 0.017808119963850587,
+      "mae_m": 0.0068788751175937555
+    }
+  },
+  {
+    "id": "nyu_00542",
+    "scene_id": "bedroom_0140",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "80da6e26e614cdcb0a212cec9314b5d61c974362230d7e5d31e033a780071614",
+      "depth": "af7c32335d72749cb74345b2ae275b58175ef25d50ff0ce21ecaec199f12e620",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 116.80819755505695,
+      "sum_absolute_error_m": 2083.9226472377777,
+      "pixels": 307200,
+      "rmse_m": 0.01949961584449467,
+      "mae_m": 0.006783602367310474
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 117.62418435723009,
+      "sum_absolute_error_m": 2188.429425239563,
+      "pixels": 307200,
+      "rmse_m": 0.019567606525101422,
+      "mae_m": 0.007123793701951702
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 115.37912160280057,
+      "sum_absolute_error_m": 2088.9602810144424,
+      "pixels": 307200,
+      "rmse_m": 0.019379965896103028,
+      "mae_m": 0.006800000914760555
+    }
+  },
+  {
+    "id": "nyu_00543",
+    "scene_id": "bedroom_0140",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "bac632e58be0f63909ab476138dcd6126fbdbf33de29dd0ef3d33c6169d13569",
+      "depth": "f8587b65c0e23c8114287cec5c8f4efa2bae4f206d36489f3e69c8e3de7ce84b",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 379.90212936769785,
+      "sum_absolute_error_m": 2346.1668236255646,
+      "pixels": 307200,
+      "rmse_m": 0.03516618514096757,
+      "mae_m": 0.007637261795656135
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 380.46832832554816,
+      "sum_absolute_error_m": 2485.2571454048157,
+      "pixels": 307200,
+      "rmse_m": 0.03519238089323777,
+      "mae_m": 0.008090029770197968
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 377.1701243627884,
+      "sum_absolute_error_m": 2357.195403456688,
+      "pixels": 307200,
+      "rmse_m": 0.035039511011287224,
+      "mae_m": 0.007673162120627239
+    }
+  },
+  {
+    "id": "nyu_00544",
+    "scene_id": "dining_room_0037",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "62b459793eb87391c6e9df3ec0391536cf82d13a32fd7fbdb4208d07c28d4738",
+      "depth": "238986c3283378d679bfea4b2b1854573bd2107290a3412ddb44cacfb3d1495d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 201.41591472482634,
+      "sum_absolute_error_m": 2832.9228439331055,
+      "pixels": 307200,
+      "rmse_m": 0.025605678356142234,
+      "mae_m": 0.009221754049261411
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 203.06697672316147,
+      "sum_absolute_error_m": 2965.542531967163,
+      "pixels": 307200,
+      "rmse_m": 0.025710412576503732,
+      "mae_m": 0.009653458762913942
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 201.22134899074138,
+      "sum_absolute_error_m": 2882.253249645233,
+      "pixels": 307200,
+      "rmse_m": 0.025593307954995505,
+      "mae_m": 0.009382334797022244
+    }
+  },
+  {
+    "id": "nyu_00545",
+    "scene_id": "dining_room_0037",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "ad60ad82bacf1ee04ea206bf72e51aed3877cf46ac3972af113aad061b8bc991",
+      "depth": "bdbdccb4f2dd284b96077ad10ea193c2c1306971d2e5d040aaa6f071e695f3a7",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 490.2096920542612,
+      "sum_absolute_error_m": 4408.956872224808,
+      "pixels": 307200,
+      "rmse_m": 0.03994664785255201,
+      "mae_m": 0.014352073151773464
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 487.8038842740168,
+      "sum_absolute_error_m": 4503.359623908997,
+      "pixels": 307200,
+      "rmse_m": 0.03984850397594806,
+      "mae_m": 0.014659373775745431
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 483.0345147362767,
+      "sum_absolute_error_m": 4412.462270081043,
+      "pixels": 307200,
+      "rmse_m": 0.03965322152936821,
+      "mae_m": 0.014363483952086729
+    }
+  },
+  {
+    "id": "nyu_00546",
+    "scene_id": "dining_room_0037",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "5bbce12d77e5e9779085d089761dbde6ab932e3005e5cb1d5623090843dbf0a1",
+      "depth": "92f13f62aaae12f2994dc8f45b03f35c909ec985fba24c6583aed592e144452d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1722.7888623337349,
+      "sum_absolute_error_m": 6807.116352319717,
+      "pixels": 307200,
+      "rmse_m": 0.07488682568544769,
+      "mae_m": 0.022158581876040747
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1719.0789148389867,
+      "sum_absolute_error_m": 7031.8938755989075,
+      "pixels": 307200,
+      "rmse_m": 0.0748061495416085,
+      "mae_m": 0.022890279542965193
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1706.8744750112617,
+      "sum_absolute_error_m": 6868.301721453667,
+      "pixels": 307200,
+      "rmse_m": 0.07454013693984347,
+      "mae_m": 0.022357752999523653
+    }
+  },
+  {
+    "id": "nyu_00547",
+    "scene_id": "dining_room_0037",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "7a1d9eaef6eb6a54184fc3453e42124efa979b758151f7e2299a214b5b66a2b3",
+      "depth": "98ee10ae7073bf1e0693beae848b72ffe5332d6e92b1d5c0f984550aac9a92ee",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1330.4141452755769,
+      "sum_absolute_error_m": 5618.9876073002815,
+      "pixels": 307200,
+      "rmse_m": 0.06580862566932698,
+      "mae_m": 0.018290975284180604
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1330.6276482559992,
+      "sum_absolute_error_m": 5826.24055659771,
+      "pixels": 307200,
+      "rmse_m": 0.06581390589508165,
+      "mae_m": 0.018965626811841503
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1321.463321952436,
+      "sum_absolute_error_m": 5684.187280356884,
+      "pixels": 307200,
+      "rmse_m": 0.06558687687193163,
+      "mae_m": 0.018503213803245065
+    }
+  },
+  {
+    "id": "nyu_00548",
+    "scene_id": "dining_room_0037",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "80a9296ab588f4c88c7ede9cd3c863a3bf641efa1402e426d0a3a4891672cadb",
+      "depth": "8e8771605c224c383ddac9c5d549d5242be24e8f9ccf823975a218a446c8d15d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 737.0314794345963,
+      "sum_absolute_error_m": 4861.90678024292,
+      "pixels": 307200,
+      "rmse_m": 0.048981537478773506,
+      "mae_m": 0.015826519466936587
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 737.0310891494587,
+      "sum_absolute_error_m": 4961.835927069187,
+      "pixels": 307200,
+      "rmse_m": 0.04898152451001358,
+      "mae_m": 0.016151809658428343
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 731.6490777263903,
+      "sum_absolute_error_m": 4873.4788962602615,
+      "pixels": 307200,
+      "rmse_m": 0.04880235829230584,
+      "mae_m": 0.015864189115430537
+    }
+  },
+  {
+    "id": "nyu_00575",
+    "scene_id": "kitchen_0060",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "2c6a19789358261673a5f7b1b3ce0693ebece1ebd47dec95db665b8f1c05c256",
+      "depth": "7e3e67ad92edd5a63161d3d4fc35b6b9c9fbb6eb74653f9c2fceea05b920ead0",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 258.23779174608455,
+      "sum_absolute_error_m": 2291.388626098633,
+      "pixels": 307200,
+      "rmse_m": 0.028993409797287595,
+      "mae_m": 0.007458947350581487
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 259.9389055939247,
+      "sum_absolute_error_m": 2490.387294769287,
+      "pixels": 307200,
+      "rmse_m": 0.02908874854040459,
+      "mae_m": 0.00810672947516044
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 257.8231717606172,
+      "sum_absolute_error_m": 2378.004583954811,
+      "pixels": 307200,
+      "rmse_m": 0.02897012490897463,
+      "mae_m": 0.007740900338394568
+    }
+  },
+  {
+    "id": "nyu_00576",
+    "scene_id": "kitchen_0060",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "fdf734e8e8c045ce2326773e6162453b15e596c495e24c5c770397dea838c63d",
+      "depth": "2c187c690dfe471a4d99d928c3b54a021150fe1914d991db0e5e1117103b0615",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 97.12263987451928,
+      "sum_absolute_error_m": 2104.307051241398,
+      "pixels": 307200,
+      "rmse_m": 0.017780731893678264,
+      "mae_m": 0.006849957849093092
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 101.00638833098776,
+      "sum_absolute_error_m": 2269.2964396476746,
+      "pixels": 307200,
+      "rmse_m": 0.018132755913399762,
+      "mae_m": 0.007387032681144774
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 101.0919726228119,
+      "sum_absolute_error_m": 2149.2580758929253,
+      "pixels": 307200,
+      "rmse_m": 0.01814043637057506,
+      "mae_m": 0.006996282799130616
+    }
+  },
+  {
+    "id": "nyu_00577",
+    "scene_id": "kitchen_0060",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "82a7f95a458c8f9f4398f2f62c0f7e2da6e209df70548bbb07ace93d2becd639",
+      "depth": "fd69e3f89c5aefd7f61de9abdd4c8a3a288026c365a526dff7372f3f2d8ba391",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1979.586007667445,
+      "sum_absolute_error_m": 5385.822696149349,
+      "pixels": 307200,
+      "rmse_m": 0.08027431014159593,
+      "mae_m": 0.017531974922361162
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1984.4968172283106,
+      "sum_absolute_error_m": 5579.93899333477,
+      "pixels": 307200,
+      "rmse_m": 0.08037381773261162,
+      "mae_m": 0.018163863910594956
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1974.9097780795255,
+      "sum_absolute_error_m": 5424.381791174412,
+      "pixels": 307200,
+      "rmse_m": 0.08017944105059573,
+      "mae_m": 0.017657492809812537
+    }
+  },
+  {
+    "id": "nyu_00578",
+    "scene_id": "kitchen_0060",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "00cd38a0f8e2809724577a94bb4eabeeb93bd2bd832694ff5fc20a2feb2608f1",
+      "depth": "05bcd850401ae168dd04ec78b6c424efc2f1d5e3b94c9f8e1e4714d91f8188f8",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 810.1820831911552,
+      "sum_absolute_error_m": 4321.053841173649,
+      "pixels": 307200,
+      "rmse_m": 0.0513547609158217,
+      "mae_m": 0.014065930472570471
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 808.4826856803104,
+      "sum_absolute_error_m": 4421.055586159229,
+      "pixels": 307200,
+      "rmse_m": 0.051300873050877605,
+      "mae_m": 0.014391456986195407
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 802.7439170501938,
+      "sum_absolute_error_m": 4328.999720692635,
+      "pixels": 307200,
+      "rmse_m": 0.05111847697569278,
+      "mae_m": 0.014091795965796336
+    }
+  },
+  {
+    "id": "nyu_00597",
+    "scene_id": "living_room_0086",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "20cf17fc51a7d9eed08b817f6114844f36ce4bdc5c922a3970b18c76433ccc06",
+      "depth": "1c1628a547fbbb8fb57c9cb15298d5b32583919ccbc383c659c2fda89fc1857f",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1003.6766268197704,
+      "sum_absolute_error_m": 4419.182814478874,
+      "pixels": 307200,
+      "rmse_m": 0.057159220774916156,
+      "mae_m": 0.014385360724215085
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1004.0198535952184,
+      "sum_absolute_error_m": 4467.458921670914,
+      "pixels": 307200,
+      "rmse_m": 0.057168993294051174,
+      "mae_m": 0.014542509510647506
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 998.9315036115393,
+      "sum_absolute_error_m": 4420.676411151886,
+      "pixels": 307200,
+      "rmse_m": 0.0570239436989891,
+      "mae_m": 0.014390222692551712
+    }
+  },
+  {
+    "id": "nyu_00598",
+    "scene_id": "living_room_0086",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "a37617fc2d2e68f78e622da978df09ff173ec71cfd8074fd7586fc9d5683b012",
+      "depth": "686cca599177a134776047318d876ee1b8fe199f87c1a9b45ccad411cccfff9b",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 456.08180482000705,
+      "sum_absolute_error_m": 4187.044174551964,
+      "pixels": 307200,
+      "rmse_m": 0.03853104322143113,
+      "mae_m": 0.01362970108903634
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 454.0975012426581,
+      "sum_absolute_error_m": 4257.135254502296,
+      "pixels": 307200,
+      "rmse_m": 0.038447132145206155,
+      "mae_m": 0.013857862156582997
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 451.1232260449298,
+      "sum_absolute_error_m": 4200.876056313515,
+      "pixels": 307200,
+      "rmse_m": 0.03832101361892288,
+      "mae_m": 0.013674726745812223
+    }
+  },
+  {
+    "id": "nyu_00599",
+    "scene_id": "living_room_0086",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "cd6168749c2db2865bd9922424fea8c6fddb685f121a28f955be0cc03f2fd7e0",
+      "depth": "d489b9cf018ff7df7fef148c0e622409c8fc779525167d3a3c3a17540d98ec47",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 187.63957670906518,
+      "sum_absolute_error_m": 2963.0642352104187,
+      "pixels": 307200,
+      "rmse_m": 0.024714487932516186,
+      "mae_m": 0.009645391390658915
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 187.33762477884278,
+      "sum_absolute_error_m": 3017.8851503133774,
+      "pixels": 307200,
+      "rmse_m": 0.024694594496103034,
+      "mae_m": 0.009823844890343025
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 184.18437918252306,
+      "sum_absolute_error_m": 2946.448540687561,
+      "pixels": 307200,
+      "rmse_m": 0.02448588421896942,
+      "mae_m": 0.009591303843383988
+    }
+  },
+  {
+    "id": "nyu_00600",
+    "scene_id": "living_room_0086",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "8bab43ee7ccd0a2c9e83c18f6a23228dcbba36e89247fb8c19d88a8fce116fbc",
+      "depth": "fd15b0650ddccff01f1f7da94c12df09c9644f7e51de8f5257728303323bf740",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 251.93327240188694,
+      "sum_absolute_error_m": 3219.560816168785,
+      "pixels": 307200,
+      "rmse_m": 0.02863730587479484,
+      "mae_m": 0.010480341198466097
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 251.53545685062545,
+      "sum_absolute_error_m": 3311.4044259786606,
+      "pixels": 307200,
+      "rmse_m": 0.02861468705523377,
+      "mae_m": 0.010779311282482619
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 248.8682624869154,
+      "sum_absolute_error_m": 3229.4849038124084,
+      "pixels": 307200,
+      "rmse_m": 0.02846257265163489,
+      "mae_m": 0.01051264617126435
+    }
+  },
+  {
+    "id": "nyu_00601",
+    "scene_id": "living_room_0086",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "79ec450b0b944f18a16197c9289155d10b983e8182cffc6a30dab1d15cfdea89",
+      "depth": "55a89b63289cfb9ab55ac15be03a466a6d13b00bb4ae1133a5fc4a277d0455af",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 603.734527672348,
+      "sum_absolute_error_m": 4713.251603722572,
+      "pixels": 307200,
+      "rmse_m": 0.04433149744369223,
+      "mae_m": 0.015342615897534415
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 604.8450039294555,
+      "sum_absolute_error_m": 4782.917123675346,
+      "pixels": 307200,
+      "rmse_m": 0.04437224917858228,
+      "mae_m": 0.015569391678630685
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 601.0463482185056,
+      "sum_absolute_error_m": 4746.074361085892,
+      "pixels": 307200,
+      "rmse_m": 0.04423269245072527,
+      "mae_m": 0.01544946081082647
+    }
+  },
+  {
+    "id": "nyu_00602",
+    "scene_id": "living_room_0086",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "2665e624c8ae798c415f659659e636ee476d026bfbdae3a565aaee75f3e7b625",
+      "depth": "faa4dfaef6fac7f405d3c8945a90a26fdd125b59906db98511999ce5151b5601",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 648.6292848327437,
+      "sum_absolute_error_m": 5227.372987270355,
+      "pixels": 307200,
+      "rmse_m": 0.04595022799977806,
+      "mae_m": 0.017016188109604022
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 650.533648580046,
+      "sum_absolute_error_m": 5304.427535891533,
+      "pixels": 307200,
+      "rmse_m": 0.046017633076588196,
+      "mae_m": 0.017267016718396918
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 645.7146580261265,
+      "sum_absolute_error_m": 5245.775131583214,
+      "pixels": 307200,
+      "rmse_m": 0.0458468726933706,
+      "mae_m": 0.01707609092312244
+    }
+  },
+  {
+    "id": "nyu_00700",
+    "scene_id": "bathroom_0033",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "a282972be10d68c09141a463c08d9e0266970a0ab5082138b8b3c0ef6e5dc38e",
+      "depth": "6ddfb211e18303bd296951355842b4c4279eda58e9752af4af13397c6ac70da4",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 167.83830903333057,
+      "sum_absolute_error_m": 2134.169143617153,
+      "pixels": 307200,
+      "rmse_m": 0.023374102383147743,
+      "mae_m": 0.006947165181045421
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 168.63841939796623,
+      "sum_absolute_error_m": 2198.349610865116,
+      "pixels": 307200,
+      "rmse_m": 0.023429750065769403,
+      "mae_m": 0.007156085972868217
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 167.31807425469898,
+      "sum_absolute_error_m": 2164.7799753546715,
+      "pixels": 307200,
+      "rmse_m": 0.023337848864691486,
+      "mae_m": 0.0070468098156076546
+    }
+  },
+  {
+    "id": "nyu_00701",
+    "scene_id": "bathroom_0033",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "10ed140d69f537b8e1ebc16e8556b7b31b2fc45f4233a1563d55ce49c85ad75a",
+      "depth": "75a5050d8999f1fd25c69ac01051512cd0f356df16a8d21d8a54b40caf41d8e4",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 18.84703340996896,
+      "sum_absolute_error_m": 740.0285367369652,
+      "pixels": 307200,
+      "rmse_m": 0.007832689207082246,
+      "mae_m": 0.002408947059690642
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 19.936903207880274,
+      "sum_absolute_error_m": 1001.8387343287468,
+      "pixels": 307200,
+      "rmse_m": 0.008055977498922891,
+      "mae_m": 0.003261193796643056
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 19.5351094096568,
+      "sum_absolute_error_m": 806.6790301203728,
+      "pixels": 307200,
+      "rmse_m": 0.007974387182905858,
+      "mae_m": 0.0026259083011730884
+    }
+  },
+  {
+    "id": "nyu_00824",
+    "scene_id": "kitchen_0035",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "50dbc78ee345b39c1c57f81fe998e2a46a440d08057749a553f8a5eb1fbd339b",
+      "depth": "200aa274840ddf1af0138b7b152a81e95c1741e9c00c671921654ce732c5894c",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1007.0199864369414,
+      "sum_absolute_error_m": 6459.8912934064865,
+      "pixels": 307200,
+      "rmse_m": 0.057254343518048936,
+      "mae_m": 0.02102829197072424
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1008.5749817705453,
+      "sum_absolute_error_m": 6535.916634917259,
+      "pixels": 307200,
+      "rmse_m": 0.05729853126783438,
+      "mae_m": 0.02127577029595462
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 998.7270468018005,
+      "sum_absolute_error_m": 6463.935987472534,
+      "pixels": 307200,
+      "rmse_m": 0.05701810769812175,
+      "mae_m": 0.021041458292553824
+    }
+  },
+  {
+    "id": "nyu_00825",
+    "scene_id": "kitchen_0035",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "ca911aecb72a50c16b9d8c7993022accfa5fc1875a4c419f2a8b9d1869631061",
+      "depth": "2f56fd7367c9fa1fe62c5eeba484386728de88a9cda6f5bc99b5eea9136ba0e3",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 229.470608900901,
+      "sum_absolute_error_m": 2490.954898059368,
+      "pixels": 307200,
+      "rmse_m": 0.02733083676635765,
+      "mae_m": 0.008108577142120339
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 230.57845464677217,
+      "sum_absolute_error_m": 2614.734153032303,
+      "pixels": 307200,
+      "rmse_m": 0.027396731685609778,
+      "mae_m": 0.008511504404402027
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 227.64976792367446,
+      "sum_absolute_error_m": 2515.4492982029915,
+      "pixels": 307200,
+      "rmse_m": 0.027222186202187075,
+      "mae_m": 0.008188311517587863
+    }
+  },
+  {
+    "id": "nyu_00826",
+    "scene_id": "kitchen_0035",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "77a9fd7699713391b256e30895016539aaad035544be1d9f7a6037b4b6d3c1b0",
+      "depth": "c5c9320c89a63e5db406f76b319c406e92e00a4cf4d7e8ade8d9ad71dff24e98",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 185.63920810523672,
+      "sum_absolute_error_m": 2808.847189307213,
+      "pixels": 307200,
+      "rmse_m": 0.024582398117709497,
+      "mae_m": 0.00914338277769275
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 186.56213248066237,
+      "sum_absolute_error_m": 2896.7002799510956,
+      "pixels": 307200,
+      "rmse_m": 0.02464342931362211,
+      "mae_m": 0.009429362890465805
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 184.068906808873,
+      "sum_absolute_error_m": 2814.2609055042267,
+      "pixels": 307200,
+      "rmse_m": 0.024478207437469767,
+      "mae_m": 0.009161005551771571
+    }
+  },
+  {
+    "id": "nyu_00827",
+    "scene_id": "kitchen_0035",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "87f9d9241108f62ac5d7e30263868a3798f55ea22858d731098c2cb0f5e8e500",
+      "depth": "a0ad0c3d4715175e44b1ab1cd495f08133e52610d7311354192ff2cfb34de4b8",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 102.86261406436914,
+      "sum_absolute_error_m": 2212.8675113916397,
+      "pixels": 307200,
+      "rmse_m": 0.01829861302095831,
+      "mae_m": 0.007203344763644661
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 103.2501202668156,
+      "sum_absolute_error_m": 2293.7036697864532,
+      "pixels": 307200,
+      "rmse_m": 0.01833304808018042,
+      "mae_m": 0.007466483300086111
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 101.7399894938597,
+      "sum_absolute_error_m": 2212.661143541336,
+      "pixels": 307200,
+      "rmse_m": 0.018198485146672452,
+      "mae_m": 0.00720267299329862
+    }
+  },
+  {
+    "id": "nyu_00828",
+    "scene_id": "kitchen_0035",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "99d61a43f5a2276b5a26313b77df570bb9168db3a69ce371446161ad2ee8a850",
+      "depth": "c5386127f289a69bd990137dbc52f061962ce073aa1886f823e44b75f1fffb16",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 588.6323009435266,
+      "sum_absolute_error_m": 4523.1120990514755,
+      "pixels": 307200,
+      "rmse_m": 0.04377351678013251,
+      "mae_m": 0.014723672197433188
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 590.6402223407589,
+      "sum_absolute_error_m": 4604.6897612810135,
+      "pixels": 307200,
+      "rmse_m": 0.043848112545074175,
+      "mae_m": 0.014989224483336632
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 586.9413831480656,
+      "sum_absolute_error_m": 4533.2939784526825,
+      "pixels": 307200,
+      "rmse_m": 0.04371059919060566,
+      "mae_m": 0.014756816336108992
+    }
+  },
+  {
+    "id": "nyu_00829",
+    "scene_id": "kitchen_0035",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "f891c1aeaf569a99e1fb1b26c4fd0bcee537dcd100d13b159595376ef30d88b6",
+      "depth": "0401d757368e432b454905a3bfd88fd1d94f9b8affe5bf8d40f7146d008445fb",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 591.0541848624913,
+      "sum_absolute_error_m": 4441.97221493721,
+      "pixels": 307200,
+      "rmse_m": 0.043863475785850835,
+      "mae_m": 0.014459544970498731
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 592.7395608435351,
+      "sum_absolute_error_m": 4494.296239495277,
+      "pixels": 307200,
+      "rmse_m": 0.04392596906107156,
+      "mae_m": 0.01462987057127369
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 586.9482983534235,
+      "sum_absolute_error_m": 4429.867962479591,
+      "pixels": 307200,
+      "rmse_m": 0.043710856683847825,
+      "mae_m": 0.01442014310702992
+    }
+  },
+  {
+    "id": "nyu_00920",
+    "scene_id": "bedroom_0028",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "99eecccab6a7f9157d68a57c4579aaa2892244df2abc59f1745a9865c386e37e",
+      "depth": "0bc88285719a4d443da052cb7e756dc8954e8af769b360c6f7f278e458b76e6a",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 303.15243557620636,
+      "sum_absolute_error_m": 3276.0246735811234,
+      "pixels": 307200,
+      "rmse_m": 0.0314137602740895,
+      "mae_m": 0.010664142817646886
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 302.71483121758445,
+      "sum_absolute_error_m": 3383.7807470560074,
+      "pixels": 307200,
+      "rmse_m": 0.031391079006671214,
+      "mae_m": 0.011014911285989607
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 299.44954970725826,
+      "sum_absolute_error_m": 3286.798683166504,
+      "pixels": 307200,
+      "rmse_m": 0.031221317550993607,
+      "mae_m": 0.01069921446343263
+    }
+  },
+  {
+    "id": "nyu_00921",
+    "scene_id": "bedroom_0028",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "65c7ed16906e98a725df6b47695bbbacdca89b04b5461d8da10892ad47c3faeb",
+      "depth": "eef1ea71952a879b210c576826d7e42cd064c615482179e6301eb780e1f6303e",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 175.63139733430535,
+      "sum_absolute_error_m": 2654.3847720623016,
+      "pixels": 307200,
+      "rmse_m": 0.023910599912959286,
+      "mae_m": 0.008640575429890305
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 176.49569329768616,
+      "sum_absolute_error_m": 2747.28688788414,
+      "pixels": 307200,
+      "rmse_m": 0.023969360684425275,
+      "mae_m": 0.008942991171497851
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 173.97005727376282,
+      "sum_absolute_error_m": 2673.4425678253174,
+      "pixels": 307200,
+      "rmse_m": 0.023797243121589318,
+      "mae_m": 0.008702612525473039
+    }
+  },
+  {
+    "id": "nyu_00922",
+    "scene_id": "bedroom_0028",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "85e1ca5ad5948e71746fb61d84773f20b6263961e41117683e183b2721efe7b7",
+      "depth": "893c148a10bcba21173c53178b859115bf0fb3275e3b1308d7c353c15059e279",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1142.433575963167,
+      "sum_absolute_error_m": 3976.4833275079727,
+      "pixels": 307200,
+      "rmse_m": 0.06098245072768969,
+      "mae_m": 0.012944281665065015
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1139.804971658934,
+      "sum_absolute_error_m": 4075.252423763275,
+      "pixels": 307200,
+      "rmse_m": 0.060912253628633097,
+      "mae_m": 0.013265795650271079
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1133.6154987812654,
+      "sum_absolute_error_m": 3959.399021625519,
+      "pixels": 307200,
+      "rmse_m": 0.060746642857269065,
+      "mae_m": 0.012888668690187236
+    }
+  },
+  {
+    "id": "nyu_00963",
+    "scene_id": "bedroom_0045",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "fa9e6f0cf632af59428b3c2292b76f3786e9892c866e3e304d2c4e044cac51be",
+      "depth": "9428b7a2940b8c82310a8fd39b865685b7d68df9818a6d066d9e8877506b6527",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 83.80001629229558,
+      "sum_absolute_error_m": 1839.573166012764,
+      "pixels": 307200,
+      "rmse_m": 0.01651624991843335,
+      "mae_m": 0.005988193899781133
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 84.53323498967772,
+      "sum_absolute_error_m": 1941.14610517025,
+      "pixels": 307200,
+      "rmse_m": 0.016588348048616048,
+      "mae_m": 0.006318834977767741
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 82.93190110498989,
+      "sum_absolute_error_m": 1855.5402920246124,
+      "pixels": 307200,
+      "rmse_m": 0.01643047825159508,
+      "mae_m": 0.006040170221434285
+    }
+  },
+  {
+    "id": "nyu_00964",
+    "scene_id": "bedroom_0045",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "8ca0edce0c3bdadfb032526ffeadfcc0cf631f1bf4ca4095605d7bb8141d2dff",
+      "depth": "42d163c8169f199d45336f737690f1cd73797285c121a6d01f93a636c94ff98c",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 442.97220116551017,
+      "sum_absolute_error_m": 2722.487668991089,
+      "pixels": 307200,
+      "rmse_m": 0.037973237953445295,
+      "mae_m": 0.008862264547497034
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 443.8366513983583,
+      "sum_absolute_error_m": 2821.338318347931,
+      "pixels": 307200,
+      "rmse_m": 0.038010271852102,
+      "mae_m": 0.009184044005038838
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 439.0893714399844,
+      "sum_absolute_error_m": 2734.8662128448486,
+      "pixels": 307200,
+      "rmse_m": 0.037806446288821335,
+      "mae_m": 0.008902559286604324
+    }
+  },
+  {
+    "id": "nyu_01024",
+    "scene_id": "bedroom_0065",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "7fb9295224868687900092919921baad1924d1bdd646c1083773dd300b8ad300",
+      "depth": "5d024271e1d3f6c27511242a464ad4e364b581f2bdf5c25c9b9e4509631a006f",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 168.12174711130857,
+      "sum_absolute_error_m": 2573.1627440452576,
+      "pixels": 307200,
+      "rmse_m": 0.023393830644238042,
+      "mae_m": 0.00837618080743899
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 168.31630918054202,
+      "sum_absolute_error_m": 2654.499575138092,
+      "pixels": 307200,
+      "rmse_m": 0.02340736320648719,
+      "mae_m": 0.00864094913781931
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 166.23905215229493,
+      "sum_absolute_error_m": 2592.3237566947937,
+      "pixels": 307200,
+      "rmse_m": 0.023262475102438798,
+      "mae_m": 0.008438553895490865
+    }
+  },
+  {
+    "id": "nyu_01025",
+    "scene_id": "bedroom_0065",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "d939686c627b396ebb14125eb51643cd8ce1f08914325b4d069586c0a453efd5",
+      "depth": "ecb2d309b931b3560e4137ede36a30f58065b4fba47ac093ec4aff4dd24ebce7",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 224.11454318457623,
+      "sum_absolute_error_m": 3039.8233535289764,
+      "pixels": 307200,
+      "rmse_m": 0.027009989422353088,
+      "mae_m": 0.009895258312268803
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 225.19868722477582,
+      "sum_absolute_error_m": 3152.17862200737,
+      "pixels": 307200,
+      "rmse_m": 0.027075240410932958,
+      "mae_m": 0.010260998118513574
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 222.4220175295456,
+      "sum_absolute_error_m": 3071.8865778446198,
+      "pixels": 307200,
+      "rmse_m": 0.026907805651501752,
+      "mae_m": 0.009999630787254622
+    }
+  },
+  {
+    "id": "nyu_01026",
+    "scene_id": "bedroom_0065",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "7e1f5a031f889a82e3857965b9df66226da952e820937c981e4f3c1bc7e95a70",
+      "depth": "d16f235f27cacd70f2c3f95b83a71346f4a509e9b64be88964c11b8290f76547",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1112.6201580317493,
+      "sum_absolute_error_m": 4260.958144187927,
+      "pixels": 307200,
+      "rmse_m": 0.060181478963711094,
+      "mae_m": 0.013870306458945075
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1110.7121704200185,
+      "sum_absolute_error_m": 4349.477840185165,
+      "pixels": 307200,
+      "rmse_m": 0.06012985542212785,
+      "mae_m": 0.01415845651101942
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1105.7602595186877,
+      "sum_absolute_error_m": 4270.930862426758,
+      "pixels": 307200,
+      "rmse_m": 0.05999566660563129,
+      "mae_m": 0.013902769734462103
+    }
+  },
+  {
+    "id": "nyu_01070",
+    "scene_id": "bedroom_0081",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "68307606af377769df02de247d18f1428ae4cfef8ebd3f99a9d76192c6b043dc",
+      "depth": "beeb0e312d43267a6957dc7d4790c2298027c03a6eead46e9cdc139d3d945d25",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 117.90777469005147,
+      "sum_absolute_error_m": 2380.6596235632896,
+      "pixels": 307200,
+      "rmse_m": 0.019591180942859075,
+      "mae_m": 0.0077495430454534164
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 116.70027041208269,
+      "sum_absolute_error_m": 2450.9473356604576,
+      "pixels": 307200,
+      "rmse_m": 0.01949060524323616,
+      "mae_m": 0.007978344191603053
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 114.16999292455486,
+      "sum_absolute_error_m": 2351.15435808897,
+      "pixels": 307200,
+      "rmse_m": 0.01927815116614191,
+      "mae_m": 0.0076534972594042
+    }
+  },
+  {
+    "id": "nyu_01071",
+    "scene_id": "bedroom_0081",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "0791eb5eca25517f79b3ec61feb02b0eb1a24041606575cec05592ff144dcdb9",
+      "depth": "02d2c38d2098e49bb748b213576202af586e5dfd3d01a98a1de613f60e08cd6a",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 179.3710666249587,
+      "sum_absolute_error_m": 2498.728546977043,
+      "pixels": 307200,
+      "rmse_m": 0.024163819872620597,
+      "mae_m": 0.008133881988857563
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 178.62085362592097,
+      "sum_absolute_error_m": 2568.322598338127,
+      "pixels": 307200,
+      "rmse_m": 0.024113234773257018,
+      "mae_m": 0.008360425124798591
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 176.97997042985753,
+      "sum_absolute_error_m": 2498.4140070676804,
+      "pixels": 307200,
+      "rmse_m": 0.02400222228412109,
+      "mae_m": 0.008132858095923439
+    }
+  },
+  {
+    "id": "nyu_01072",
+    "scene_id": "bedroom_0081",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "1210a21960cec70756c59d2c9cc004ca3a26b2095a5a59b31cf8fc5e395bda24",
+      "depth": "eadab9c009dec8b7ca354da90f112f877735138dd444dc219089136804e0a367",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 389.98108149478713,
+      "sum_absolute_error_m": 3485.1553639173508,
+      "pixels": 307200,
+      "rmse_m": 0.035629617824559624,
+      "mae_m": 0.011344906783585126
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 388.9251328454607,
+      "sum_absolute_error_m": 3567.346951842308,
+      "pixels": 307200,
+      "rmse_m": 0.03558134811219661,
+      "mae_m": 0.011612457525528346
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 385.1199079014484,
+      "sum_absolute_error_m": 3467.2004368305206,
+      "pixels": 307200,
+      "rmse_m": 0.035406857154135565,
+      "mae_m": 0.011286459755307685
+    }
+  },
+  {
+    "id": "nyu_01159",
+    "scene_id": "bedroom_0113",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "8f661ea4b8fbe7b6c2ce6f97db28da609ee2456201374a2fd58608f11b07d006",
+      "depth": "1f9d4d45403ffedb2a3883289e7fd662773e414e2be85f0a08bcd04b9e032d3f",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 115.23559804644042,
+      "sum_absolute_error_m": 2145.9185041189194,
+      "pixels": 307200,
+      "rmse_m": 0.019367908484331064,
+      "mae_m": 0.006985411797262107
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 113.87806871828757,
+      "sum_absolute_error_m": 2221.474263072014,
+      "pixels": 307200,
+      "rmse_m": 0.019253488989678616,
+      "mae_m": 0.007231361533437545
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 111.32705943815466,
+      "sum_absolute_error_m": 2152.056238889694,
+      "pixels": 307200,
+      "rmse_m": 0.019036616600871498,
+      "mae_m": 0.007005391402635723
+    }
+  },
+  {
+    "id": "nyu_01160",
+    "scene_id": "bedroom_0113",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "7e74b4d488ef15d6c9ee433d770eb989abbe3b5efb18637e29626788ef86d91d",
+      "depth": "3753050a52e44da7ed1b2870f90d2834c00e80a743ab08c00a6d0d60da3241f4",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 310.09989743641654,
+      "sum_absolute_error_m": 3375.18817281723,
+      "pixels": 307200,
+      "rmse_m": 0.03177168189285602,
+      "mae_m": 0.010986940666722754
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 311.17565429938026,
+      "sum_absolute_error_m": 3475.8290355205536,
+      "pixels": 307200,
+      "rmse_m": 0.03182674320450955,
+      "mae_m": 0.01131454764166847
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 308.90064163867345,
+      "sum_absolute_error_m": 3405.2170293331146,
+      "pixels": 307200,
+      "rmse_m": 0.03171018673603521,
+      "mae_m": 0.011084690850693732
+    }
+  },
+  {
+    "id": "nyu_01161",
+    "scene_id": "bedroom_0113",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "c6b1b1616d8df90f6ac3d452672b85a520257c7f36d842e3b30b3cedd60223f0",
+      "depth": "05c6bfae80b1ee84250c76390efd7932c763507d59169f7942d2f90436a65a5f",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 104.52322327626212,
+      "sum_absolute_error_m": 2025.129369020462,
+      "pixels": 307200,
+      "rmse_m": 0.018445727620122473,
+      "mae_m": 0.006592217998113483
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 105.41701812389975,
+      "sum_absolute_error_m": 2127.9345737695694,
+      "pixels": 307200,
+      "rmse_m": 0.018524425925573768,
+      "mae_m": 0.006926870357322817
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 104.08907156044721,
+      "sum_absolute_error_m": 2048.8049145936966,
+      "pixels": 307200,
+      "rmse_m": 0.018407379312452312,
+      "mae_m": 0.006669286831359689
+    }
+  },
+  {
+    "id": "nyu_01221",
+    "scene_id": "living_room_0032",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "e83191c089235fded835cd9c4e164f841497ab3d48469d4870f27be7cfb57184",
+      "depth": "7895716f2a86b4e50bbb750e8e8273e85d34321e797b6a4a98b36651fe4ab7ac",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 211.24757633784355,
+      "sum_absolute_error_m": 3820.784747362137,
+      "pixels": 307200,
+      "rmse_m": 0.02622317430997662,
+      "mae_m": 0.012437450349486123
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 211.75934776538713,
+      "sum_absolute_error_m": 3876.630133152008,
+      "pixels": 307200,
+      "rmse_m": 0.026254919415361372,
+      "mae_m": 0.012619238714687526
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 209.53988803710826,
+      "sum_absolute_error_m": 3819.8834121227264,
+      "pixels": 307200,
+      "rmse_m": 0.026116967467608648,
+      "mae_m": 0.012434516315503666
+    }
+  },
+  {
+    "id": "nyu_01222",
+    "scene_id": "living_room_0032",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "2ac5c1dcc4975380c6583f8bd503093ea08973afe73fe18f53ef817b44b43ae0",
+      "depth": "70a088308e7cc2fb3ae7bd77661019ca5c0a2c256d1bc4efbd021c536e2d06f1",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 617.7558397490183,
+      "sum_absolute_error_m": 4389.751368761063,
+      "pixels": 307200,
+      "rmse_m": 0.044843326789125885,
+      "mae_m": 0.014289555236852417
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 616.400568895845,
+      "sum_absolute_error_m": 4475.244024038315,
+      "pixels": 307200,
+      "rmse_m": 0.0447941097527472,
+      "mae_m": 0.014567851640749722
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 613.0541592611036,
+      "sum_absolute_error_m": 4406.424008727074,
+      "pixels": 307200,
+      "rmse_m": 0.04467235171794076,
+      "mae_m": 0.014343828153408443
+    }
+  },
+  {
+    "id": "nyu_01223",
+    "scene_id": "living_room_0032",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "8866173bea699b6e83dc3f1a75cfc12888eb7b8bee297f86c7dabfe2a3767e08",
+      "depth": "bba1a8fb2ede3830c1a324f986670507a616b6ec0d069fd807a653a4c39ef92d",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 70.17879369493122,
+      "sum_absolute_error_m": 1892.6154832839966,
+      "pixels": 307200,
+      "rmse_m": 0.015114449843081319,
+      "mae_m": 0.00616085769298176
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 70.70077056789138,
+      "sum_absolute_error_m": 1985.4514220952988,
+      "pixels": 307200,
+      "rmse_m": 0.015170554951144275,
+      "mae_m": 0.006463058014633134
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 69.69084149837074,
+      "sum_absolute_error_m": 1921.8786498308182,
+      "pixels": 307200,
+      "rmse_m": 0.015061812905573782,
+      "mae_m": 0.006256115396584694
+    }
+  },
+  {
+    "id": "nyu_01300",
+    "scene_id": "living_room_0058",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "409a97c2ac16132a2b01a820d4f1d8354955966feadf5d00a8ca2b2a4cec95ab",
+      "depth": "b280e63fce26370e4b64b396f0ecf45dfeac6b3ac529b6bc941817e37fcf35bb",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 474.8882360244615,
+      "sum_absolute_error_m": 4771.083421468735,
+      "pixels": 307200,
+      "rmse_m": 0.03931742798440399,
+      "mae_m": 0.015530870512593537
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 474.8283859372076,
+      "sum_absolute_error_m": 4841.69571685791,
+      "pixels": 307200,
+      "rmse_m": 0.03931495032180524,
+      "mae_m": 0.015760728244980177
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 470.1017398064513,
+      "sum_absolute_error_m": 4780.798929691315,
+      "pixels": 307200,
+      "rmse_m": 0.039118781945920285,
+      "mae_m": 0.015562496515922248
+    }
+  },
+  {
+    "id": "nyu_01301",
+    "scene_id": "living_room_0058",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "32db1d7e3b25c81b12b6d172dfaaa2f2716a4c2a7970449e439a3985d0d8cd9d",
+      "depth": "9a642a24f4c67a41fb0faca6ee252ee28f900be7acc4611c8ddda3f98a236a03",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 128.78794505626342,
+      "sum_absolute_error_m": 2199.619020819664,
+      "pixels": 307200,
+      "rmse_m": 0.02047514571327941,
+      "mae_m": 0.007160218166730677
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 129.7284842664655,
+      "sum_absolute_error_m": 2300.3725615739822,
+      "pixels": 307200,
+      "rmse_m": 0.02054977476895795,
+      "mae_m": 0.007488191932206973
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 128.16244947179388,
+      "sum_absolute_error_m": 2207.667487502098,
+      "pixels": 307200,
+      "rmse_m": 0.020425363486141334,
+      "mae_m": 0.007186417602545892
+    }
+  },
+  {
+    "id": "nyu_01341",
+    "scene_id": "dining_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "2c3e58e89101023a0b9dd82cf86761f19802b904fb045be751926c934e21fc04",
+      "depth": "75cb811cf37f85bd84722859ce4c83a98ccf07e0a491cea4d8ea2ebd78a0cf8b",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1918.726445873432,
+      "sum_absolute_error_m": 8126.504529893398,
+      "pixels": 307200,
+      "rmse_m": 0.07903071754700348,
+      "mae_m": 0.026453465266580073
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1916.8913259585288,
+      "sum_absolute_error_m": 8184.528903841972,
+      "pixels": 307200,
+      "rmse_m": 0.07899291498833669,
+      "mae_m": 0.02664234669219392
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1907.401471009141,
+      "sum_absolute_error_m": 8101.852541089058,
+      "pixels": 307200,
+      "rmse_m": 0.07879713931001057,
+      "mae_m": 0.026373217907190945
+    }
+  },
+  {
+    "id": "nyu_01342",
+    "scene_id": "dining_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "4221455cdbf69fadc1f8692c0c475f62328f22daa430eac1e542f95f6d7ca5ef",
+      "depth": "952bd9570ec63fdd9971090837124a488d7e5fab0d8820ee7e86fbd905375ee5",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1271.7672889367884,
+      "sum_absolute_error_m": 4955.271559536457,
+      "pixels": 307200,
+      "rmse_m": 0.06434180194094485,
+      "mae_m": 0.01613044127453274
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1270.4082488394265,
+      "sum_absolute_error_m": 5023.251567065716,
+      "pixels": 307200,
+      "rmse_m": 0.06430741417875165,
+      "mae_m": 0.016351730361542045
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1263.585149827198,
+      "sum_absolute_error_m": 4956.9869320988655,
+      "pixels": 307200,
+      "rmse_m": 0.06413449079546624,
+      "mae_m": 0.01613602516959266
+    }
+  },
+  {
+    "id": "nyu_01343",
+    "scene_id": "dining_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "4e6710202749695f9ebe6066a9e74aecd1490c31e8042550fbd825a74d9cf8d9",
+      "depth": "a4c7f47d1947c34edd552158287f204d1479c96f7ed122748c0ff8facc457305",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1933.1841847701337,
+      "sum_absolute_error_m": 6424.501542687416,
+      "pixels": 307200,
+      "rmse_m": 0.07932790976782349,
+      "mae_m": 0.020913090959268934
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1928.4955276821534,
+      "sum_absolute_error_m": 6498.775028645992,
+      "pixels": 307200,
+      "rmse_m": 0.07923165221366402,
+      "mae_m": 0.021154866629707007
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1917.4763070362937,
+      "sum_absolute_error_m": 6399.808226466179,
+      "pixels": 307200,
+      "rmse_m": 0.0790049672718986,
+      "mae_m": 0.020832709070527925
+    }
+  },
+  {
+    "id": "nyu_01344",
+    "scene_id": "dining_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "f5b24f54da0efa25d0ab42800faae98b70314657f735f79144ee8a8582ba45c7",
+      "depth": "097b71fb4d5ad2a2803fb869957ed2e54903513af3fbdb1d4c71bb832d5d6d32",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 909.6437275342976,
+      "sum_absolute_error_m": 5048.675070822239,
+      "pixels": 307200,
+      "rmse_m": 0.054415805077514395,
+      "mae_m": 0.01643448916283281
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 904.4637496521023,
+      "sum_absolute_error_m": 5074.689194023609,
+      "pixels": 307200,
+      "rmse_m": 0.05426064812610919,
+      "mae_m": 0.01651917055346227
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 896.6515103474665,
+      "sum_absolute_error_m": 4985.490242958069,
+      "pixels": 307200,
+      "rmse_m": 0.05402580372913477,
+      "mae_m": 0.01622880938462913
+    }
+  },
+  {
+    "id": "nyu_01345",
+    "scene_id": "dining_room_0001",
+    "shape": [
+      480,
+      640
+    ],
+    "valid_pixels": 307200,
+    "mask_sha256": "32dea1b8e211c0d9f8416aaf15e5e8d357e2c17afb18532eea2dd0ab38339914",
+    "source_files_sha256": {
+      "rgb": "ead7903433a6c89bd8bc748286b30ad49b142cb3e9ad303acb06ddaf62ba7390",
+      "depth": "29e2c37d779262f99264256b2f3006c5b405f3872e8f6b919e9fd00bc6449fc8",
+      "mask": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+    },
+    "bicubic": {
+      "sum_squared_error_m2": 1966.2448050391968,
+      "sum_absolute_error_m": 8225.739958405495,
+      "pixels": 307200,
+      "rmse_m": 0.08000335289684407,
+      "mae_m": 0.026776497260434552
+    },
+    "cnn_epoch_1": {
+      "sum_squared_error_m2": 1963.6488937617073,
+      "sum_absolute_error_m": 8298.721608042717,
+      "pixels": 307200,
+      "rmse_m": 0.07995052371757105,
+      "mae_m": 0.027014067734514053
+    },
+    "cnn_epoch_2": {
+      "sum_squared_error_m2": 1953.9047194248726,
+      "sum_absolute_error_m": 8215.3225761652,
+      "pixels": 307200,
+      "rmse_m": 0.07975190859917507,
+      "mae_m": 0.026742586510954423
+    }
+  }
+]

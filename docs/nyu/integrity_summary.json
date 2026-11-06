@@ -1,0 +1,178 @@
+{
+  "source": {
+    "dataset": "Official NYU Depth V2 labelled release",
+    "units": "metres",
+    "mat_file": "nyu_depth_v2_labeled.mat",
+    "mat_sha256": "2d724b0c0ab358aa1ce5df855e5bd14a2279ab7202efe22f32a30d612dcb86aa",
+    "split_file": "splits.mat",
+    "splits_sha256": "6e081404491a8bfba2f066beaa9713ef6046f9007aa5f799f2a350506a580cee",
+    "official_page": "https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html",
+    "source_layout": {
+      "images": {
+        "shape": [
+          1449,
+          3,
+          640,
+          480
+        ],
+        "dtype": "uint8"
+      },
+      "depths": {
+        "shape": [
+          1449,
+          640,
+          480
+        ],
+        "dtype": "float32"
+      },
+      "rawDepths": {
+        "shape": [
+          1449,
+          640,
+          480
+        ],
+        "dtype": "float32"
+      }
+    }
+  },
+  "manifests_sha256": {
+    "manifest_official.json": "d31729e29382c9bf64fa8b3875da56ac73e60b9c30718580b878398e8e522f65",
+    "manifest_development.json": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+    "manifest_validation_subset.json": "179649bdd81adb9c4536b16fd896002201319f16e77eba05faafe0fe01ddda7d"
+  },
+  "total_samples": 1449,
+  "official_split_counts": {
+    "train": 795,
+    "test": 654
+  },
+  "official_scene_counts": {
+    "train": 249,
+    "test": 215
+  },
+  "development_split_counts": {
+    "test": 654,
+    "train": 672,
+    "validation": 123
+  },
+  "development_scene_counts": {
+    "train": 219,
+    "validation": 30,
+    "test": 215
+  },
+  "scene_overlap": [],
+  "validation_selection": {
+    "rule": "Within each scene type, sorted training room IDs; evenly spaced positions; never hold out the only room",
+    "requested_scene_fraction": 0.1,
+    "validation_rooms": [
+      "bathroom_0001",
+      "bathroom_0033",
+      "bathroom_0057",
+      "bedroom_0004",
+      "bedroom_0028",
+      "bedroom_0045",
+      "bedroom_0065",
+      "bedroom_0081",
+      "bedroom_0113",
+      "bedroom_0140",
+      "bookstore_0000",
+      "classroom_0003",
+      "conference_room_0001",
+      "dining_room_0001",
+      "dining_room_0037",
+      "furniture_store_0001",
+      "home_office_0004",
+      "kitchen_0003",
+      "kitchen_0035",
+      "kitchen_0060",
+      "living_room_0000",
+      "living_room_0032",
+      "living_room_0058",
+      "living_room_0086",
+      "office_0000",
+      "office_kitchen_0001",
+      "playroom_0002",
+      "reception_room_0001",
+      "study_0003",
+      "study_room_0004"
+    ],
+    "split_samples": {
+      "test": 654,
+      "train": 672,
+      "validation": 123
+    },
+    "official_split_unchanged": true,
+    "note": "Derived development validation; not an official NYU validation split"
+  },
+  "benchmark_subset": {
+    "rule": "Before scoring: round-robin across validation scene types ranked by prevalence; median-index frame per room",
+    "count": 8,
+    "ids": [
+      "nyu_00178",
+      "nyu_00053",
+      "nyu_00231",
+      "nyu_00205",
+      "nyu_00109",
+      "nyu_01343",
+      "nyu_00455",
+      "nyu_00170"
+    ],
+    "scene_types": {
+      "bedroom": 1,
+      "living_room": 1,
+      "furniture_store": 1,
+      "kitchen": 1,
+      "bookstore": 1,
+      "dining_room": 1,
+      "reception_room": 1,
+      "bathroom": 1
+    }
+  },
+  "reference_depth": {
+    "pixels": 445132800,
+    "nonfinite": 0,
+    "zero": 0,
+    "negative": 0,
+    "above_10m": 0,
+    "valid_positive": 445132800,
+    "invalid_fraction": 0.0,
+    "min_positive_m": 0.7132995128631592,
+    "max_positive_m": 9.99547004699707
+  },
+  "raw_depth": {
+    "pixels": 445132800,
+    "nonfinite": 0,
+    "zero": 139922305,
+    "negative": 0,
+    "above_10m": 0,
+    "valid_positive": 305210495,
+    "invalid_fraction": 0.31433833903050956,
+    "min_positive_m": 0.7132995128631592,
+    "max_positive_m": 10.0
+  },
+  "roundtrip": {
+    "samples_checked": 1449,
+    "rgb_exact": true,
+    "valid_metric_depth_max_abs_error_m": 0.0,
+    "spatial_operation": "axis transpose only; no resize, crop, warp or depth quantization"
+  },
+  "registration": {
+    "source": "Official projected raw depth and aligned filled depth in RGB coordinates",
+    "structural_checks": "All RGB/depth/mask dimensions and source axis mapping checked",
+    "visual_verification": "Representative RGB/depth overlays must be inspected separately; dimensions alone are insufficient"
+  },
+  "exported_files": {
+    "checked_samples": 1449,
+    "checked_files": 7245,
+    "missing_files": [],
+    "errors": [],
+    "content_duplicates": [],
+    "dimensions": {
+      "[480, 640]": 1449
+    },
+    "exported_bytes": 4977218731,
+    "limitation": "Exact RGB+depth content duplicates checked; near-duplicates require scene-aware/manual review"
+  },
+  "complete": true,
+  "training_started": false,
+  "full_per_frame_report": "data/nyu/converted/integrity_report.json (local, ignored dataset directory)"
+}

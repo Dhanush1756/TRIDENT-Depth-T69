@@ -1,0 +1,428 @@
+{
+  "status": "audited; no new training",
+  "archive_sha256": "8042c3b3aafddde344b3075eeb525c2e5bc1998cfe01dbb4505f060e0fe51a9b",
+  "training_environment": {
+    "source_id": "76b42849f4a09df0f96c3c8a767ba7be05e8266da911d2ed06fd1d9e05a6a2de",
+    "environment": {
+      "python": "3.13.16",
+      "torch": "2.11.0+cu130",
+      "cuda": "13.0",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "opencv": "4.11.0",
+      "pillow": "11.3.0",
+      "h5py": "3.15.1",
+      "gpu": "Tesla T4",
+      "gpu_memory_bytes": 15637086208
+    },
+    "dataset_archive_sha256": "0e97b6d1a2ae7a83c4383566eee782dc04dc68048f9aff9590ebe0c7d9df1cd6",
+    "experiment_sha256": "a9a4183e15fc64189dbad088977e7c7d84742e7b6440bed6a9f228fd11b68e0c",
+    "pipeline_sha256": "2e741df393a000e3527c3233ac6602d42920b6cb3029e03055bad0f6f79691d5"
+  },
+  "run": {
+    "dataset": "Official NYU labelled release; audited development partition",
+    "split_manifest_sha256": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+    "config": {
+      "experiment": {
+        "manifest": "../../data/nyu/converted/manifest_development.json",
+        "pipeline_config": "dense_sr_4x_pipeline.json",
+        "dataset": "Official NYU labelled release; audited development partition",
+        "model": "lightweight_cnn",
+        "initializer": "bicubic",
+        "output": "../../artifacts/training/pilot_dense4_lightweight_seed69",
+        "epochs": 2,
+        "batch_size": 1,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.0,
+        "device": "cuda",
+        "seed": 69,
+        "loss_weights": {
+          "depth": 1.0,
+          "gradient": 0.2,
+          "edge": 0.1,
+          "uncertainty": 0.05,
+          "measurement": 0.2
+        }
+      },
+      "pipeline": {
+        "protocol": "dense_sr",
+        "scale": 4,
+        "seed": 69,
+        "min_depth": 0.0,
+        "max_depth": 10,
+        "target_size": null,
+        "density": 0.05,
+        "sampling": "random",
+        "noise_std_m": 0.01,
+        "hole_fraction": 0.1
+      }
+    },
+    "torch_version": "2.11.0+cu130",
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "deterministic_algorithms": true,
+    "split_audit": {
+      "manifest_sha256": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+      "sample_counts": {
+        "test": 654,
+        "train": 672,
+        "validation": 123
+      },
+      "scene_counts": {
+        "test": 215,
+        "train": 219,
+        "validation": 30
+      },
+      "test_used_for_training_or_selection": false
+    },
+    "runtime_paths": {
+      "manifest": "/content/trident-nyu-converted/manifest_development.json",
+      "output": "/content/drive/MyDrive/TRIDENT-T69/runs/pilot_dense4_lightweight_seed69"
+    },
+    "scheduler": "constant learning rate"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.022229976973557358,
+      "validation_loss": 0.02578578604294396,
+      "validation_rmse_m": 0.058512513280960604,
+      "validation_mae_m": 0.016522200063913986,
+      "best_epoch": 1,
+      "best_validation_rmse_m": 0.058512513280960604,
+      "train_components": {
+        "depth": 0.014449945328427324,
+        "gradient": 0.01879792158433702,
+        "edge": 0.028416860419037265,
+        "uncertainty": 0.0,
+        "measurement": 0.005893805772107693
+      },
+      "validation_components": {
+        "depth": 0.016522200268927992,
+        "gradient": 0.022535668301767085,
+        "edge": 0.03550879279060698,
+        "uncertainty": 0.0,
+        "measurement": 0.0060278638142986386
+      },
+      "epoch_seconds": 74.83309371200005,
+      "cuda_peak_allocated_bytes": 306735104,
+      "cuda_peak_reserved_bytes": 364904448
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0208923879746137,
+      "validation_loss": 0.025341035290886233,
+      "validation_rmse_m": 0.058333194710834015,
+      "validation_mae_m": 0.01622853069660048,
+      "best_epoch": 2,
+      "best_validation_rmse_m": 0.058333194710834015,
+      "train_components": {
+        "depth": 0.013488795770432003,
+        "gradient": 0.01859356945628644,
+        "edge": 0.02737000029516085,
+        "uncertainty": 0.0,
+        "measurement": 0.004739390634183239
+      },
+      "validation_components": {
+        "depth": 0.016228530641145458,
+        "gradient": 0.022452738991658377,
+        "edge": 0.03515129227463792,
+        "uncertainty": 0.0,
+        "measurement": 0.005534135326705267
+      },
+      "epoch_seconds": 64.17765242200005,
+      "cuda_peak_allocated_bytes": 307357696,
+      "cuda_peak_reserved_bytes": 543162368
+    }
+  ],
+  "best_checkpoint": {
+    "epoch": 2,
+    "checkpoint": "epoch_002.pt",
+    "validation_rmse_m": 0.058333194710834015
+  },
+  "checkpoint_audits": [
+    {
+      "epoch": 1,
+      "model_name": "lightweight_cnn",
+      "parameters": 11873,
+      "finite_model_and_moments": true,
+      "optimizer_steps": [
+        672.0,
+        672.0,
+        672.0,
+        672.0,
+        672.0,
+        672.0
+      ],
+      "scheduler": {
+        "base_lrs": [
+          0.0001
+        ],
+        "last_epoch": 1,
+        "_step_count": 2,
+        "_is_initial": false,
+        "_get_lr_called_within_step": false,
+        "_last_lr": [
+          0.0001
+        ],
+        "lr_lambdas": [
+          null
+        ]
+      },
+      "history_matches": true,
+      "python_numpy_cpu_rng_loadable": true,
+      "loader_rng_matches_seeded_epoch": true,
+      "cpu_rng_sha256": "225d2b8fb1b097f8ac4f17a96de104c598418d7f2ed9c7c092842d12a385c7e6",
+      "loader_rng_sha256": "095ea97e7e4ef6df0c0e65d311e0b03c36657d3df312fbedd68f652d7dca5411",
+      "cuda_rng": {
+        "bytes": 16,
+        "seed": 69,
+        "offset": 0,
+        "sha256": "940186d5b713c1409fcd2d3d6946dd237f025c2b36067bbd1fdad18f6cc4f16a",
+        "structurally_valid": true,
+        "restored_on_cuda": false
+      },
+      "checkpoint_sha256": "d61c9de32383c756e0e60adef91a1911bee21b95f02f2b327bada7d452933a88"
+    },
+    {
+      "epoch": 2,
+      "model_name": "lightweight_cnn",
+      "parameters": 11873,
+      "finite_model_and_moments": true,
+      "optimizer_steps": [
+        1344.0,
+        1344.0,
+        1344.0,
+        1344.0,
+        1344.0,
+        1344.0
+      ],
+      "scheduler": {
+        "base_lrs": [
+          0.0001
+        ],
+        "last_epoch": 2,
+        "_step_count": 3,
+        "_is_initial": false,
+        "_get_lr_called_within_step": false,
+        "_last_lr": [
+          0.0001
+        ],
+        "lr_lambdas": [
+          null
+        ]
+      },
+      "history_matches": true,
+      "python_numpy_cpu_rng_loadable": true,
+      "loader_rng_matches_seeded_epoch": true,
+      "cpu_rng_sha256": "e81c4aa72ec914d25616760756543a1d2da1d8c81f2a3fa14d12bcc42952587c",
+      "loader_rng_sha256": "69808b943f9c959443375fcbcde8ce3c51dc7ca893751736d80f54fadebf55ce",
+      "cuda_rng": {
+        "bytes": 16,
+        "seed": 69,
+        "offset": 0,
+        "sha256": "940186d5b713c1409fcd2d3d6946dd237f025c2b36067bbd1fdad18f6cc4f16a",
+        "structurally_valid": true,
+        "restored_on_cuda": false
+      },
+      "checkpoint_sha256": "a1fb5080360d9e693d43e67b3aa105da05be93af6baca6d1c84bee979ce3fb43"
+    }
+  ],
+  "local_source_matches_training_archive": true,
+  "split_audit": {
+    "manifest_sha256": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+    "sample_counts": {
+      "test": 654,
+      "train": 672,
+      "validation": 123
+    },
+    "scene_counts": {
+      "test": 215,
+      "train": 219,
+      "validation": 30
+    },
+    "test_used_for_training_or_selection": false
+  },
+  "evaluation": {
+    "split": "validation",
+    "frames": 123,
+    "scenes": 30,
+    "full_frame": true,
+    "crop": null,
+    "depth_units": "metres",
+    "input_shape": [
+      120,
+      160
+    ],
+    "target_shape": [
+      480,
+      640
+    ],
+    "mask": "identical target_valid from TorchDepthDataset for every method",
+    "aggregation": "global valid-pixel double-precision error sums",
+    "metrics_function": "trident_depth.training.validation.validation_errors",
+    "protocol": {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "seed": 69,
+      "min_depth": 0.0,
+      "max_depth": 10,
+      "target_size": null,
+      "density": 0.05,
+      "sampling": "random",
+      "noise_std_m": 0.01,
+      "hole_fraction": 0.1
+    },
+    "local_environment": {
+      "python": "3.10.8",
+      "torch": "2.14.1+cpu",
+      "numpy": "1.26.4",
+      "pillow": "10.2.0",
+      "device": "cpu"
+    }
+  },
+  "aggregate": {
+    "bicubic": {
+      "rmse_m": 0.05852721329415767,
+      "mae_m": 0.01620300759002472,
+      "valid_pixels": 37785600,
+      "frames": 123
+    },
+    "cnn_epoch_1": {
+      "rmse_m": 0.05851251324911981,
+      "mae_m": 0.016522199770755596,
+      "valid_pixels": 37785600,
+      "frames": 123
+    },
+    "cnn_epoch_2": {
+      "rmse_m": 0.05833319475785504,
+      "mae_m": 0.01622853062992195,
+      "valid_pixels": 37785600,
+      "frames": 123
+    }
+  },
+  "cpu_replay": [
+    {
+      "epoch": 1,
+      "cpu_minus_recorded": {
+        "rmse_m": -3.184079389040306e-11,
+        "mae_m": -2.931583899246082e-10
+      },
+      "loss_delta": -4.5051782790461736e-10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "epoch": 2,
+      "cpu_minus_recorded": {
+        "rmse_m": 4.7021025961768714e-11,
+        "mae_m": -6.667853075237318e-11
+      },
+      "loss_delta": -8.328901110465914e-11,
+      "tolerance": 1e-06,
+      "passed": true
+    }
+  ],
+  "comparison_cpu": {
+    "rmse_m": {
+      "bicubic": 0.05852721329415767,
+      "cnn": 0.05833319475785504,
+      "cnn_minus_bicubic": -0.00019401853630263144,
+      "reduction_percent": 0.33150140828932795
+    },
+    "mae_m": {
+      "bicubic": 0.01620300759002472,
+      "cnn": 0.01622853062992195,
+      "cnn_minus_bicubic": 2.552303989723087e-05,
+      "reduction_percent": -0.15752038475217386
+    }
+  },
+  "comparison_recorded": {
+    "rmse_m": {
+      "bicubic": 0.05852721329415767,
+      "cnn": 0.058333194710834015,
+      "cnn_minus_bicubic": -0.0001940185833236574,
+      "reduction_percent": 0.33150148862977696
+    },
+    "mae_m": {
+      "bicubic": 0.01620300759002472,
+      "cnn": 0.01622853069660048,
+      "cnn_minus_bicubic": 2.5523106575761623e-05,
+      "reduction_percent": -0.1575207962716426
+    }
+  },
+  "uncertainty": {
+    "expected_zero": true,
+    "reason": "LightweightCNN returns depth and residual only; no log_scale head. combined_loss uses pred.sum()*0. The 0.05 weight therefore contributes zero; this run learns no uncertainty calibration."
+  },
+  "limitations": [
+    "CPU replay uses different Python/PyTorch/NumPy/Pillow versions from Colab; numerical agreement is checked to 1e-6 m, not bitwise equivalence.",
+    "CUDA Philox bytes and seed checked structurally; GPU RNG restoration and exact resumed CUDA execution were not performed on this CPU host.",
+    "Validation evidence only; official test pixels were never loaded. No optimizer steps were performed during this audit."
+  ],
+  "protected_files_sha256": {
+    "configs\\dense_sr.json": "57236212f4176f998d908f005bfe87abc65dff83b1680725f3738f2deadb8f03",
+    "configs\\phase5\\dense_sr_2x_lightweight_cnn.json": "0d7c618e0956a3fca9460b43d51b8a33bcecc62dcc05f3f05bfcd1e414545135",
+    "configs\\phase5\\dense_sr_2x_pipeline.json": "f4da5440b3fdb6ded52b576b9b6d3ebaf08098855854235b7374291b6ab53f20",
+    "configs\\phase5\\dense_sr_2x_residual_cnn.json": "048b3972a024a6d2b94a0dec5f7e69cfc6cb0ffa961afa064a86ef4ce114f521",
+    "configs\\phase5\\dense_sr_4x_lightweight_cnn.json": "e61bc5240a2b4234e9d786c207a90a52a0335f69b46e7f2089ba1a423b3aefd7",
+    "configs\\phase5\\dense_sr_4x_pipeline.json": "2e741df393a000e3527c3233ac6602d42920b6cb3029e03055bad0f6f79691d5",
+    "configs\\phase5\\dense_sr_4x_residual_cnn.json": "440d4050f15fc457beb293fee10a305de4e08ecaa2c6c3d110de61ee56e39ea4",
+    "configs\\phase5\\dense_sr_8x_lightweight_cnn.json": "c6f53094ca07f53b67a85cb7a5492b7b6e01e66e0f8da45ed8c0f5e4cbb68eb3",
+    "configs\\phase5\\dense_sr_8x_pipeline.json": "f2cb40d27438e258d24d52dec7186fc658c05cfd00c3c5d47f3160b229b73e31",
+    "configs\\phase5\\dense_sr_8x_residual_cnn.json": "1a09de31bfb1dfa50b35e7ebf917cbd35f72ec5d36e78a755d6f4d6c98bcb95e",
+    "configs\\phase5\\pilot_dense4_lightweight.json": "a9a4183e15fc64189dbad088977e7c7d84742e7b6440bed6a9f228fd11b68e0c",
+    "configs\\phase5\\sparse_completion_2x_lightweight_cnn.json": "e9b68cfda606760fce35456b9b5cdc80645e5d8c6fa6b64ed730032ac62958f0",
+    "configs\\phase5\\sparse_completion_2x_pipeline.json": "19dd7aa70b3860a26ee431862d67c9e59376b2ed2dba5340b1649dd29b50fce0",
+    "configs\\phase5\\sparse_completion_2x_residual_cnn.json": "2a66dc5354a891f0070a58be060f02539b0dd4dd09f8752d299e4bfaa097cd60",
+    "configs\\phase5\\sparse_completion_4x_lightweight_cnn.json": "fc22a31afd52e8037e4639e5925c958e26cb76df07e3457fb792357e5023e796",
+    "configs\\phase5\\sparse_completion_4x_pipeline.json": "b8e77734f06ca9bf356f40ed8d33054e8eeaf5ab94516b70a47ef708ae8ed4c5",
+    "configs\\phase5\\sparse_completion_4x_residual_cnn.json": "885a2a3a4fc5b0adbd643f24c83e922e2519cc2ad0f97c840e7dda65162dd018",
+    "configs\\phase5\\sparse_completion_8x_lightweight_cnn.json": "8090b50efd95ac4aff107b0f3599af8ea9900238d6381512d1e293aa32551cf9",
+    "configs\\phase5\\sparse_completion_8x_pipeline.json": "ab5e079643f3df60cf4a03f54e492dd01c9c56645e2dcad1eb6f7cb0187e0b7c",
+    "configs\\phase5\\sparse_completion_8x_residual_cnn.json": "1d5c7f2c0314b69a6d306613416e59c341eaef184af63c3f3f9c9de9ec89ff16",
+    "configs\\sparse_completion.json": "d2e6dede077dd3d317bdb2ef4112fbf751f43d471d13bb47705ac86c6aa69d7c",
+    "configs\\train_nyu.json": "9f4f5fbb74faadbde2f1d64827a38b653edae7eef90bc9ee06673e9cc4efb380",
+    "trident_depth\\models\\__init__.py": "3ddb263ee33ae01c9f673b2eb8db3e60aea239b29875432081c3586156b2515e",
+    "trident_depth\\models\\baseline.py": "a22a449d8c276dbe1d9c1d3bb28fa797e2404e6f79f3cf7ee81b208185ee863b",
+    "trident_depth\\models\\checkpoint.py": "4341de7552909f3df28a657100064915126930d54e509e77131ba1c39163f719",
+    "trident_depth\\models\\fusion.py": "52635d74ba1725586dc2cbf8bf75ea42e81037f6782883d07b3f33d292b685d3",
+    "trident_depth\\models\\inputs.py": "e0ca3656fdbb9bc98ae712b9fde2b09df9dcc6928dd95732dec4fd2dcb06618a",
+    "trident_depth\\models\\residual_cnn.py": "99bad2b086e89675e67346d31e670bba1285261318aaa38b1136dff1ed330cd3",
+    "artifacts\\nyu\\validation_baselines\\dense_sr\\results.json": "fbb96410607d37bdb11c93e0802f13d288915c7e1c0eb82ef14c716f075c11f1",
+    "artifacts\\nyu\\validation_baselines\\sparse_completion\\results.json": "61d2384ba4c66f6d81b0e4932b7ecb6140589c49cad1fb6afc1330ad70260f2f"
+  },
+  "protected_files_unchanged": true,
+  "validation_payload_identity": {
+    "validation_frames": 123,
+    "matched_files": 369,
+    "rgb_depth_mask_byte_identical_to_training_archive": true,
+    "test_entries_decoded": 0
+  },
+  "audit_module_sha256": "048c3d2c2b6a88f786faf68939720bb369fca1ec116164b44ca7ee97721d39a4",
+  "frame_comparison": {
+    "rmse_m": {
+      "cnn_better": 116,
+      "cnn_worse": 7,
+      "equal": 0
+    },
+    "mae_m": {
+      "cnn_better": 40,
+      "cnn_worse": 83,
+      "equal": 0
+    }
+  },
+  "test_suite": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+    "passed": 135,
+    "failed": 0,
+    "warnings": 1,
+    "warning": "Existing upstream Starlette/httpx deprecation",
+    "seconds": 24.2,
+    "run_after_audit": true
+  },
+  "dependency_check": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pip check",
+    "result": "No broken requirements found."
+  }
+}

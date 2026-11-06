@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRIDENT Depth · T69</title><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body>
+<header><a href="/" class="brand">TRIDENT<span>DEPTH / T69</span></a><span class="status" id="connection">Connecting…</span></header>
+<main>
+<section class="intro"><p class="eyebrow">COMPUTER VISION HACKATHON 2026 · P4</p><h1>Depth, with<br><em>definition.</em></h1><p class="lede">Reconstruct depth maps with classical filtering and RGB guidance. Inspect boundaries, compare methods, and export metric depth.</p><p id="model-note" class="notice">Checking available reconstruction methods…</p></section>
+<section class="workspace" aria-label="Depth reconstruction workspace">
+<form id="reconstruct-form">
+<div class="section-title"><span>01</span><h2>Source & guidance</h2></div>
+<label class="upload">Depth map <strong>Required</strong><input name="depth" type="file" accept=".png,.tif,.tiff,.npy" required><small>Numeric PNG, TIFF, or NPY · up to 8 MiB</small></label>
+<label class="upload">RGB guidance<input name="rgb" type="file" accept=".png,.jpg,.jpeg"><small>Optional · registered at the target resolution</small></label>
+<details><summary>Validity mask & reference</summary><label>Input validity mask<input name="mask" type="file" accept=".png,.tif,.tiff,.npy"></label><label>Ground-truth depth<input name="ground_truth" type="file" accept=".png,.tif,.tiff,.npy"></label><label>Reference units to metres<input name="gt_scale_to_m" type="number" value="0.001" min="0.000000001" step="any"></label></details>
+<div class="section-title"><span>02</span><h2>Reconstruction</h2></div>
+<div class="fields"><label>Input condition<select name="protocol" id="protocol"><option value="dense_sr">Low-resolution depth</option><option value="sparse_completion">Sparse / incomplete depth</option></select></label><label>Scale<select name="scale"><option value="2">2×</option><option value="4" selected>4×</option><option value="8">8×</option></select></label></div>
+<p class="hint" id="shape-note">RGB and reference dimensions must equal depth dimensions × scale.</p>
+<label>Method<select name="method" id="method"><option value="classical">Classical refinement</option><option value="nearest">Nearest neighbour</option><option value="bilinear">Bilinear</option><option value="bicubic">Bicubic</option><option value="guided">Guided filter</option><option value="joint_bilateral">Joint bilateral filter</option><option value="deep" disabled>Deep learning · checkpoint required</option><option value="hybrid" disabled>Hybrid · checkpoint required</option></select></label>
+<div class="fields"><label>Depth units to metres<input name="depth_scale_to_m" type="number" value="0.001" min="0.000000001" step="any" required></label><label>Maximum depth (m)<input name="max_depth_m" type="number" value="10" min="0.001" step="any" required></label></div>
+<p class="hint">Millimetres: 0.001 · metres: 1 · set the factor from your data source. Previews share this maximum depth.</p>
+<label class="check"><input name="noisy" type="checkbox" value="true"> Measurements contain noise</label>
+<button type="submit" id="run">Reconstruct depth <span>↗</span></button><p id="message" role="status" aria-live="polite"></p>
+</form>
+<div class="results">
+<div class="section-title"><span>03</span><h2>Compare & inspect</h2></div>
+<div id="empty"><div class="depth-lines" aria-hidden="true">≋</div><h3>Your depth, reconstructed.</h3><p>Choose a depth map to begin. Results appear here with measured runtime and downloadable numeric depth.</p></div>
+<div id="result" hidden><div class="views"><figure><img id="input-image" alt="Input depth visualization"><figcaption>Input depth</figcaption></figure><figure><img id="output-image" alt="Reconstructed depth visualization"><figcaption>Reconstructed depth</figcaption></figure></div><p class="hint">Shared depth scale · invalid pixels are black. Colors visualize depth; downloads preserve numeric values.</p><div class="run-info" id="run-info"></div><p id="metric-note"></p><dl id="metrics"></dl><div class="downloads"><a id="download-npz" download="trident_depth_m.npz">Download metric depth (.npz)</a><a id="download-png" download="trident_depth_mm.png">16-bit millimetres (.png)</a></div><details><summary>Intermediate depth maps</summary><div id="intermediates" class="views"></div></details></div>
+</div>
+</section>
+</main><footer>TRIDENT-Depth 2.0 <span>Trust-Routed Intelligent Depth Enhancement Network · Team T69</span></footer>
+</body></html>

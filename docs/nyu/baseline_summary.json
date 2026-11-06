@@ -1,0 +1,812 @@
+{
+  "provenance": {
+    "source": {
+      "dataset": "Official NYU Depth V2 labelled release",
+      "units": "metres",
+      "mat_file": "nyu_depth_v2_labeled.mat",
+      "mat_sha256": "2d724b0c0ab358aa1ce5df855e5bd14a2279ab7202efe22f32a30d612dcb86aa",
+      "split_file": "splits.mat",
+      "splits_sha256": "6e081404491a8bfba2f066beaa9713ef6046f9007aa5f799f2a350506a580cee",
+      "official_page": "https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html",
+      "source_layout": {
+        "images": {
+          "shape": [
+            1449,
+            3,
+            640,
+            480
+          ],
+          "dtype": "uint8"
+        },
+        "depths": {
+          "shape": [
+            1449,
+            640,
+            480
+          ],
+          "dtype": "float32"
+        },
+        "rawDepths": {
+          "shape": [
+            1449,
+            640,
+            480
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    "manifests_sha256": {
+      "manifest_official.json": "d31729e29382c9bf64fa8b3875da56ac73e60b9c30718580b878398e8e522f65",
+      "manifest_development.json": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+      "manifest_validation_subset.json": "179649bdd81adb9c4536b16fd896002201319f16e77eba05faafe0fe01ddda7d"
+    },
+    "validation_selection": {
+      "rule": "Within each scene type, sorted training room IDs; evenly spaced positions; never hold out the only room",
+      "requested_scene_fraction": 0.1,
+      "validation_rooms": [
+        "bathroom_0001",
+        "bathroom_0033",
+        "bathroom_0057",
+        "bedroom_0004",
+        "bedroom_0028",
+        "bedroom_0045",
+        "bedroom_0065",
+        "bedroom_0081",
+        "bedroom_0113",
+        "bedroom_0140",
+        "bookstore_0000",
+        "classroom_0003",
+        "conference_room_0001",
+        "dining_room_0001",
+        "dining_room_0037",
+        "furniture_store_0001",
+        "home_office_0004",
+        "kitchen_0003",
+        "kitchen_0035",
+        "kitchen_0060",
+        "living_room_0000",
+        "living_room_0032",
+        "living_room_0058",
+        "living_room_0086",
+        "office_0000",
+        "office_kitchen_0001",
+        "playroom_0002",
+        "reception_room_0001",
+        "study_0003",
+        "study_room_0004"
+      ],
+      "split_samples": {
+        "test": 654,
+        "train": 672,
+        "validation": 123
+      },
+      "official_split_unchanged": true,
+      "note": "Derived development validation; not an official NYU validation split"
+    },
+    "subset": {
+      "rule": "Before scoring: round-robin across validation scene types ranked by prevalence; median-index frame per room",
+      "count": 8,
+      "ids": [
+        "nyu_00178",
+        "nyu_00053",
+        "nyu_00231",
+        "nyu_00205",
+        "nyu_00109",
+        "nyu_01343",
+        "nyu_00455",
+        "nyu_00170"
+      ],
+      "scene_types": {
+        "bedroom": 1,
+        "living_room": 1,
+        "furniture_store": 1,
+        "kitchen": 1,
+        "bookstore": 1,
+        "dining_room": 1,
+        "reception_room": 1,
+        "bathroom": 1
+      }
+    },
+    "repeats": 3,
+    "label": "NYU official labelled release; training-derived development validation; no test-set tuning",
+    "protocols_note": "dense SR and synthetic sparse/noisy completion reported separately; sparse protocol retains target resolution",
+    "package_versions": {
+      "numpy": "1.26.4",
+      "Pillow": "10.2.0",
+      "scipy": "1.15.3",
+      "h5py": "3.15.1",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "cpu_logical_cores": 16,
+    "opencv_threads": 16,
+    "training_started": false
+  },
+  "aggregation": "Macro arithmetic mean of each per-image metric; timing is median of per-image latency medians",
+  "results": [
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "method": "bicubic",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.03502374554026685,
+        "mae_m": 0.009436035461136878,
+        "psnr_db": 51.03406823236029,
+        "ssim": 0.9964538728050976,
+        "boundary_precision": 0.978942482976936,
+        "boundary_recall": 0.8073969723159773,
+        "boundary_f1": 0.8839138381664834,
+        "edge_preservation": 0.5756079474775687
+      },
+      "median_of_per_image_latency_medians_ms": 13.932649977505207,
+      "max_python_traced_peak_bytes": 8681327,
+      "max_process_lifetime_peak_rss_bytes": 166014976
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "method": "bilinear",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.04000494559820091,
+        "mae_m": 0.010773292590553561,
+        "psnr_db": 49.807632820814234,
+        "ssim": 0.9954790887137221,
+        "boundary_precision": 0.9784384887977258,
+        "boundary_recall": 0.7544585793048154,
+        "boundary_f1": 0.8506685211640163,
+        "edge_preservation": 0.5878705538398549
+      },
+      "median_of_per_image_latency_medians_ms": 13.18564999382943,
+      "max_python_traced_peak_bytes": 8682220,
+      "max_process_lifetime_peak_rss_bytes": 166014976
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "method": "classical",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.043933058236632475,
+        "mae_m": 0.01388244172669753,
+        "psnr_db": 48.711293828557274,
+        "ssim": 0.9947984587905775,
+        "boundary_precision": 0.9495332987948788,
+        "boundary_recall": 0.7388674651731104,
+        "boundary_f1": 0.8300702977774869,
+        "edge_preservation": 0.520014857005087
+      },
+      "median_of_per_image_latency_medians_ms": 588.9247999875806,
+      "max_python_traced_peak_bytes": 58994523,
+      "max_process_lifetime_peak_rss_bytes": 166244352
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "method": "guided",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.049454150445133065,
+        "mae_m": 0.016303797673220592,
+        "psnr_db": 47.674145842968485,
+        "ssim": 0.9935789603079588,
+        "boundary_precision": 0.9483259694281405,
+        "boundary_recall": 0.7281161430616016,
+        "boundary_f1": 0.8227249236441057,
+        "edge_preservation": 0.49058452195936647
+      },
+      "median_of_per_image_latency_medians_ms": 467.67399995587766,
+      "max_python_traced_peak_bytes": 49777711,
+      "max_process_lifetime_peak_rss_bytes": 166014976
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "method": "joint_bilateral",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.043572076994622004,
+        "mae_m": 0.013789673238570686,
+        "psnr_db": 48.775015446040655,
+        "ssim": 0.994846379259575,
+        "boundary_precision": 0.9496947933198885,
+        "boundary_recall": 0.7399680571093268,
+        "boundary_f1": 0.8307892606128036,
+        "edge_preservation": 0.5202958401065647
+      },
+      "median_of_per_image_latency_medians_ms": 484.39634998794645,
+      "max_python_traced_peak_bytes": 49778860,
+      "max_process_lifetime_peak_rss_bytes": 166014976
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "method": "nearest",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.04836573532282135,
+        "mae_m": 0.011510492902937888,
+        "psnr_db": 48.13189029417884,
+        "ssim": 0.9936510075103919,
+        "boundary_precision": 0.9133400412120162,
+        "boundary_recall": 0.9660558969655832,
+        "boundary_f1": 0.9387141754014345,
+        "edge_preservation": 0.27013873123400944
+      },
+      "median_of_per_image_latency_medians_ms": 11.98544999351725,
+      "max_python_traced_peak_bytes": 8681358,
+      "max_process_lifetime_peak_rss_bytes": 166014976
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "method": "bicubic",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.06213742335102513,
+        "mae_m": 0.01994490236642984,
+        "psnr_db": 45.82152170244708,
+        "ssim": 0.9886412346819698,
+        "boundary_precision": 0.8597224124494453,
+        "boundary_recall": 0.6027255517072577,
+        "boundary_f1": 0.7022349681467647,
+        "edge_preservation": 0.4719321553313163
+      },
+      "median_of_per_image_latency_medians_ms": 12.776249961461872,
+      "max_python_traced_peak_bytes": 8393178,
+      "max_process_lifetime_peak_rss_bytes": 168136704
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "method": "bilinear",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.06899573401564851,
+        "mae_m": 0.022455200829960328,
+        "psnr_db": 44.89091392565388,
+        "ssim": 0.9869296506410651,
+        "boundary_precision": 0.8438251592411936,
+        "boundary_recall": 0.5470104360869702,
+        "boundary_f1": 0.6568685366503492,
+        "edge_preservation": 0.47543046868387007
+      },
+      "median_of_per_image_latency_medians_ms": 11.860349972266704,
+      "max_python_traced_peak_bytes": 8393238,
+      "max_process_lifetime_peak_rss_bytes": 168136704
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "method": "classical",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.06690188235371858,
+        "mae_m": 0.023577433125004366,
+        "psnr_db": 45.069225858742506,
+        "ssim": 0.9884352689605933,
+        "boundary_precision": 0.8674291331461443,
+        "boundary_recall": 0.6326981318645102,
+        "boundary_f1": 0.7261530239309999,
+        "edge_preservation": 0.46909062069170226
+      },
+      "median_of_per_image_latency_medians_ms": 655.8704500203021,
+      "max_python_traced_peak_bytes": 58993502,
+      "max_process_lifetime_peak_rss_bytes": 168136704
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "method": "guided",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.0697241701003638,
+        "mae_m": 0.025445639004125647,
+        "psnr_db": 44.712306866914794,
+        "ssim": 0.9879277417937515,
+        "boundary_precision": 0.8875875773411669,
+        "boundary_recall": 0.6326335186597715,
+        "boundary_f1": 0.7327541192897652,
+        "edge_preservation": 0.4576746427997906
+      },
+      "median_of_per_image_latency_medians_ms": 463.1505999714136,
+      "max_python_traced_peak_bytes": 49776817,
+      "max_process_lifetime_peak_rss_bytes": 168136704
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "method": "joint_bilateral",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.06699961488055493,
+        "mae_m": 0.02359389157529222,
+        "psnr_db": 45.05229679458023,
+        "ssim": 0.9883263672412036,
+        "boundary_precision": 0.8672270800820068,
+        "boundary_recall": 0.6323263479058259,
+        "boundary_f1": 0.7257575769132245,
+        "edge_preservation": 0.4688840396108676
+      },
+      "median_of_per_image_latency_medians_ms": 504.0444500045851,
+      "max_python_traced_peak_bytes": 49776354,
+      "max_process_lifetime_peak_rss_bytes": 168136704
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "method": "nearest",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.08636851474383243,
+        "mae_m": 0.025144159546713733,
+        "psnr_db": 42.87253018885141,
+        "ssim": 0.9793425816858002,
+        "boundary_precision": 0.6266414864111002,
+        "boundary_recall": 0.9454395015494907,
+        "boundary_f1": 0.7517680734258719,
+        "edge_preservation": 0.08340381826448624
+      },
+      "median_of_per_image_latency_medians_ms": 11.07564999256283,
+      "max_python_traced_peak_bytes": 8393358,
+      "max_process_lifetime_peak_rss_bytes": 168136704
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "method": "bicubic",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.10202907737629602,
+        "mae_m": 0.03900092642567567,
+        "psnr_db": 41.45659088724932,
+        "ssim": 0.9742905864800313,
+        "boundary_precision": 0.7203976482460462,
+        "boundary_recall": 0.41474043623288287,
+        "boundary_f1": 0.5074310877968834,
+        "edge_preservation": 0.39921203792883125
+      },
+      "median_of_per_image_latency_medians_ms": 17.548650037497282,
+      "max_python_traced_peak_bytes": 8321238,
+      "max_process_lifetime_peak_rss_bytes": 168280064
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "method": "bilinear",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.11144098703934348,
+        "mae_m": 0.043257706654379335,
+        "psnr_db": 40.69145773732956,
+        "ssim": 0.9728847986260345,
+        "boundary_precision": 0.7076781575230935,
+        "boundary_recall": 0.3693394547692481,
+        "boundary_f1": 0.46395587204373523,
+        "edge_preservation": 0.4045143874414816
+      },
+      "median_of_per_image_latency_medians_ms": 16.329500009305775,
+      "max_python_traced_peak_bytes": 8321178,
+      "max_process_lifetime_peak_rss_bytes": 168280064
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "method": "classical",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.10917879056152095,
+        "mae_m": 0.04340256062995953,
+        "psnr_db": 40.83676018273331,
+        "ssim": 0.9753859965942759,
+        "boundary_precision": 0.7623036136119339,
+        "boundary_recall": 0.4734086237544972,
+        "boundary_f1": 0.5629179908886293,
+        "edge_preservation": 0.41051919305905255
+      },
+      "median_of_per_image_latency_medians_ms": 791.2863999954425,
+      "max_python_traced_peak_bytes": 58993911,
+      "max_process_lifetime_peak_rss_bytes": 168312832
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "method": "guided",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.109669027056574,
+        "mae_m": 0.0442989152114266,
+        "psnr_db": 40.80453532634549,
+        "ssim": 0.9759399765918106,
+        "boundary_precision": 0.7854422563030105,
+        "boundary_recall": 0.49406845510313185,
+        "boundary_f1": 0.5892861964184797,
+        "edge_preservation": 0.40940011483307304
+      },
+      "median_of_per_image_latency_medians_ms": 646.3252999819815,
+      "max_python_traced_peak_bytes": 49780456,
+      "max_process_lifetime_peak_rss_bytes": 168280064
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "method": "joint_bilateral",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.10936221666873686,
+        "mae_m": 0.04344970404878647,
+        "psnr_db": 40.82249655796217,
+        "ssim": 0.9752125554220574,
+        "boundary_precision": 0.761558106279248,
+        "boundary_recall": 0.47153208429309623,
+        "boundary_f1": 0.5610284308516552,
+        "edge_preservation": 0.4102830090394632
+      },
+      "median_of_per_image_latency_medians_ms": 651.235049997922,
+      "max_python_traced_peak_bytes": 49777183,
+      "max_process_lifetime_peak_rss_bytes": 168280064
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "method": "nearest",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.13556932908688996,
+        "mae_m": 0.04736673505748816,
+        "psnr_db": 38.91604423075305,
+        "ssim": 0.9539289802031754,
+        "boundary_precision": 0.40587034920161374,
+        "boundary_recall": 0.6272458390143235,
+        "boundary_f1": 0.48720965324799365,
+        "edge_preservation": 0.028259393923487554
+      },
+      "median_of_per_image_latency_medians_ms": 13.544850051403046,
+      "max_python_traced_peak_bytes": 8321518,
+      "max_process_lifetime_peak_rss_bytes": 168280064
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "method": "bicubic",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 23.496949987020344,
+      "max_python_traced_peak_bytes": 9833178,
+      "max_process_lifetime_peak_rss_bytes": 170053632
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "method": "bilinear",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 23.276599997188896,
+      "max_python_traced_peak_bytes": 9833118,
+      "max_process_lifetime_peak_rss_bytes": 170053632
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "method": "classical",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.21626601906278856,
+        "mae_m": 0.060497173200589414,
+        "psnr_db": 35.381070343296756,
+        "ssim": 0.9738365762317098,
+        "boundary_precision": 0.7682267121432933,
+        "boundary_recall": 0.6617880569312098,
+        "boundary_f1": 0.7094832396693646,
+        "edge_preservation": 0.32482813667215654
+      },
+      "median_of_per_image_latency_medians_ms": 916.7633499600925,
+      "max_python_traced_peak_bytes": 58993812,
+      "max_process_lifetime_peak_rss_bytes": 170270720
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "method": "guided",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.2130524319086952,
+        "mae_m": 0.060072054931200304,
+        "psnr_db": 35.52211093816489,
+        "ssim": 0.9757307262426699,
+        "boundary_precision": 0.8048133868023888,
+        "boundary_recall": 0.6369136065834201,
+        "boundary_f1": 0.7083008585059203,
+        "edge_preservation": 0.3580830545613315
+      },
+      "median_of_per_image_latency_medians_ms": 742.9911000072025,
+      "max_python_traced_peak_bytes": 49776219,
+      "max_process_lifetime_peak_rss_bytes": 170053632
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "method": "joint_bilateral",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.21695632437399473,
+        "mae_m": 0.06072679195565191,
+        "psnr_db": 35.35522902874997,
+        "ssim": 0.9733253519667617,
+        "boundary_precision": 0.7653900519798138,
+        "boundary_recall": 0.6627963183010392,
+        "boundary_f1": 0.7088118336225556,
+        "edge_preservation": 0.3229092140900843
+      },
+      "median_of_per_image_latency_medians_ms": 743.3015499846078,
+      "max_python_traced_peak_bytes": 49776627,
+      "max_process_lifetime_peak_rss_bytes": 170053632
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "method": "nearest",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 23.425249964930117,
+      "max_python_traced_peak_bytes": 9833238,
+      "max_process_lifetime_peak_rss_bytes": 170053632
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "method": "bicubic",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 23.35234999191016,
+      "max_python_traced_peak_bytes": 9833178,
+      "max_process_lifetime_peak_rss_bytes": 171393024
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "method": "bilinear",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 22.38904999103397,
+      "max_python_traced_peak_bytes": 9833238,
+      "max_process_lifetime_peak_rss_bytes": 171393024
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "method": "classical",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.21626601906278856,
+        "mae_m": 0.060497173200589414,
+        "psnr_db": 35.381070343296756,
+        "ssim": 0.9738365762317098,
+        "boundary_precision": 0.7682267121432933,
+        "boundary_recall": 0.6617880569312098,
+        "boundary_f1": 0.7094832396693646,
+        "edge_preservation": 0.32482813667215654
+      },
+      "median_of_per_image_latency_medians_ms": 806.5263500320725,
+      "max_python_traced_peak_bytes": 58993577,
+      "max_process_lifetime_peak_rss_bytes": 171409408
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "method": "guided",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.2130524319086952,
+        "mae_m": 0.060072054931200304,
+        "psnr_db": 35.52211093816489,
+        "ssim": 0.9757307262426699,
+        "boundary_precision": 0.8048133868023888,
+        "boundary_recall": 0.6369136065834201,
+        "boundary_f1": 0.7083008585059203,
+        "edge_preservation": 0.3580830545613315
+      },
+      "median_of_per_image_latency_medians_ms": 654.1059499722905,
+      "max_python_traced_peak_bytes": 49776281,
+      "max_process_lifetime_peak_rss_bytes": 171393024
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "method": "joint_bilateral",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.21695632437399473,
+        "mae_m": 0.06072679195565191,
+        "psnr_db": 35.35522902874997,
+        "ssim": 0.9733253519667617,
+        "boundary_precision": 0.7653900519798138,
+        "boundary_recall": 0.6627963183010392,
+        "boundary_f1": 0.7088118336225556,
+        "edge_preservation": 0.3229092140900843
+      },
+      "median_of_per_image_latency_medians_ms": 656.3667499576695,
+      "max_python_traced_peak_bytes": 49776283,
+      "max_process_lifetime_peak_rss_bytes": 171393024
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "method": "nearest",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 23.37219996843487,
+      "max_python_traced_peak_bytes": 9833358,
+      "max_process_lifetime_peak_rss_bytes": 171393024
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "method": "bicubic",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 24.22439999645576,
+      "max_python_traced_peak_bytes": 9833298,
+      "max_process_lifetime_peak_rss_bytes": 172732416
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "method": "bilinear",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 23.652000003494322,
+      "max_python_traced_peak_bytes": 9833342,
+      "max_process_lifetime_peak_rss_bytes": 172732416
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "method": "classical",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.21626601906278856,
+        "mae_m": 0.060497173200589414,
+        "psnr_db": 35.381070343296756,
+        "ssim": 0.9738365762317098,
+        "boundary_precision": 0.7682267121432933,
+        "boundary_recall": 0.6617880569312098,
+        "boundary_f1": 0.7094832396693646,
+        "edge_preservation": 0.32482813667215654
+      },
+      "median_of_per_image_latency_medians_ms": 932.3843499878421,
+      "max_python_traced_peak_bytes": 58993630,
+      "max_process_lifetime_peak_rss_bytes": 172732416
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "method": "guided",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.2130524319086952,
+        "mae_m": 0.060072054931200304,
+        "psnr_db": 35.52211093816489,
+        "ssim": 0.9757307262426699,
+        "boundary_precision": 0.8048133868023888,
+        "boundary_recall": 0.6369136065834201,
+        "boundary_f1": 0.7083008585059203,
+        "edge_preservation": 0.3580830545613315
+      },
+      "median_of_per_image_latency_medians_ms": 765.2502999990247,
+      "max_python_traced_peak_bytes": 49780122,
+      "max_process_lifetime_peak_rss_bytes": 172732416
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "method": "joint_bilateral",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 0.21695632437399473,
+        "mae_m": 0.06072679195565191,
+        "psnr_db": 35.35522902874997,
+        "ssim": 0.9733253519667617,
+        "boundary_precision": 0.7653900519798138,
+        "boundary_recall": 0.6627963183010392,
+        "boundary_f1": 0.7088118336225556,
+        "edge_preservation": 0.3229092140900843
+      },
+      "median_of_per_image_latency_medians_ms": 751.3831999967806,
+      "max_python_traced_peak_bytes": 49778969,
+      "max_process_lifetime_peak_rss_bytes": 172732416
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "method": "nearest",
+      "samples": 8,
+      "macro_mean_per_image_metrics": {
+        "rmse_m": 3.311596045311448,
+        "mae_m": 3.012306333411592,
+        "psnr_db": 10.33849525423717,
+        "ssim": 0.022027803918466735,
+        "boundary_precision": 0.182814360549086,
+        "boundary_recall": 0.42446695823609587,
+        "boundary_f1": 0.23432990029379408,
+        "edge_preservation": 0.002678653126877977
+      },
+      "median_of_per_image_latency_medians_ms": 25.23094997741282,
+      "max_python_traced_peak_bytes": 9833238,
+      "max_process_lifetime_peak_rss_bytes": 172732416
+    }
+  ]
+}

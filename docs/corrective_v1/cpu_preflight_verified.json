@@ -1,0 +1,909 @@
+{
+  "purpose": "untrained compatibility checks, not efficacy evidence",
+  "optimizer_steps": 0,
+  "device": "cpu",
+  "torch_version": "2.14.1+cpu",
+  "cuda_verified": false,
+  "gpu": null,
+  "parameters": 473059,
+  "paired_initial_tensor_sha256": "c045895360e6c1db1306046fe59932158ab76f5211aa66f3abc3469ea348b894",
+  "matching_non_head_tensors_and_constructor_rng": true,
+  "split_audit": {
+    "manifest_sha256": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+    "sample_counts": {
+      "test": 654,
+      "train": 672,
+      "validation": 123
+    },
+    "scene_counts": {
+      "test": 215,
+      "train": 219,
+      "validation": 30
+    },
+    "test_used_for_training_or_selection": false
+  },
+  "validation_reference": {
+    "sha256": "bba902eb2f3e9cc5bd66393b3768ffd5777a2d063989e75d2ff0cc762e83b138",
+    "frames": 123,
+    "rgb_depth_mask_file_hashes_verified": true,
+    "evaluated": false
+  },
+  "official_test_pixels_loaded": 0,
+  "boundary_evaluation": {
+    "edge_threshold_m": 0.05,
+    "boundary_tolerance_px": 1,
+    "aggregation": "arithmetic mean of per-frame boundary F1"
+  },
+  "experiments": {
+    "A1": {
+      "configuration": {
+        "manifest": "../../data/nyu/converted/manifest_development.json",
+        "pipeline_config": "../phase5/dense_sr_4x_pipeline.json",
+        "dataset": "Official NYU labelled release; audited development partition",
+        "model": "residual_cnn_v2",
+        "initializer": "bicubic",
+        "output": "../../artifacts/training/corrective_v1_A1_dense4_seed69",
+        "epochs": 2,
+        "batch_size": 1,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.0,
+        "device": "cuda",
+        "seed": 69,
+        "loss_weights": {
+          "depth": 1.0,
+          "gradient": 0.2,
+          "edge": 0.1,
+          "uncertainty": 0.05,
+          "measurement": 0.2
+        },
+        "decoder_upsampling": "nearest",
+        "experiment_id": "A1",
+        "contract_version": "A1_B0_v1",
+        "objective": "L_J",
+        "alpha": 1.0,
+        "initialization": "exact_zero_v1",
+        "uncertainty_enabled": true
+      },
+      "experiment_sha256": "69cb4ee865ac2ddf70c65eff589dcd721d3987bc3838b8a0c86ed9bdb79cd1c7",
+      "pipeline": {
+        "protocol": "dense_sr",
+        "scale": 4,
+        "seed": 69,
+        "min_depth": 0.0,
+        "max_depth": 10,
+        "target_size": null,
+        "density": 0.05,
+        "sampling": "random",
+        "noise_std_m": 0.01,
+        "hole_fraction": 0.1
+      },
+      "pipeline_sha256": "2e741df393a000e3527c3233ac6602d42920b6cb3029e03055bad0f6f79691d5",
+      "probes": [
+        {
+          "sample_ids": [
+            "synthetic_diagnostic"
+          ],
+          "shape": [
+            1,
+            1,
+            32,
+            40
+          ],
+          "exact_identity": true,
+          "parameters_unchanged": true,
+          "finite_loss_and_gradients": true,
+          "gradient_norms": {
+            "enc1.0.weight": 0.0022342728916555643,
+            "enc1.0.bias": 0.0002728128747548908,
+            "enc1.2.weight": 0.0038874526508152485,
+            "enc1.2.bias": 0.0011911370093002915,
+            "enc2.0.weight": 9.837740799412131e-05,
+            "enc2.0.bias": 7.164310227381065e-05,
+            "enc2.2.weight": 0.00015402412100229412,
+            "enc2.2.bias": 0.0001530046429252252,
+            "bottleneck.0.weight": 4.773626278620213e-05,
+            "bottleneck.0.bias": 8.450695167994127e-05,
+            "bottleneck.2.weight": 0.00015695655019953847,
+            "bottleneck.2.bias": 0.0002258163585793227,
+            "dec2.0.weight": 0.0004768258659169078,
+            "dec2.0.bias": 0.0006377954850904644,
+            "dec2.2.weight": 0.0004728643980342895,
+            "dec2.2.bias": 0.0018858339171856642,
+            "dec1.0.weight": 0.00807253085076809,
+            "dec1.0.bias": 0.005565274506807327,
+            "dec1.2.weight": 0.006778697948902845,
+            "dec1.2.bias": 0.01574253849685192,
+            "residual_head.weight": 0.20806187391281128,
+            "residual_head.bias": 1.5430982112884521,
+            "log_scale_head.weight": 0.006541641894727945,
+            "log_scale_head.bias": 0.04851993918418884,
+            "boundary_head.weight": null,
+            "boundary_head.bias": null
+          },
+          "diagnostic_loss": 0.046950384974479675,
+          "components": {
+            "depth": 0.029999971389770508,
+            "gradient": 1.5332543013002464e-09,
+            "edge": 0.08812493085861206,
+            "uncertainty": 0.042758531868457794,
+            "measurement": 0.029999976977705956,
+            "weighted_depth": 0.029999971389770508,
+            "weighted_gradient": 3.0665087136227953e-10,
+            "weighted_edge": 0.00881249364465475,
+            "weighted_uncertainty": 0.0021379266399890184,
+            "weighted_measurement": 0.005999995395541191,
+            "correction_mean_m": 0.0,
+            "correction_abs_m": 0.0,
+            "correction_rms_m": 0.0,
+            "correction_max_m": 0.0,
+            "correction_p50_m": 0.0,
+            "correction_p90_m": 0.0,
+            "correction_p99_m": 0.0,
+            "mse_cross_term_m2": 0.0,
+            "mse_correction_term_m2": 0.0,
+            "corrected_pixel_improvement_fraction": 0.0,
+            "uncertainty_scale_mean_m": 1.0132381916046143,
+            "uncertainty_clamp_fraction": 0.0,
+            "uncertainty_coverage50": 1.0,
+            "uncertainty_coverage90": 1.0,
+            "uncertainty_coverage95": 1.0
+          },
+          "seconds": 0.06434660009108484,
+          "cuda_peak_allocated_bytes": null,
+          "cuda_peak_reserved_bytes": null
+        },
+        {
+          "sample_ids": [
+            "nyu_00003"
+          ],
+          "shape": [
+            1,
+            1,
+            480,
+            640
+          ],
+          "exact_identity": true,
+          "parameters_unchanged": true,
+          "finite_loss_and_gradients": true,
+          "gradient_norms": {
+            "enc1.0.weight": 0.0019641423132270575,
+            "enc1.0.bias": 0.0002566999464761466,
+            "enc1.2.weight": 0.003882430726662278,
+            "enc1.2.bias": 0.0011971108615398407,
+            "enc2.0.weight": 0.00012238869385328144,
+            "enc2.0.bias": 8.73208700795658e-05,
+            "enc2.2.weight": 0.0001960928930202499,
+            "enc2.2.bias": 0.00018661993090063334,
+            "bottleneck.0.weight": 6.98517615091987e-05,
+            "bottleneck.0.bias": 0.00011490444012451917,
+            "bottleneck.2.weight": 0.0002176633570343256,
+            "bottleneck.2.bias": 0.0002835694467648864,
+            "dec2.0.weight": 0.0005614827387034893,
+            "dec2.0.bias": 0.0007200708496384323,
+            "dec2.2.weight": 0.0005389070138335228,
+            "dec2.2.bias": 0.0020210903603583574,
+            "dec1.0.weight": 0.00864929798990488,
+            "dec1.0.bias": 0.005837679374963045,
+            "dec1.2.weight": 0.007322336547076702,
+            "dec1.2.bias": 0.01606638915836811,
+            "residual_head.weight": 0.0007505441317334771,
+            "residual_head.bias": 0.005628332961350679,
+            "log_scale_head.weight": 0.006775783374905586,
+            "log_scale_head.bias": 0.049729123711586,
+            "boundary_head.weight": null,
+            "boundary_head.bias": null
+          },
+          "diagnostic_loss": 0.010996033437550068,
+          "components": {
+            "depth": 0.006534395273774862,
+            "gradient": 0.00874934159219265,
+            "edge": 0.01287180557847023,
+            "uncertainty": 0.019503135234117508,
+            "measurement": 0.0022471589036285877,
+            "weighted_depth": 0.006534395273774862,
+            "weighted_gradient": 0.001749868388287723,
+            "weighted_edge": 0.0012871805811300874,
+            "weighted_uncertainty": 0.0009751567849889398,
+            "weighted_measurement": 0.0004494317981880158,
+            "correction_mean_m": 0.0,
+            "correction_abs_m": 0.0,
+            "correction_rms_m": 0.0,
+            "correction_max_m": 0.0,
+            "correction_p50_m": 0.0,
+            "correction_p90_m": 0.0,
+            "correction_p99_m": 0.0,
+            "mse_cross_term_m2": 0.0,
+            "mse_correction_term_m2": 0.0,
+            "corrected_pixel_improvement_fraction": 0.0,
+            "uncertainty_scale_mean_m": 1.0131429433822632,
+            "uncertainty_clamp_fraction": 0.0,
+            "uncertainty_coverage50": 0.9999967217445374,
+            "uncertainty_coverage90": 1.0,
+            "uncertainty_coverage95": 1.0
+          },
+          "seconds": 3.357291499967687,
+          "cuda_peak_allocated_bytes": null,
+          "cuda_peak_reserved_bytes": null
+        },
+        {
+          "sample_ids": [
+            "nyu_00005"
+          ],
+          "shape": [
+            1,
+            1,
+            480,
+            640
+          ],
+          "exact_identity": true,
+          "parameters_unchanged": true,
+          "finite_loss_and_gradients": true,
+          "gradient_norms": {
+            "enc1.0.weight": 0.004265669733285904,
+            "enc1.0.bias": 0.00037097674794495106,
+            "enc1.2.weight": 0.007138049695640802,
+            "enc1.2.bias": 0.0015217288164421916,
+            "enc2.0.weight": 0.00017942090926226228,
+            "enc2.0.bias": 9.241560474038124e-05,
+            "enc2.2.weight": 0.00028621533419936895,
+            "enc2.2.bias": 0.00020419196516741067,
+            "bottleneck.0.weight": 0.00010155210475204512,
+            "bottleneck.0.bias": 0.00013289687922224402,
+            "bottleneck.2.weight": 0.0002753758162725717,
+            "bottleneck.2.bias": 0.0003259308577980846,
+            "dec2.0.weight": 0.0007742756279185414,
+            "dec2.0.bias": 0.0008521031122654676,
+            "dec2.2.weight": 0.0006848369957879186,
+            "dec2.2.bias": 0.0023644347675144672,
+            "dec1.0.weight": 0.013204014860093594,
+            "dec1.0.bias": 0.006578582338988781,
+            "dec1.2.weight": 0.009481537155807018,
+            "dec1.2.bias": 0.016809793189167976,
+            "residual_head.weight": 0.00013337798009160906,
+            "residual_head.bias": 5.611372034763917e-05,
+            "log_scale_head.weight": 0.006684503052383661,
+            "log_scale_head.bias": 0.0493563711643219,
+            "boundary_head.weight": null,
+            "boundary_head.bias": null
+          },
+          "diagnostic_loss": 0.022313354536890984,
+          "components": {
+            "depth": 0.013692495413124561,
+            "gradient": 0.018524067476391792,
+            "edge": 0.025966327637434006,
+            "uncertainty": 0.028578026220202446,
+            "measurement": 0.004452546592801809,
+            "weighted_depth": 0.013692495413124561,
+            "weighted_gradient": 0.003704813541844487,
+            "weighted_edge": 0.0025966328103095293,
+            "weighted_uncertainty": 0.0014289013342931867,
+            "weighted_measurement": 0.0008905093418434262,
+            "correction_mean_m": 0.0,
+            "correction_abs_m": 0.0,
+            "correction_rms_m": 0.0,
+            "correction_max_m": 0.0,
+            "correction_p50_m": 0.0,
+            "correction_p90_m": 0.0,
+            "correction_p99_m": 0.0,
+            "mse_cross_term_m2": 0.0,
+            "mse_correction_term_m2": 0.0,
+            "corrected_pixel_improvement_fraction": 0.0,
+            "uncertainty_scale_mean_m": 1.015209674835205,
+            "uncertainty_clamp_fraction": 0.0,
+            "uncertainty_coverage50": 0.9997981786727905,
+            "uncertainty_coverage90": 1.0,
+            "uncertainty_coverage95": 1.0
+          },
+          "seconds": 3.269031200092286,
+          "cuda_peak_allocated_bytes": null,
+          "cuda_peak_reserved_bytes": null
+        }
+      ],
+      "training_sample_provenance": [
+        {
+          "id": "nyu_00003",
+          "scene": "office_0003",
+          "files": {
+            "rgb": {
+              "path": "rgb/nyu_00003.png",
+              "sha256": "92847dc1869b2df70ce662eff695d0ef934c4bf62adb3ee08538e244414ca035"
+            },
+            "depth": {
+              "path": "depth/nyu_00003.npy",
+              "sha256": "2db75921acd79c2f857537e276cc244bb0bcac9e57b7e8070cec2bd1617701e9"
+            },
+            "mask": {
+              "path": "mask/nyu_00003.npy",
+              "sha256": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+            }
+          }
+        },
+        {
+          "id": "nyu_00005",
+          "scene": "office_0004",
+          "files": {
+            "rgb": {
+              "path": "rgb/nyu_00005.png",
+              "sha256": "ceb76aa8f3ebd805e41a099dc395acffeb925a5dfceef650ebc6cfa0ff3eb9c5"
+            },
+            "depth": {
+              "path": "depth/nyu_00005.npy",
+              "sha256": "f98d4388af78797fa3db32ffed5dc5d2d5f3922d1496fd03885f72b5cab09c96"
+            },
+            "mask": {
+              "path": "mask/nyu_00005.npy",
+              "sha256": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+            }
+          }
+        }
+      ],
+      "fixed_training_probe": {
+        "sample_ids": [
+          "nyu_00003"
+        ],
+        "optimizer_steps": 0,
+        "objective": 0.010996033437550068,
+        "per_term": {
+          "depth": {
+            "depth_output": {
+              "norm": 0.001804242143407464,
+              "cosine_to_reconstruction": 0.9638260006904602
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          },
+          "gradient": {
+            "depth_output": {
+              "norm": 0.0007038734620437026,
+              "cosine_to_reconstruction": 0.6656109094619751
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          },
+          "edge": {
+            "depth_output": {
+              "norm": 0.00020247917564120144,
+              "cosine_to_reconstruction": 0.9236748218536377
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          },
+          "measurement": {
+            "depth_output": {
+              "norm": 0.0003608042898122221,
+              "cosine_to_reconstruction": 0.32425224781036377
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          },
+          "uncertainty": {
+            "depth_output": {
+              "norm": 8.903053821995854e-05,
+              "cosine_to_reconstruction": 0.9639459848403931
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0019641423132270575,
+              "cosine_to_reconstruction": null
+            }
+          }
+        },
+        "uncertainty_training_probe": {
+          "all": {
+            "count": 307200,
+            "mean_scale_m": 1.0131429433822632,
+            "mean_abs_error_m": 0.006534395273774862,
+            "coverage50": 0.9999967217445374,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "edge": {
+            "count": 11511,
+            "mean_scale_m": 1.0135828256607056,
+            "mean_abs_error_m": 0.08504427224397659,
+            "coverage50": 0.9999131560325623,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "flat": {
+            "count": 295689,
+            "mean_scale_m": 1.0131257772445679,
+            "mean_abs_error_m": 0.003478052094578743,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_1": {
+            "count": 30704,
+            "mean_scale_m": 1.0123488903045654,
+            "mean_abs_error_m": 0.003353237174451351,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_2": {
+            "count": 30657,
+            "mean_scale_m": 1.012492299079895,
+            "mean_abs_error_m": 0.001104984199628234,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_3": {
+            "count": 30730,
+            "mean_scale_m": 1.0125209093093872,
+            "mean_abs_error_m": 0.0010440526530146599,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_4": {
+            "count": 30736,
+            "mean_scale_m": 1.0125494003295898,
+            "mean_abs_error_m": 0.001109650474973023,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_5": {
+            "count": 30765,
+            "mean_scale_m": 1.012721061706543,
+            "mean_abs_error_m": 0.008039731532335281,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_6": {
+            "count": 30723,
+            "mean_scale_m": 1.0130667686462402,
+            "mean_abs_error_m": 0.0069604297168552876,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_7": {
+            "count": 30716,
+            "mean_scale_m": 1.0133839845657349,
+            "mean_abs_error_m": 0.006998792290687561,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_8": {
+            "count": 30720,
+            "mean_scale_m": 1.0135847330093384,
+            "mean_abs_error_m": 0.0060003516264259815,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_9": {
+            "count": 30722,
+            "mean_scale_m": 1.0139291286468506,
+            "mean_abs_error_m": 0.012832467444241047,
+            "coverage50": 1.0,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          },
+          "scale_decile_10": {
+            "count": 30727,
+            "mean_scale_m": 1.0148311853408813,
+            "mean_abs_error_m": 0.017886893823742867,
+            "coverage50": 0.9999674558639526,
+            "coverage90": 1.0,
+            "coverage95": 1.0
+          }
+        }
+      },
+      "checkpoint": {
+        "model_optimizer_scheduler_rng_roundtrip": true,
+        "optimizer_moments": "empty: zero optimizer steps"
+      }
+    },
+    "B0": {
+      "configuration": {
+        "manifest": "../../data/nyu/converted/manifest_development.json",
+        "pipeline_config": "../phase5/dense_sr_4x_pipeline.json",
+        "dataset": "Official NYU labelled release; audited development partition",
+        "model": "residual_cnn_v2",
+        "initializer": "bicubic",
+        "output": "../../artifacts/training/corrective_v1_B0_dense4_seed69",
+        "epochs": 2,
+        "batch_size": 1,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.0,
+        "device": "cuda",
+        "seed": 69,
+        "loss_weights": {
+          "depth": 1.0,
+          "gradient": 0.2,
+          "edge": 0.1,
+          "uncertainty": 0.0,
+          "measurement": 0.2
+        },
+        "decoder_upsampling": "nearest",
+        "experiment_id": "B0",
+        "contract_version": "A1_B0_v1",
+        "objective": "L_R",
+        "alpha": 1.0,
+        "initialization": "exact_zero_v1",
+        "uncertainty_enabled": false
+      },
+      "experiment_sha256": "273f8d5df6d0d84610042af1dcd09a4736ad266914165426b1e9431f23d1e638",
+      "pipeline": {
+        "protocol": "dense_sr",
+        "scale": 4,
+        "seed": 69,
+        "min_depth": 0.0,
+        "max_depth": 10,
+        "target_size": null,
+        "density": 0.05,
+        "sampling": "random",
+        "noise_std_m": 0.01,
+        "hole_fraction": 0.1
+      },
+      "pipeline_sha256": "2e741df393a000e3527c3233ac6602d42920b6cb3029e03055bad0f6f79691d5",
+      "probes": [
+        {
+          "sample_ids": [
+            "synthetic_diagnostic"
+          ],
+          "shape": [
+            1,
+            1,
+            32,
+            40
+          ],
+          "exact_identity": true,
+          "parameters_unchanged": true,
+          "finite_loss_and_gradients": true,
+          "gradient_norms": {
+            "enc1.0.weight": 0.0,
+            "enc1.0.bias": 0.0,
+            "enc1.2.weight": 0.0,
+            "enc1.2.bias": 0.0,
+            "enc2.0.weight": 0.0,
+            "enc2.0.bias": 0.0,
+            "enc2.2.weight": 0.0,
+            "enc2.2.bias": 0.0,
+            "bottleneck.0.weight": 0.0,
+            "bottleneck.0.bias": 0.0,
+            "bottleneck.2.weight": 0.0,
+            "bottleneck.2.bias": 0.0,
+            "dec2.0.weight": 0.0,
+            "dec2.0.bias": 0.0,
+            "dec2.2.weight": 0.0,
+            "dec2.2.bias": 0.0,
+            "dec1.0.weight": 0.0,
+            "dec1.0.bias": 0.0,
+            "dec1.2.weight": 0.0,
+            "dec1.2.bias": 0.0,
+            "residual_head.weight": 0.20140866935253143,
+            "residual_head.bias": 1.4937384128570557,
+            "log_scale_head.weight": null,
+            "log_scale_head.bias": null,
+            "boundary_head.weight": null,
+            "boundary_head.bias": null
+          },
+          "diagnostic_loss": 0.044812463223934174,
+          "components": {
+            "depth": 0.029999971389770508,
+            "gradient": 1.5332543013002464e-09,
+            "edge": 0.08812493085861206,
+            "uncertainty": 0.0,
+            "measurement": 0.029999976977705956,
+            "weighted_depth": 0.029999971389770508,
+            "weighted_gradient": 3.0665087136227953e-10,
+            "weighted_edge": 0.00881249364465475,
+            "weighted_uncertainty": 0.0,
+            "weighted_measurement": 0.005999995395541191,
+            "correction_mean_m": 0.0,
+            "correction_abs_m": 0.0,
+            "correction_rms_m": 0.0,
+            "correction_max_m": 0.0,
+            "correction_p50_m": 0.0,
+            "correction_p90_m": 0.0,
+            "correction_p99_m": 0.0,
+            "mse_cross_term_m2": 0.0,
+            "mse_correction_term_m2": 0.0,
+            "corrected_pixel_improvement_fraction": 0.0
+          },
+          "seconds": 0.08766690001357347,
+          "cuda_peak_allocated_bytes": null,
+          "cuda_peak_reserved_bytes": null
+        },
+        {
+          "sample_ids": [
+            "nyu_00003"
+          ],
+          "shape": [
+            1,
+            1,
+            480,
+            640
+          ],
+          "exact_identity": true,
+          "parameters_unchanged": true,
+          "finite_loss_and_gradients": true,
+          "gradient_norms": {
+            "enc1.0.weight": 0.0,
+            "enc1.0.bias": 0.0,
+            "enc1.2.weight": 0.0,
+            "enc1.2.bias": 0.0,
+            "enc2.0.weight": 0.0,
+            "enc2.0.bias": 0.0,
+            "enc2.2.weight": 0.0,
+            "enc2.2.bias": 0.0,
+            "bottleneck.0.weight": 0.0,
+            "bottleneck.0.bias": 0.0,
+            "bottleneck.2.weight": 0.0,
+            "bottleneck.2.bias": 0.0,
+            "dec2.0.weight": 0.0,
+            "dec2.0.bias": 0.0,
+            "dec2.2.weight": 0.0,
+            "dec2.2.bias": 0.0,
+            "dec1.0.weight": 0.0,
+            "dec1.0.bias": 0.0,
+            "dec1.2.weight": 0.0,
+            "dec1.2.bias": 0.0,
+            "residual_head.weight": 0.0007390113896690309,
+            "residual_head.bias": 0.0055390032939612865,
+            "log_scale_head.weight": null,
+            "log_scale_head.bias": null,
+            "boundary_head.weight": null,
+            "boundary_head.bias": null
+          },
+          "diagnostic_loss": 0.010020876303315163,
+          "components": {
+            "depth": 0.006534395273774862,
+            "gradient": 0.00874934159219265,
+            "edge": 0.01287180557847023,
+            "uncertainty": 0.0,
+            "measurement": 0.0022471589036285877,
+            "weighted_depth": 0.006534395273774862,
+            "weighted_gradient": 0.001749868388287723,
+            "weighted_edge": 0.0012871805811300874,
+            "weighted_uncertainty": 0.0,
+            "weighted_measurement": 0.0004494317981880158,
+            "correction_mean_m": 0.0,
+            "correction_abs_m": 0.0,
+            "correction_rms_m": 0.0,
+            "correction_max_m": 0.0,
+            "correction_p50_m": 0.0,
+            "correction_p90_m": 0.0,
+            "correction_p99_m": 0.0,
+            "mse_cross_term_m2": 0.0,
+            "mse_correction_term_m2": 0.0,
+            "corrected_pixel_improvement_fraction": 0.0
+          },
+          "seconds": 3.180422500008717,
+          "cuda_peak_allocated_bytes": null,
+          "cuda_peak_reserved_bytes": null
+        },
+        {
+          "sample_ids": [
+            "nyu_00005"
+          ],
+          "shape": [
+            1,
+            1,
+            480,
+            640
+          ],
+          "exact_identity": true,
+          "parameters_unchanged": true,
+          "finite_loss_and_gradients": true,
+          "gradient_norms": {
+            "enc1.0.weight": 0.0,
+            "enc1.0.bias": 0.0,
+            "enc1.2.weight": 0.0,
+            "enc1.2.bias": 0.0,
+            "enc2.0.weight": 0.0,
+            "enc2.0.bias": 0.0,
+            "enc2.2.weight": 0.0,
+            "enc2.2.bias": 0.0,
+            "bottleneck.0.weight": 0.0,
+            "bottleneck.0.bias": 0.0,
+            "bottleneck.2.weight": 0.0,
+            "bottleneck.2.bias": 0.0,
+            "dec2.0.weight": 0.0,
+            "dec2.0.bias": 0.0,
+            "dec2.2.weight": 0.0,
+            "dec2.2.bias": 0.0,
+            "dec1.0.weight": 0.0,
+            "dec1.0.bias": 0.0,
+            "dec1.2.weight": 0.0,
+            "dec1.2.bias": 0.0,
+            "residual_head.weight": 0.00012956887076143175,
+            "residual_head.bias": 1.2848810001742095e-05,
+            "log_scale_head.weight": null,
+            "log_scale_head.bias": null,
+            "boundary_head.weight": null,
+            "boundary_head.bias": null
+          },
+          "diagnostic_loss": 0.020884452387690544,
+          "components": {
+            "depth": 0.013692495413124561,
+            "gradient": 0.018524067476391792,
+            "edge": 0.025966327637434006,
+            "uncertainty": 0.0,
+            "measurement": 0.004452546592801809,
+            "weighted_depth": 0.013692495413124561,
+            "weighted_gradient": 0.003704813541844487,
+            "weighted_edge": 0.0025966328103095293,
+            "weighted_uncertainty": 0.0,
+            "weighted_measurement": 0.0008905093418434262,
+            "correction_mean_m": 0.0,
+            "correction_abs_m": 0.0,
+            "correction_rms_m": 0.0,
+            "correction_max_m": 0.0,
+            "correction_p50_m": 0.0,
+            "correction_p90_m": 0.0,
+            "correction_p99_m": 0.0,
+            "mse_cross_term_m2": 0.0,
+            "mse_correction_term_m2": 0.0,
+            "corrected_pixel_improvement_fraction": 0.0
+          },
+          "seconds": 3.1801806999137625,
+          "cuda_peak_allocated_bytes": null,
+          "cuda_peak_reserved_bytes": null
+        }
+      ],
+      "training_sample_provenance": [
+        {
+          "id": "nyu_00003",
+          "scene": "office_0003",
+          "files": {
+            "rgb": {
+              "path": "rgb/nyu_00003.png",
+              "sha256": "92847dc1869b2df70ce662eff695d0ef934c4bf62adb3ee08538e244414ca035"
+            },
+            "depth": {
+              "path": "depth/nyu_00003.npy",
+              "sha256": "2db75921acd79c2f857537e276cc244bb0bcac9e57b7e8070cec2bd1617701e9"
+            },
+            "mask": {
+              "path": "mask/nyu_00003.npy",
+              "sha256": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+            }
+          }
+        },
+        {
+          "id": "nyu_00005",
+          "scene": "office_0004",
+          "files": {
+            "rgb": {
+              "path": "rgb/nyu_00005.png",
+              "sha256": "ceb76aa8f3ebd805e41a099dc395acffeb925a5dfceef650ebc6cfa0ff3eb9c5"
+            },
+            "depth": {
+              "path": "depth/nyu_00005.npy",
+              "sha256": "f98d4388af78797fa3db32ffed5dc5d2d5f3922d1496fd03885f72b5cab09c96"
+            },
+            "mask": {
+              "path": "mask/nyu_00005.npy",
+              "sha256": "15efbd5f694743a841bc590eedf495de2c83d5383a0daede36fb5609dc551813"
+            }
+          }
+        }
+      ],
+      "fixed_training_probe": {
+        "sample_ids": [
+          "nyu_00003"
+        ],
+        "optimizer_steps": 0,
+        "objective": 0.010020876303315163,
+        "per_term": {
+          "depth": {
+            "depth_output": {
+              "norm": 0.001804242143407464,
+              "cosine_to_reconstruction": 0.9638260006904602
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          },
+          "gradient": {
+            "depth_output": {
+              "norm": 0.0007038734620437026,
+              "cosine_to_reconstruction": 0.6656109094619751
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          },
+          "edge": {
+            "depth_output": {
+              "norm": 0.00020247917564120144,
+              "cosine_to_reconstruction": 0.9236748218536377
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          },
+          "measurement": {
+            "depth_output": {
+              "norm": 0.0003608042898122221,
+              "cosine_to_reconstruction": 0.32425224781036377
+            },
+            "shared_enc1_weight": {
+              "norm": 0.0,
+              "cosine_to_reconstruction": null
+            }
+          }
+        },
+        "uncertainty_training_probe": null
+      },
+      "checkpoint": {
+        "model_optimizer_scheduler_rng_roundtrip": true,
+        "optimizer_moments": "empty: zero optimizer steps"
+      }
+    }
+  },
+  "source_files_sha256": {
+    "trident_depth/__init__.py": "95769bc7d402b5f79eee2f516cf0951325277d3af44c607fedeeee49ebb1b372",
+    "trident_depth/classical/__init__.py": "4a655ef6f8e13fd74016c5d7587e2145b9494bd1efc8d74d24bc70de406e7cbb",
+    "trident_depth/classical/denoising.py": "34dae5f700d355ca721cf99f5db3fe9d550dfcbf4795c5824fba9ed54e791588",
+    "trident_depth/classical/discontinuity.py": "bacc9244cd778cbc53028a1acfa81712497aca7cd8ff93afd1a4b569523d3121",
+    "trident_depth/classical/edge_detection.py": "3d69b31954dc61dd79a99f77438df547e97d21d348e35ff031a60f0e204ddc11",
+    "trident_depth/classical/guided_filter.py": "fcc83c0c2963c3c03b6d65ae25893fb28ebb6eac467f18fa2fc7fe4e2243a854",
+    "trident_depth/classical/hole_filling.py": "5d922b9b00e2e070e79cffbe873b179c7dfd7b691f1d5f1cf71a770c072b03c3",
+    "trident_depth/classical/interpolation.py": "b6e1edcedea0865eb9eddaa7834acab33b564a3f999730d2976d25e31d6626a1",
+    "trident_depth/classical/joint_bilateral.py": "2bba531a9ad65ac93e3148b2f8ae8bfe45909fcb60cb2eed00d664087ca784ba",
+    "trident_depth/classical/pipeline.py": "dd2551165b7152835b352c3a34cb46a1015f7c6204ae109fc116c39e361c6979",
+    "trident_depth/cli.py": "3aa43aeeea15fb70b897007d8fa9dc655e8d40b10ac93d45e30143657ebd9f4e",
+    "trident_depth/config.py": "ff6f5ae6c6b35dae39db1f9482960b25fe713924aa60edff9feb0c9beea4b26e",
+    "trident_depth/data/__init__.py": "52023a76fe98c939d2a19d66a9024a81b2604f9c9bce392d6454ab4bf5dc5027",
+    "trident_depth/data/dataset.py": "10bac4b8c6ffaf31b0c84cce4a8e22c02171de42004d1af4fac2858aaf2b50cc",
+    "trident_depth/data/degradation.py": "bc5856b145d88fc0c1db2aebc55efcf11243c9b00fd942388c88f4ac0d407666",
+    "trident_depth/data/io.py": "984cb002d4b3231b04d0683c121c41bb04b0fdcf00fcfade6ba8ba5569c6a852",
+    "trident_depth/data/nyu.py": "a4788650a2748bb2335b68cca21f068cba382cfe39b1afec154ee5673fdc2806",
+    "trident_depth/data/nyu_integrity.py": "f3e58c2eed361cc61b8007575e2413d63a91c809ab01a271d4107bb95379c7e0",
+    "trident_depth/data/nyu_splits.py": "2a5fdb2c8811df9514ddd6e57294f0b33cc96918913483b8dceb59be07029827",
+    "trident_depth/data/preprocessing.py": "92bccb0f5074f5d50b267f93ec6f9aa972e93f00b3fac2c5307b27d811fa533f",
+    "trident_depth/data/sample.py": "1e61c1e63d4df0382b3fce0792e3a7afffe8fb825916d52b84a579a3eaeb8bbe",
+    "trident_depth/data/splits.py": "577e7d0c89abf41af146729ee13e2ae26d5081144490512867742ef77bf0846d",
+    "trident_depth/evaluation/__init__.py": "cef7eb32ab78f77c341690ca13f843ca4e519a29824bbdec165ca049bcf9b265",
+    "trident_depth/evaluation/benchmark.py": "11dc5c5c0e8acdf4e1d4ac8957278b27e6e8e6f77442306d8d603a06459f5156",
+    "trident_depth/evaluation/custom_diagnostics.py": "645c7f89c30bff6cce108277c59970e2f50185988c6f36b82696c5baeab6907c",
+    "trident_depth/evaluation/custom_pilot.py": "2a957fa1a5f644bef7d3d3136cb5f3902ed634fdd738214ad6d53389210d5d00",
+    "trident_depth/evaluation/failure_analysis.py": "fcd053266bafbdf0300a435efb0041f9db16ba3228759ceadccb92126b12f15c",
+    "trident_depth/evaluation/metrics.py": "4351403b3e6762c5c683843f83b6103fe9ec6e25f8bb2f57c5e19329c510e1bc",
+    "trident_depth/evaluation/nyu_preparation.py": "e609914bb9403c57cbe3f569ea47e27f16884d391e672e6cf443dcec23465fd8",
+    "trident_depth/evaluation/pilot_audit.py": "048c3d2c2b6a88f786faf68939720bb369fca1ec116164b44ca7ee97721d39a4",
+    "trident_depth/inference.py": "97b067e459af151147d4e1f2a4a40670a7c8b45bd258c7f12834ad7ba7d31942",
+    "trident_depth/logging_utils.py": "ac365fd8d0853153d8d4d3a2a203c031712357ed7512549b61c70b0c72b3ece6",
+    "trident_depth/models/__init__.py": "3ddb263ee33ae01c9f673b2eb8db3e60aea239b29875432081c3586156b2515e",
+    "trident_depth/models/baseline.py": "a22a449d8c276dbe1d9c1d3bb28fa797e2404e6f79f3cf7ee81b208185ee863b",
+    "trident_depth/models/checkpoint.py": "f57f9d6496932ea713ad9f80126c17627d4b8b6817c37c99bb261325411c6086",
+    "trident_depth/models/fusion.py": "52635d74ba1725586dc2cbf8bf75ea42e81037f6782883d07b3f33d292b685d3",
+    "trident_depth/models/inputs.py": "e0ca3656fdbb9bc98ae712b9fde2b09df9dcc6928dd95732dec4fd2dcb06618a",
+    "trident_depth/models/residual_cnn.py": "99bad2b086e89675e67346d31e670bba1285261318aaa38b1136dff1ed330cd3",
+    "trident_depth/models/residual_v2.py": "329114a6106542eb9b81d481f2aaf56e1f47a7a33b8384ccabfa8b9fbe9e106e",
+    "trident_depth/training/__init__.py": "6e8137e449d460a9b38eaa83c14cf1032246549047cdacfbd7e80e30067cc548",
+    "trident_depth/training/boundaries.py": "6e546897e317058399a9c373e6dcda2f0bd70cae74821d3586ff6a684778511e",
+    "trident_depth/training/colab.py": "397a47949dc6bbd61896c23a7b57a1a88f4876bd1c68168080ff2df3e78aeb49",
+    "trident_depth/training/corrective.py": "6f6c324c94d7d8ef7041e9dd69564597b567c9988d442d476b1c2abb897eef94",
+    "trident_depth/training/corrective_data.py": "2cb477b5e089ee3682cf2f75ad45b1a44a3679ce1c50a745ba945ff51f24c3f2",
+    "trident_depth/training/corrective_monitoring.py": "a2628e599ef3278ebad5866f29b701c423231d544f562504b60763c98983c141",
+    "trident_depth/training/corrective_preflight.py": "38396b2fdd9509ab4aa00536a8c7d91dba4d2dc54538f2ab035aafc3e1c86f42",
+    "trident_depth/training/corrective_train.py": "44df9df2824b8f8436e875a293785992ca8f76723bccff5299bc093e19fe1408",
+    "trident_depth/training/custom_pilot.py": "72ac37de8240c8b07ff6c450035d1e4e55144e2c9569726a7c9f8f05bb91a18a",
+    "trident_depth/training/dataset.py": "362ca21e4f4d17b293bcfd456664a0f5fba03562ee753791e91ba9f396e43d5e",
+    "trident_depth/training/losses.py": "f539d67e4c347ea1671516e1b304f67342cb6614a474a9416eeceb709bab59d4",
+    "trident_depth/training/portable.py": "9089497585b57288b2bd4333fe9ac537955f92cb52a0a6b5fc6cd55afa327a87",
+    "trident_depth/training/state.py": "e582c1909bef596b92afe6844c45507d4b0c58093ace14cf582b21f5cb3c6728",
+    "trident_depth/training/train.py": "c7594c6b6fa721410b686cfdb4fd901aa1adc92f7c0c8caa452e314a8ed13c34",
+    "trident_depth/training/validation.py": "b3a302544b1f04de1e2d79d11cd2ad1a623e9712cde1dc72f429594a36701b83"
+  }
+}

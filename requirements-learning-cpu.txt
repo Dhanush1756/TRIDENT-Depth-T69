@@ -1,0 +1,4 @@
+# Local Windows/CPU verification. For Colab/Kaggle use that runtime's GPU wheel.
+--extra-index-url https://download.pytorch.org/whl/cpu
+-r requirements-app.txt
+torch==2.14.1+cpu

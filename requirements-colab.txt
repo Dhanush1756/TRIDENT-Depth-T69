@@ -1,0 +1,12 @@
+# Python 3.10-3.13; preserve Colab's CUDA-enabled torch installation.
+# Separate from the Windows CPU requirements; never install learning-cpu in Colab.
+numpy==2.2.6
+Pillow==11.3.0
+scipy==1.15.3
+opencv-python-headless==4.11.0.86
+h5py==3.15.1
+pytest==9.0.2
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+httpx==0.28.1

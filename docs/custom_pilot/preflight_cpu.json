@@ -1,0 +1,72 @@
+{
+  "purpose": "untrained compatibility diagnostic; not benchmark results",
+  "optimizer_steps": 0,
+  "parameters": 473059,
+  "device": "cpu",
+  "torch_version": "2.14.1+cpu",
+  "experiment_sha256": "908114bfc3f35929f943c9cc0e9dd3868171da22e6073d9d525343c6b401e098",
+  "config": {
+    "manifest": "../../data/nyu/converted/manifest_development.json",
+    "pipeline_config": "dense_sr_4x_pipeline.json",
+    "dataset": "Official NYU labelled release; audited development partition",
+    "model": "residual_cnn",
+    "initializer": "bicubic",
+    "output": "../../artifacts/training/pilot_dense4_residual_seed69",
+    "epochs": 2,
+    "batch_size": 1,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "device": "cuda",
+    "seed": 69,
+    "loss_weights": {
+      "depth": 1.0,
+      "gradient": 0.2,
+      "edge": 0.1,
+      "uncertainty": 0.05,
+      "measurement": 0.2
+    },
+    "decoder_upsampling": "nearest"
+  },
+  "pipeline": {
+    "protocol": "dense_sr",
+    "scale": 4,
+    "seed": 69,
+    "min_depth": 0.0,
+    "max_depth": 10,
+    "target_size": null,
+    "density": 0.05,
+    "sampling": "random",
+    "noise_std_m": 0.01,
+    "hole_fraction": 0.1
+  },
+  "split_audit": {
+    "manifest_sha256": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+    "sample_counts": {
+      "test": 654,
+      "train": 672,
+      "validation": 123
+    },
+    "scene_counts": {
+      "test": 215,
+      "train": 219,
+      "validation": 30
+    },
+    "test_used_for_training_or_selection": false
+  },
+  "diagnostic_training_sample": "nyu_00003",
+  "full_frame_shape": [
+    480,
+    640
+  ],
+  "loss_and_active_gradients_finite": true,
+  "parameters_unchanged": true,
+  "checkpoint_roundtrip_passed": true,
+  "uncertainty_head_receives_gradients": true,
+  "boundary_confidence_head_supervised": false,
+  "boundary_evaluation": {
+    "edge_threshold_m": 0.05,
+    "boundary_tolerance_px": 1,
+    "aggregation": "arithmetic mean of per-frame boundary F1"
+  },
+  "cuda_verified": false
+}

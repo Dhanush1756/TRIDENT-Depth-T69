@@ -1,0 +1,6 @@
+# Reproducible Phase 1 CPU environment, verified locally.
+numpy==1.26.4
+Pillow==10.2.0
+pytest==9.0.2
+scipy==1.15.3
+opencv-python-headless==4.11.0.86

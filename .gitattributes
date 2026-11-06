@@ -1,0 +1,5 @@
+# Preserve SHA256 provenance across Windows and Colab checkouts.
+trident_depth/** -text
+configs/** -text
+docs/** -text
+notebooks/** -text

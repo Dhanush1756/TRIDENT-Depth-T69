@@ -1,0 +1,559 @@
+{
+  "split": {
+    "manifest_sha256": "d1cdbcf0ff3ee96f2e0c173c3c4701ed3f5c526ab517ce3b988268c3c6a391f5",
+    "sample_counts": {
+      "test": 654,
+      "train": 672,
+      "validation": 123
+    },
+    "scene_counts": {
+      "test": 215,
+      "train": 219,
+      "validation": 30
+    },
+    "test_used_for_training_or_selection": false
+  },
+  "classical_record_count": 288,
+  "rankings": [
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "per_method": {
+        "nearest": {
+          "rmse_m": 0.04836573532282135,
+          "mae_m": 0.011510492902937888,
+          "ssim": 0.9936510075103919,
+          "boundary_f1": 0.9387141754014345,
+          "edge_preservation": 0.27013873123400944
+        },
+        "bilinear": {
+          "rmse_m": 0.04000494559820091,
+          "mae_m": 0.010773292590553561,
+          "ssim": 0.9954790887137221,
+          "boundary_f1": 0.8506685211640161,
+          "edge_preservation": 0.5878705538398549
+        },
+        "bicubic": {
+          "rmse_m": 0.03502374554026684,
+          "mae_m": 0.009436035461136876,
+          "ssim": 0.9964538728050976,
+          "boundary_f1": 0.8839138381664834,
+          "edge_preservation": 0.5756079474775687
+        },
+        "guided": {
+          "rmse_m": 0.04945415044513307,
+          "mae_m": 0.016303797673220592,
+          "ssim": 0.9935789603079588,
+          "boundary_f1": 0.8227249236441057,
+          "edge_preservation": 0.49058452195936647
+        },
+        "joint_bilateral": {
+          "rmse_m": 0.043572076994622004,
+          "mae_m": 0.013789673238570686,
+          "ssim": 0.994846379259575,
+          "boundary_f1": 0.8307892606128036,
+          "edge_preservation": 0.5202958401065647
+        },
+        "classical": {
+          "rmse_m": 0.043933058236632475,
+          "mae_m": 0.01388244172669753,
+          "ssim": 0.9947984587905776,
+          "boundary_f1": 0.830070297777487,
+          "edge_preservation": 0.5200148570050869
+        }
+      },
+      "best_rmse": "bicubic",
+      "best_boundary_f1": "nearest"
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "per_method": {
+        "nearest": {
+          "rmse_m": 0.08636851474383245,
+          "mae_m": 0.025144159546713733,
+          "ssim": 0.9793425816858001,
+          "boundary_f1": 0.7517680734258718,
+          "edge_preservation": 0.08340381826448624
+        },
+        "bilinear": {
+          "rmse_m": 0.06899573401564851,
+          "mae_m": 0.022455200829960328,
+          "ssim": 0.9869296506410651,
+          "boundary_f1": 0.6568685366503492,
+          "edge_preservation": 0.47543046868387007
+        },
+        "bicubic": {
+          "rmse_m": 0.06213742335102513,
+          "mae_m": 0.01994490236642984,
+          "ssim": 0.9886412346819697,
+          "boundary_f1": 0.7022349681467646,
+          "edge_preservation": 0.47193215533131627
+        },
+        "guided": {
+          "rmse_m": 0.0697241701003638,
+          "mae_m": 0.02544563900412565,
+          "ssim": 0.9879277417937515,
+          "boundary_f1": 0.7327541192897653,
+          "edge_preservation": 0.45767464279979064
+        },
+        "joint_bilateral": {
+          "rmse_m": 0.06699961488055493,
+          "mae_m": 0.02359389157529222,
+          "ssim": 0.9883263672412035,
+          "boundary_f1": 0.7257575769132245,
+          "edge_preservation": 0.4688840396108676
+        },
+        "classical": {
+          "rmse_m": 0.06690188235371858,
+          "mae_m": 0.023577433125004363,
+          "ssim": 0.9884352689605933,
+          "boundary_f1": 0.7261530239309999,
+          "edge_preservation": 0.46909062069170226
+        }
+      },
+      "best_rmse": "bicubic",
+      "best_boundary_f1": "nearest"
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "per_method": {
+        "nearest": {
+          "rmse_m": 0.13556932908688996,
+          "mae_m": 0.04736673505748816,
+          "ssim": 0.9539289802031754,
+          "boundary_f1": 0.48720965324799365,
+          "edge_preservation": 0.028259393923487554
+        },
+        "bilinear": {
+          "rmse_m": 0.11144098703934346,
+          "mae_m": 0.043257706654379335,
+          "ssim": 0.9728847986260345,
+          "boundary_f1": 0.46395587204373523,
+          "edge_preservation": 0.4045143874414816
+        },
+        "bicubic": {
+          "rmse_m": 0.10202907737629602,
+          "mae_m": 0.03900092642567567,
+          "ssim": 0.9742905864800313,
+          "boundary_f1": 0.5074310877968834,
+          "edge_preservation": 0.3992120379288313
+        },
+        "guided": {
+          "rmse_m": 0.109669027056574,
+          "mae_m": 0.0442989152114266,
+          "ssim": 0.9759399765918108,
+          "boundary_f1": 0.5892861964184797,
+          "edge_preservation": 0.40940011483307304
+        },
+        "joint_bilateral": {
+          "rmse_m": 0.10936221666873684,
+          "mae_m": 0.04344970404878647,
+          "ssim": 0.9752125554220574,
+          "boundary_f1": 0.5610284308516553,
+          "edge_preservation": 0.41028300903946313
+        },
+        "classical": {
+          "rmse_m": 0.10917879056152094,
+          "mae_m": 0.043402560629959536,
+          "ssim": 0.9753859965942759,
+          "boundary_f1": 0.5629179908886293,
+          "edge_preservation": 0.4105191930590525
+        }
+      },
+      "best_rmse": "bicubic",
+      "best_boundary_f1": "guided"
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "per_method": {
+        "nearest": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "bilinear": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "bicubic": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "guided": {
+          "rmse_m": 0.2130524319086952,
+          "mae_m": 0.0600720549312003,
+          "ssim": 0.9757307262426698,
+          "boundary_f1": 0.7083008585059203,
+          "edge_preservation": 0.3580830545613315
+        },
+        "joint_bilateral": {
+          "rmse_m": 0.21695632437399476,
+          "mae_m": 0.060726791955651914,
+          "ssim": 0.9733253519667617,
+          "boundary_f1": 0.7088118336225556,
+          "edge_preservation": 0.3229092140900842
+        },
+        "classical": {
+          "rmse_m": 0.21626601906278856,
+          "mae_m": 0.060497173200589414,
+          "ssim": 0.9738365762317098,
+          "boundary_f1": 0.7094832396693644,
+          "edge_preservation": 0.32482813667215654
+        }
+      },
+      "best_rmse": "guided",
+      "best_boundary_f1": "classical"
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "per_method": {
+        "nearest": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "bilinear": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "bicubic": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "guided": {
+          "rmse_m": 0.2130524319086952,
+          "mae_m": 0.0600720549312003,
+          "ssim": 0.9757307262426698,
+          "boundary_f1": 0.7083008585059203,
+          "edge_preservation": 0.3580830545613315
+        },
+        "joint_bilateral": {
+          "rmse_m": 0.21695632437399476,
+          "mae_m": 0.060726791955651914,
+          "ssim": 0.9733253519667617,
+          "boundary_f1": 0.7088118336225556,
+          "edge_preservation": 0.3229092140900842
+        },
+        "classical": {
+          "rmse_m": 0.21626601906278856,
+          "mae_m": 0.060497173200589414,
+          "ssim": 0.9738365762317098,
+          "boundary_f1": 0.7094832396693644,
+          "edge_preservation": 0.32482813667215654
+        }
+      },
+      "best_rmse": "guided",
+      "best_boundary_f1": "classical"
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "per_method": {
+        "nearest": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "bilinear": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "bicubic": {
+          "rmse_m": 3.311596045311448,
+          "mae_m": 3.0123063334115914,
+          "ssim": 0.022027803918466735,
+          "boundary_f1": 0.23432990029379405,
+          "edge_preservation": 0.0026786531268779773
+        },
+        "guided": {
+          "rmse_m": 0.2130524319086952,
+          "mae_m": 0.0600720549312003,
+          "ssim": 0.9757307262426698,
+          "boundary_f1": 0.7083008585059203,
+          "edge_preservation": 0.3580830545613315
+        },
+        "joint_bilateral": {
+          "rmse_m": 0.21695632437399476,
+          "mae_m": 0.060726791955651914,
+          "ssim": 0.9733253519667617,
+          "boundary_f1": 0.7088118336225556,
+          "edge_preservation": 0.3229092140900842
+        },
+        "classical": {
+          "rmse_m": 0.21626601906278856,
+          "mae_m": 0.060497173200589414,
+          "ssim": 0.9738365762317098,
+          "boundary_f1": 0.7094832396693644,
+          "edge_preservation": 0.32482813667215654
+        }
+      },
+      "best_rmse": "guided",
+      "best_boundary_f1": "classical"
+    }
+  ],
+  "model_profiles": [
+    {
+      "model": "lightweight_cnn",
+      "parameters": 11873,
+      "fp32_parameters_bytes": 47492,
+      "decoder_upsampling": null,
+      "fp32_adam_parameters_gradients_moments_bytes": 189968,
+      "diagnostic_shape": [
+        128,
+        160
+      ],
+      "retained_unique_nonparameter_storage_bytes": 5980160,
+      "estimated_retained_storage_full_resolution_bytes": 89702400,
+      "not_gpu_peak_measurement": true,
+      "optimizer_steps": 0
+    },
+    {
+      "model": "residual_cnn",
+      "parameters": 473059,
+      "fp32_parameters_bytes": 1892236,
+      "decoder_upsampling": "nearest",
+      "fp32_adam_parameters_gradients_moments_bytes": 7568944,
+      "diagnostic_shape": [
+        128,
+        160
+      ],
+      "retained_unique_nonparameter_storage_bytes": 30720000,
+      "estimated_retained_storage_full_resolution_bytes": 460800000,
+      "not_gpu_peak_measurement": true,
+      "optimizer_steps": 0
+    }
+  ],
+  "actual_nyu_gradient_probes": [
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "model": "lightweight_cnn",
+      "loss": 0.204043909907341,
+      "terms": {
+        "depth": 0.1557445079088211,
+        "gradient": 0.006715068593621254,
+        "edge": 0.1581106185913086,
+        "uncertainty": 0.0,
+        "measurement": 0.15572664141654968
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 2,
+      "model": "residual_cnn",
+      "loss": 0.033760830760002136,
+      "terms": {
+        "depth": 0.029861191287636757,
+        "gradient": 0.004119661636650562,
+        "edge": 0.030335938557982445,
+        "uncertainty": -0.11859140545129776,
+        "measurement": 0.029858434572815895
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "model": "lightweight_cnn",
+      "loss": 0.009120389819145203,
+      "terms": {
+        "depth": 0.00623761210590601,
+        "gradient": 0.007036447525024414,
+        "edge": 0.006628083996474743,
+        "uncertainty": 0.0,
+        "measurement": 0.0040633962489664555
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 4,
+      "model": "residual_cnn",
+      "loss": 0.07698462903499603,
+      "terms": {
+        "depth": 0.05106941983103752,
+        "gradient": 0.005155364982783794,
+        "edge": 0.051890768110752106,
+        "uncertainty": 0.18962353467941284,
+        "measurement": 0.05106941610574722
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "model": "lightweight_cnn",
+      "loss": 0.06300242245197296,
+      "terms": {
+        "depth": 0.04721018299460411,
+        "gradient": 0.0077475570142269135,
+        "edge": 0.04802669212222099,
+        "uncertainty": 0.0,
+        "measurement": 0.047200292348861694
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "dense_sr",
+      "scale": 8,
+      "model": "residual_cnn",
+      "loss": 0.2154856026172638,
+      "terms": {
+        "depth": 0.1558781862258911,
+        "gradient": 0.005438878200948238,
+        "edge": 0.1583804190158844,
+        "uncertainty": 0.23011943697929382,
+        "measurement": 0.15587815642356873
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "model": "lightweight_cnn",
+      "loss": 0.10473108291625977,
+      "terms": {
+        "depth": 0.08823558688163757,
+        "gradient": 0.015188704244792461,
+        "edge": 0.08997558057308197,
+        "uncertainty": 0.0,
+        "measurement": 0.08920381218194962
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 2,
+      "model": "residual_cnn",
+      "loss": 0.17374956607818604,
+      "terms": {
+        "depth": 0.1502632200717926,
+        "gradient": 0.006121763028204441,
+        "edge": 0.1525622010231018,
+        "uncertainty": -0.011966247111558914,
+        "measurement": 0.15208156406879425
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "model": "lightweight_cnn",
+      "loss": 0.020167624577879906,
+      "terms": {
+        "depth": 0.01373390294611454,
+        "gradient": 0.021509874612092972,
+        "edge": 0.01417077798396349,
+        "uncertainty": 0.0,
+        "measurement": 0.01429337915033102
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 4,
+      "model": "residual_cnn",
+      "loss": 0.12226918339729309,
+      "terms": {
+        "depth": 0.10321247577667236,
+        "gradient": 0.006048038601875305,
+        "edge": 0.10480362176895142,
+        "uncertainty": 0.04233897477388382,
+        "measurement": 0.10499574989080429
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "model": "lightweight_cnn",
+      "loss": 0.20570194721221924,
+      "terms": {
+        "depth": 0.1753222644329071,
+        "gradient": 0.018044685944914818,
+        "edge": 0.17892153561115265,
+        "uncertainty": 0.0,
+        "measurement": 0.1775718331336975
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    },
+    {
+      "protocol": "sparse_completion",
+      "scale": 8,
+      "model": "residual_cnn",
+      "loss": 0.08068244159221649,
+      "terms": {
+        "depth": 0.07225088030099869,
+        "gradient": 0.006475093308836222,
+        "edge": 0.07339764386415482,
+        "uncertainty": -0.0741773247718811,
+        "measurement": 0.07011301815509796
+      },
+      "gradients_finite": true,
+      "optimizer_steps": 0
+    }
+  ],
+  "proposed_experiments": [
+    "configs/phase5/dense_sr_2x_lightweight_cnn.json",
+    "configs/phase5/dense_sr_2x_residual_cnn.json",
+    "configs/phase5/dense_sr_4x_lightweight_cnn.json",
+    "configs/phase5/dense_sr_4x_residual_cnn.json",
+    "configs/phase5/dense_sr_8x_lightweight_cnn.json",
+    "configs/phase5/dense_sr_8x_residual_cnn.json",
+    "configs/phase5/sparse_completion_2x_lightweight_cnn.json",
+    "configs/phase5/sparse_completion_2x_residual_cnn.json",
+    "configs/phase5/sparse_completion_4x_lightweight_cnn.json",
+    "configs/phase5/sparse_completion_4x_residual_cnn.json",
+    "configs/phase5/sparse_completion_8x_lightweight_cnn.json",
+    "configs/phase5/sparse_completion_8x_residual_cnn.json"
+  ],
+  "official_test_used_for_selection": false,
+  "optimizer_steps": 0,
+  "training_started": false,
+  "normalization": {
+    "rgb": "uint8 / 255",
+    "depth": "float32 metres, no per-image normalization",
+    "range_m": [
+      0,
+      10
+    ]
+  },
+  "limitation": "CPU diagnostic crops and analytical scaling do not measure GPU memory or GPU training time"
+}

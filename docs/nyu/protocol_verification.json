@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "nyu_00178",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00053",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00231",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00205",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00109",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_01343",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00455",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00170",
+    "protocol": "dense_sr",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      240,
+      320
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00178",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00053",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00231",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00205",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00109",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_01343",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00455",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00170",
+    "protocol": "dense_sr",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      120,
+      160
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00178",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00053",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00231",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00205",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00109",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_01343",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00455",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00170",
+    "protocol": "dense_sr",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      60,
+      80
+    ],
+    "input_valid_fraction": 1.0,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00178",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04486328125,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00053",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04512044270833333,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00231",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.045113932291666665,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00205",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.044775390625,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00109",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.045670572916666666,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_01343",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04415690104166667,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00455",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.0446484375,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00170",
+    "protocol": "sparse_completion",
+    "scale": 2,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04485026041666667,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00178",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04486328125,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00053",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04512044270833333,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00231",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.045113932291666665,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00205",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.044775390625,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00109",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.045670572916666666,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_01343",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04415690104166667,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00455",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.0446484375,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00170",
+    "protocol": "sparse_completion",
+    "scale": 4,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04485026041666667,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00178",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04486328125,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00053",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04512044270833333,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00231",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.045113932291666665,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00205",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.044775390625,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00109",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.045670572916666666,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_01343",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04415690104166667,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00455",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.0446484375,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  },
+  {
+    "id": "nyu_00170",
+    "protocol": "sparse_completion",
+    "scale": 8,
+    "target_shape": [
+      480,
+      640
+    ],
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "input_shape": [
+      480,
+      640
+    ],
+    "input_valid_fraction": 0.04485026041666667,
+    "target_valid_fraction": 1.0,
+    "input_units": "metres"
+  }
+]

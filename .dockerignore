@@ -1,0 +1,11 @@
+.git
+.venv
+data
+artifacts
+checkpoints
+__pycache__
+.pytest_cache
+.pdf-audit.txt
+.env
+*.pt
+*.pth

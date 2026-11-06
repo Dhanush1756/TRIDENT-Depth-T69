@@ -1,0 +1,12 @@
+{
+  "protocol": "dense_sr",
+  "scale": 8,
+  "seed": 69,
+  "min_depth": 0.0,
+  "max_depth": 10,
+  "target_size": null,
+  "density": 0.05,
+  "sampling": "random",
+  "noise_std_m": 0.01,
+  "hole_fraction": 0.1
+}

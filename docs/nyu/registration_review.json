@@ -1,0 +1,18 @@
+{
+  "review_method": "Codex visual inspection of both generated contact sheets",
+  "panels": ["registration_1.png", "registration_2.png"],
+  "frames_reviewed": 8,
+  "result": "No gross axis reversal, transpose error, frame mismatch or large registration displacement was observed in these eight examples.",
+  "observations": [
+    "Bedroom furniture and chair silhouettes occupy corresponding RGB and depth locations.",
+    "Kitchen refrigerator and cabinet boundaries correspond to depth discontinuities.",
+    "Dining and reception chair outlines, bookstore layout and bathroom sink silhouette correspond across modalities.",
+    "Raw depth contains extensive missing regions around reflective, low-return and image-border areas; these were preserved rather than filled by the converter."
+  ],
+  "limits": [
+    "This verifies representative visual consistency and the source registration was preserved exactly, not a new subpixel calibration.",
+    "Raw sensor noise and occlusion-edge offsets remain. Not all RGB texture edges are depth edges.",
+    "Filled reference depth includes NYU's original inpainting and must not be described as independently measured dense sensor ground truth."
+  ],
+  "source_spatial_operation": "Axis transpose only; no resize, crop, additional reprojection or warp"
+}

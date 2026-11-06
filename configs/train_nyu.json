@@ -1,0 +1,14 @@
+{
+  "manifest": "../data/nyu/converted/manifest_development.json",
+  "pipeline_config": "dense_sr.json",
+  "dataset": "Official NYU Depth V2 labelled release; scene-disjoint development split from official training scenes",
+  "model": "residual_cnn",
+  "initializer": "bicubic",
+  "decoder_upsampling": "nearest",
+  "output": "../artifacts/training/nyu_residual_scale4",
+  "epochs": 20,
+  "batch_size": 1,
+  "learning_rate": 0.0001,
+  "device": "cuda",
+  "seed": 69
+}

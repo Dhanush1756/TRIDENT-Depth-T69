@@ -1,0 +1,10 @@
+{
+  "checked_predictions": 288,
+  "all_prediction_files_present": true,
+  "shape_and_numeric_checks_passed": true,
+  "reference_arrays_match_source": true,
+  "input_masks_consistent": true,
+  "test_samples_in_validation": 0,
+  "independent_rmse_and_mae_recomputation": true,
+  "max_absolute_metric_difference": 0.0
+}

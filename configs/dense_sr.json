@@ -1,0 +1,8 @@
+{
+  "protocol": "dense_sr",
+  "scale": 4,
+  "seed": 69,
+  "min_depth": 0.0,
+  "max_depth": 10.0,
+  "target_size": null
+}
