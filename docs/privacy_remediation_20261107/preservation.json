@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "original_files": [
+    {
+      "role": "eval_P4_T69.md",
+      "sha256": "9cadd2c149caa76e2b8d3332284e3b57ea38c22fd545bb85aec8a6e3795cf911",
+      "unchanged": true
+    },
+    {
+      "role": "epoch_012.pt",
+      "sha256": "09bb8fc5edfff40c7fe27a39d44eb571d02726e0bb22a78c28afcd7f0bd844bd",
+      "unchanged": true
+    },
+    {
+      "role": "benchmark_console.log",
+      "sha256": "f10a6333660faa37ea77d887c44985d11fc0ae5c65f8ff0d82b583318368778e",
+      "unchanged": true
+    },
+    {
+      "role": "per_frame.jsonl",
+      "sha256": "46b0ed6f49ec102ea869b68fcbdd05a9672b5abcaf11ebc3b1cc0422035758ef",
+      "unchanged": true
+    }
+  ],
+  "held_image_originals_preserved": true,
+  "protected_source_config_notebook_files_unchanged": 104,
+  "original_evidence_pairs_unchanged": 9,
+  "Modal_operations_performed": false,
+  "history_rewrite_performed": false,
+  "push_performed": false,
+  "index_empty": true
+}

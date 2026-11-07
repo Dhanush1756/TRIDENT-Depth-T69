@@ -11,20 +11,50 @@ function downloadLink(id, encoded, mime) {
   objectUrls.push(url);
   link.href = url;
 }
+let capabilities = {};
+run.disabled = true;
+function updateMethods() {
+  const protocol = document.querySelector('#protocol').value;
+  const scales = form.elements.scale;
+  scales.disabled = protocol === 'sparse_completion';
+  if (scales.disabled) scales.value = '4';
+  for (const option of document.querySelector('#method').options) {
+    const spec = capabilities[option.value];
+    const allowedScales = spec?.protocol_scales?.[protocol] || spec?.scales || [];
+    option.disabled = !spec || !spec.protocols.includes(protocol) || !allowedScales.includes(Number(scales.value));
+  }
+  const methods = document.querySelector('#method');
+  if (methods.selectedOptions[0]?.disabled) methods.value = 'classical';
+  document.querySelector('#shape-note').textContent = protocol === 'dense_sr'
+    ? 'RGB and reference must match depth dimensions multiplied by scale. Learned dense SR requires clean, fully valid depth.'
+    : 'Completion keeps input resolution. Use a validity mask for missing depth; learned completion uses conditioning scale 4.';
+}
 fetch('/api/health').then(r => {if (!r.ok) throw new Error('Backend unavailable'); return r.json();}).then(health => {
-  document.querySelector('#connection').textContent = '● Backend connected';
+  capabilities = health.capabilities;
+  for (const [value, label] of [['deep', 'Deep learning'], ['hybrid', 'Hybrid refinement']]) {
+    const option = document.querySelector(`#method option[value="${value}"]`);
+    option.textContent = health.methods.includes(value) ? label : `${label} - unavailable`;
+  }
+  document.querySelector('#connection').textContent = 'Backend connected';
   document.querySelector('#model-note').textContent = health.trained_checkpoint_loaded
-    ? 'Trained checkpoint loaded. Classical, deep learning, and hybrid methods are available.'
-    : 'Classical methods are ready. Deep learning and hybrid methods become available when a trained checkpoint is configured.';
-  for (const option of document.querySelector('#method').options) option.disabled = !health.methods.includes(option.value);
-}).catch(() => {document.querySelector('#connection').textContent = 'Backend unavailable';document.querySelector('#model-note').textContent = 'Start the FastAPI server to reconstruct depth maps.';});
-document.querySelector('#protocol').addEventListener('change', event => {
-  document.querySelector('#shape-note').textContent = event.target.value === 'dense_sr'
-    ? 'RGB and reference dimensions must equal depth dimensions × scale.'
-    : 'Completion keeps the input resolution. Scale conditions the learned model; RGB and reference must match the depth dimensions.';
-});
+    ? `Loaded ${health.checkpoint?.model || 'trained model'}. Available methods depend on the selected protocol and scale. Model accuracy is not guaranteed for arbitrary uploads.`
+    : 'Classical methods are ready. Learned methods require a configured, verified checkpoint.';
+  updateMethods(); run.disabled = false;
+}).catch(() => {document.querySelector('#connection').textContent = 'Backend unavailable';document.querySelector('#model-note').textContent = 'Cannot connect. Start the server and reload this page.';});
+document.querySelector('#protocol').addEventListener('change', updateMethods);
+form.elements.scale.addEventListener('change', updateMethods);
 form.addEventListener('submit', async event => {
   event.preventDefault();
+  document.querySelector('#result').hidden = true;
+  document.querySelector('#empty').hidden = false;
+  const spec = capabilities[form.elements.method.value];
+  const rgb = form.elements.rgb.files[0];
+  if (spec?.rgb_required && !rgb) {message.className='error';message.textContent='This model requires registered RGB guidance.';return;}
+  for (const input of form.querySelectorAll('input[type=file]')) {
+    if (input.files[0]?.size > 8*1024*1024) {message.className='error';message.textContent='Each file must be at most 8 MiB.';return;}
+  }
+  form.setAttribute('aria-busy','true');
+  document.querySelector('#result').hidden = true;
   run.disabled = true; message.className = ''; message.textContent = 'Reconstructing depth…';
   const data = new FormData(form);
   for (const name of ['rgb', 'mask', 'ground_truth']) if (!data.get(name)?.size) data.delete(name);
@@ -32,11 +62,14 @@ form.addEventListener('submit', async event => {
   const timeout = setTimeout(() => controller.abort(), 120000);
   try {
     const response = await fetch('/api/reconstruct', {method: 'POST', body: data, signal: controller.signal});
-    const result = await response.json();
+    const result = await response.json().catch(() => {throw new Error(`Server returned ${response.status}. Check upload limits and server logs.`);});
     if (!response.ok) throw new Error(typeof result.detail === 'string' ? result.detail : JSON.stringify(result.detail));
     objectUrls.splice(0).forEach(url => URL.revokeObjectURL(url));
     document.querySelector('#input-image').src = `data:image/png;base64,${result.input_preview}`;
     document.querySelector('#output-image').src = `data:image/png;base64,${result.output_preview}`;
+    const guidance = document.querySelector('#rgb-image');
+    guidance.parentElement.hidden = !result.rgb_preview;
+    if (result.rgb_preview) guidance.src = `data:image/png;base64,${result.rgb_preview}`;
     const info = document.querySelector('#run-info'); info.replaceChildren();
     for (const text of [result.method, `${result.output_shape[1]} × ${result.output_shape[0]} pixels`, `${result.latency_ms.toFixed(1)} ms`, 'Metric depth / m']) {
       const span = document.createElement('span'); span.textContent = text; info.append(span);
@@ -62,5 +95,5 @@ form.addEventListener('submit', async event => {
     document.querySelector('#empty').hidden = true; document.querySelector('#result').hidden = false;
     message.textContent = 'Reconstruction complete. Downloads preserve numeric depth values.';
   } catch (error) {message.className = 'error';message.textContent = error.name === 'AbortError' ? 'The request timed out. Try a smaller image.' : error.message;}
-  finally {clearTimeout(timeout);run.disabled = false;}
+  finally {clearTimeout(timeout);run.disabled = false;form.setAttribute('aria-busy','false');}
 });

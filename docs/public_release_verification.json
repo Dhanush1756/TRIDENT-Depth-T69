@@ -1,0 +1,138 @@
+{
+  "status": "LOCAL_RELEASE_REVIEW_PASS_DEPLOYMENT_PENDING",
+  "checkpoint": {
+    "status": "PASS",
+    "checkpoint_sha256": "09bb8fc5edfff40c7fe27a39d44eb571d02726e0bb22a78c28afcd7f0bd844bd",
+    "epoch": 12,
+    "best_epoch": 12,
+    "parameters": 473059,
+    "complete_model_optimizer_scheduler_scaler_rng": true,
+    "original_training_sources_verified": 66
+  },
+  "browser": {
+    "status": "PASS",
+    "browser": "isolated headless Chrome",
+    "real_epoch12_checkpoint_loaded": true,
+    "checks": [
+      {
+        "method": "nearest",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": false
+      },
+      {
+        "method": "bilinear",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": false
+      },
+      {
+        "method": "bicubic",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": false
+      },
+      {
+        "method": "guided",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": false
+      },
+      {
+        "method": "joint_bilateral",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": false
+      },
+      {
+        "method": "classical",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": false
+      },
+      {
+        "method": "deep",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": true
+      },
+      {
+        "method": "hybrid",
+        "loading": true,
+        "result_rendered": true,
+        "numeric_download": true,
+        "real_checkpoint": true
+      }
+    ],
+    "server_error_rendered": true,
+    "early_validation_hides_stale_result": true,
+    "completion_scale_locked": true,
+    "layouts": [
+      {
+        "viewport": [
+          1440,
+          1000
+        ],
+        "metrics": {
+          "width": 1440,
+          "scrollWidth": 1425,
+          "workspaceColumns": "360px 919px"
+        },
+        "horizontal_overflow": false
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "metrics": {
+          "width": 390,
+          "scrollWidth": 390,
+          "workspaceColumns": "349px"
+        },
+        "horizontal_overflow": false
+      },
+      {
+        "viewport": [
+          360,
+          800
+        ],
+        "metrics": {
+          "width": 360,
+          "scrollWidth": 360,
+          "workspaceColumns": "322px"
+        },
+        "horizontal_overflow": false
+      }
+    ],
+    "client_missing_rgb_prevented_network": true,
+    "keyboard_focus": {
+      "tag": "A",
+      "outline": "2px"
+    },
+    "accessibility": {
+      "named_controls": 9,
+      "unnamed_controls": [],
+      "scope": "AX names and viewport checks; not a complete WCAG audit"
+    },
+    "official_test_accessed": false,
+    "scientific_benchmark": false
+  },
+  "tests": {
+    "passed": 277,
+    "failed": 0,
+    "seconds": 37.66,
+    "warning": "Existing Starlette/httpx deprecation"
+  },
+  "docker": "Static configuration review only; no build or container run performed",
+  "scientific_benchmark": "Running externally; not accessed, interrupted, modified or rerun",
+  "dataset_access": "No dataset samples used in these app checks",
+  "staging_commit_push": "None performed"
+}

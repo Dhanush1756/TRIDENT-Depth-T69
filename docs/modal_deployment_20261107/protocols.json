@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic public API protocol smoke; not NYU evaluation or a scientific benchmark",
+  "url": "https://dhanush1756--trident-depth-t69-web.us-east.modal.run",
+  "seed": 69,
+  "datasets_accessed": false,
+  "checks": [
+    {
+      "task": "dense2",
+      "method": "deep",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 8.596487000005482,
+      "roundtrip_ms": 1388.6082998942584
+    },
+    {
+      "task": "dense2",
+      "method": "hybrid",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 16.07086299999594,
+      "roundtrip_ms": 651.5052999602631
+    },
+    {
+      "task": "dense4",
+      "method": "deep",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 9.185974000004649,
+      "roundtrip_ms": 652.6825999608263
+    },
+    {
+      "task": "dense4",
+      "method": "hybrid",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 15.12331300000369,
+      "roundtrip_ms": 692.4097000155598
+    },
+    {
+      "task": "dense8",
+      "method": "deep",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 9.119734000009316,
+      "roundtrip_ms": 646.9154000515118
+    },
+    {
+      "task": "dense8",
+      "method": "hybrid",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 15.173114999996073,
+      "roundtrip_ms": 652.7195000089705
+    },
+    {
+      "task": "sparse",
+      "method": "deep",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 8.340672000002769,
+      "roundtrip_ms": 645.9977999329567
+    },
+    {
+      "task": "sparse",
+      "method": "hybrid",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 13.553253999987191,
+      "roundtrip_ms": 649.9704999150708
+    },
+    {
+      "task": "noisy",
+      "method": "deep",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 8.683697999998685,
+      "roundtrip_ms": 644.9572000419721
+    },
+    {
+      "task": "noisy",
+      "method": "hybrid",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 15.06313400000181,
+      "roundtrip_ms": 658.8594999630004
+    },
+    {
+      "task": "incomplete",
+      "method": "deep",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 8.147463000000243,
+      "roundtrip_ms": 641.3230000762269
+    },
+    {
+      "task": "incomplete",
+      "method": "hybrid",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 14.454477999990445,
+      "roundtrip_ms": 647.306099999696
+    },
+    {
+      "task": "sparse_noisy_holes",
+      "method": "deep",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 9.112388999994891,
+      "roundtrip_ms": 742.7869000239298
+    },
+    {
+      "task": "sparse_noisy_holes",
+      "method": "hybrid",
+      "target": [
+        32,
+        32
+      ],
+      "status": "PASS",
+      "server_inference_ms": 14.18596599999944,
+      "roundtrip_ms": 651.5324999345466
+    },
+    {
+      "task": "larger_dense4",
+      "method": "hybrid",
+      "target": [
+        240,
+        320
+      ],
+      "status": "PASS",
+      "server_inference_ms": 269.852580999995,
+      "roundtrip_ms": 948.1018000515178
+    }
+  ]
+}

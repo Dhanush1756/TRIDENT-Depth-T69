@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "rows": 28,
+  "rounded_numeric_values": 168,
+  "rule": "within half a unit of last displayed decimal; exact frame counts",
+  "source_sha256": "680f8e5da5e8525239be9feb0ebf4d4d9a7e6cb93ef55e47aefcf36f30c35691"
+}

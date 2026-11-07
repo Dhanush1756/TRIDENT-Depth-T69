@@ -1,0 +1,39 @@
+{
+  "status": "PREPARED_NOT_DEPLOYED",
+  "modal_sdk": "1.6.3",
+  "sdk_configuration_import": "PASS in module and script modes; no cloud execution",
+  "checkpoint_sha256": "09bb8fc5edfff40c7fe27a39d44eb571d02726e0bb22a78c28afcd7f0bd844bd",
+  "real_checkpoint_local_synthetic_http_methods": [
+    "nearest",
+    "bilinear",
+    "bicubic",
+    "guided",
+    "joint_bilateral",
+    "classical",
+    "deep",
+    "hybrid"
+  ],
+  "tests": {
+    "full_suite_passed": 282,
+    "warnings": 1,
+    "new_deployment_safety_tests_passed": 5
+  },
+  "protected_source_config_notebook_files_unchanged": 104,
+  "cloud_image_build": "NOT RUN",
+  "public_url": null,
+  "authentication": "not configured in inspected local terminal",
+  "gpu_allocated": false,
+  "datasets_uploaded": false,
+  "colab_runtime_accessed": false,
+  "git_staged_committed_pushed": false,
+  "resources": {
+    "cpu_physical_cores": 2,
+    "memory_mib": 4096,
+    "max_containers": 1,
+    "min_containers": 0,
+    "scaledown_seconds": 30
+  },
+  "estimated_usd_per_active_hour_at_requested_usage": 0.126288,
+  "cost_source": "https://modal.com/pricing",
+  "cost_checked": "2026-11-07"
+}

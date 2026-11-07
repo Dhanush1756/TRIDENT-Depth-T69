@@ -1,0 +1,187 @@
+{
+  "status": "IN_MEMORY_PROJECTION_ONLY",
+  "actual_history_clean": false,
+  "git_history_rewritten": false,
+  "git_objects_written": 0,
+  "git_refs_changed": false,
+  "commits": 5,
+  "main_commits": 2,
+  "projected_path_findings": 0,
+  "credential_signature_findings": 0,
+  "projected_held_images": 0,
+  "image_object_ids": [
+    "091ebaa8ae4a5d25775cc158b053f9583ec91e2b",
+    "140cb9b31e47bcab07e4116c6077d9213ee41f5e",
+    "7fea03ccbcb7037de1cec2bc1b16c9872283e9ac",
+    "cb55872ffd2d7cb3d6470187963994c064ec4d49"
+  ],
+  "commit_mapping": {
+    "495df10bd1aa275c36305c4760df7729a06c0a48": "495df10bd1aa275c36305c4760df7729a06c0a48",
+    "b29a8870a59f11ed0c402a7466e88ac9d1ede82b": "b29a8870a59f11ed0c402a7466e88ac9d1ede82b",
+    "a2642b907a970a81e0360bc46b255865f7ea116b": "a2642b907a970a81e0360bc46b255865f7ea116b",
+    "1ee87ec21fc023d21adb46b4d617d4a331fc46be": "1ee87ec21fc023d21adb46b4d617d4a331fc46be",
+    "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7": "58bf70da990e0fbc74cc3f29cc268645b022e651"
+  },
+  "tree_ref_mapping": {
+    "2f2a98548ad23331adfc9f85f29bb5d75caee724": "c74465fd352b93026c92ccf5bc7b9bc34e450317"
+  },
+  "documentation_hygiene": [
+    {
+      "path": "README.md",
+      "original_blob": "6cd7e2443ba1be953a779e2599f506a207953770",
+      "reason": "replace a non-sensitive absolute placeholder example with a relative checkpoint example"
+    }
+  ],
+  "signed_commits_kept_byte_identical": [
+    "1ee87ec21fc023d21adb46b4d617d4a331fc46be"
+  ],
+  "protected_file_versions_unchanged": 187,
+  "unique_projected_blobs_scanned": 261,
+  "json_numeric_values_and_other_fields_preserved": true,
+  "exposure_summary": [
+    {
+      "path": "docs/corrective_design/verification.json",
+      "blob": "6f7340b449661e4a08bae1e98b8ed809305b2ada",
+      "original_sha256": "389083ad7a6ae1e979c2e42d6acab147ab864ec72e2602fee8376a138f030b01",
+      "sanitized_sha256": "ca9decae53ba65b8492d4dd81f0b3afb43749436a355f95dbc8f6cd8f090d0ae",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 1
+    },
+    {
+      "path": "docs/corrective_v1/verification.json",
+      "blob": "f67752abc7d00f3b6ec4be289274c52d6aced85d",
+      "original_sha256": "3f0c55f3afce206bac8328c9a72b268be17c96918d47dc31e8c0aa5d8b9862c1",
+      "sanitized_sha256": "2fb85b9db7f9adb75ac00042d268a7400f96f6276c75896c4d324b6cc3fda156",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 1
+    },
+    {
+      "path": "docs/custom_diagnostics/analysis.json",
+      "blob": "579cd18aaad84a815a6084c2e4e35204af579546",
+      "original_sha256": "63947bde679a5135714a206c3241bbef4c6d8349d2e0fc1fe533bcdf89589e82",
+      "sanitized_sha256": "4f58eb77470dfebf4edaf2d2c8b417827c0612d8db92df51eeca33a7c3f09a6e",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 2
+    },
+    {
+      "path": "docs/custom_diagnostics/report.md",
+      "blob": "746c46c3ac855eb5830e4b4ba1c2f448990d176e",
+      "original_sha256": "49aa00cdbb2790a122edfe3b8d2d68693a9fb802e2fc77c074537284750dea6a",
+      "sanitized_sha256": "b3f49928894a57a20b9d94b83c712b4145a89c3b542f4a76e4ec294a867f7763",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 1
+    },
+    {
+      "path": "docs/nyu/baseline_results_dense_sr.json",
+      "blob": "227a9072a692890da775b733784322dd9c3927ef",
+      "original_sha256": "fbb96410607d37bdb11c93e0802f13d288915c7e1c0eb82ef14c716f075c11f1",
+      "sanitized_sha256": "abd60d08db11e05d03d0cf37b51db8fa31d302bcec7aa4d1f7bb77e8854bf678",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 1
+    },
+    {
+      "path": "docs/nyu/baseline_results_sparse_completion.json",
+      "blob": "2ed86acddaa3881e16ce9feebabc50d224d62be4",
+      "original_sha256": "61d2384ba4c66f6d81b0e4932b7ecb6140589c49cad1fb6afc1330ad70260f2f",
+      "sanitized_sha256": "b82be2f3cf2cbacc1a6b371e8498c4f92a9e8cdfd8113a9e97e3ea415056da4e",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 1
+    },
+    {
+      "path": "docs/nyu/source_inspection.json",
+      "blob": "9ca2757707a392474fcb053713156b26f06768f0",
+      "original_sha256": "04518f5efb6bd23152848d42750857eb0510c1699fc79b82fc73c949f1791741",
+      "sanitized_sha256": "7815d0c4ffcbfa1bc8caacc9bdb65a80d3372a7d63b7ded4640ba004f092c25e",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 1
+    },
+    {
+      "path": "docs/pilot_dense4/report.md",
+      "blob": "43f233bcff3cf8200d10ef816e803763dc5bb271",
+      "original_sha256": "08db324f0696640e88e523e449d4558128d09afc3c88b98ea78dc59c1decaf22",
+      "sanitized_sha256": "9aac7a5f17776395aae268e4737eec2aac0b1c3d9b9d7dc81faa577de689ba44",
+      "commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [
+        "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7"
+      ],
+      "locations_count": 1
+    },
+    {
+      "path": "docs/hybrid_v1_dense4/implementation.md",
+      "blob": "be2e26913f2bfd67e5a7774eb845745e0bc10d07",
+      "original_sha256": "52d85920b467919c74b57f9e539c66113ee0d43420d860c3e99fbbe1ab644c86",
+      "sanitized_sha256": "a08be54f9634c2e6b95737c0123b0b3458c63c13e36811c6c673d3202c455e7b",
+      "commits": [],
+      "tree_roots": [
+        "2f2a98548ad23331adfc9f85f29bb5d75caee724"
+      ],
+      "main_commits": [],
+      "locations_count": 2
+    }
+  ],
+  "main_projection": {
+    "original": "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7",
+    "projected": "58bf70da990e0fbc74cc3f29cc268645b022e651"
+  }
+}

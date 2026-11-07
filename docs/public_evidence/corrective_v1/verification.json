@@ -1,0 +1,45 @@
+{
+  "status": "A1/B0 implementation and CPU preflight complete; training not approved",
+  "tests": {
+    "passed": 171,
+    "existing_preserved": 144,
+    "added": 27,
+    "warning": "existing Starlette/httpx deprecation",
+    "seconds": 19.74,
+    "log_sha256": "f88f84f448d2c9700902ca2d3af14ea08bc7952ab1cca0db35ea666ec055b875"
+  },
+  "preserved_inventory": {
+    "checked": 136,
+    "unchanged": 134,
+    "allowed_additive_edits": {
+      "trident_depth/inference.py": {
+        "before": "01b44ff67b1ae8538e7ecbf7c718414d2a12a6817c0ab05a1d38b18c24e1063a",
+        "after": "97b067e459af151147d4e1f2a4a40670a7c8b45bd258c7f12834ad7ba7d31942"
+      },
+      "trident_depth/models/checkpoint.py": {
+        "before": "4341de7552909f3df28a657100064915126930d54e509e77131ba1c39163f719",
+        "after": "f57f9d6496932ea713ad9f80126c17627d4b8b6817c37c99bb261325411c6086"
+      }
+    }
+  },
+  "historical_archives_verified": {
+    "artifacts\\colab\\trident_custom_pilot_source.zip": "3e00df63a280c8c61d7b600e3ab3f285fd62d46d295b1204f77157a374c57a2f",
+    "${USER_HOME}\\Downloads\\pilot_dense4_residual_seed69-20261106T121048Z-1-001.zip": "cd8ff60166acb80b187043c7f368809829fd04697829c11a7e9cf91e61e3ebbd"
+  },
+  "historical_benchmark_jsons": {
+    "artifacts/nyu/validation_baselines/dense_sr/results.json": "fbb96410607d37bdb11c93e0802f13d288915c7e1c0eb82ef14c716f075c11f1",
+    "artifacts/nyu/validation_baselines/sparse_completion/results.json": "61d2384ba4c66f6d81b0e4932b7ecb6140589c49cad1fb6afc1330ad70260f2f"
+  },
+  "historical_benchmark_records_unchanged": 288,
+  "cpu_preflight_sha256": "28004435a046f62ca6f22954aca2f493fa260a4c9d3e5eeee82e4b36427bd16e",
+  "source_hashes_match_preflight": true,
+  "optimizer_steps": 0,
+  "trained_checkpoint_writes": 0,
+  "gpu_preflight_prepared_but_not_executed": true,
+  "official_test_evaluated": false,
+  "training_flags": {
+    "TRAIN_A1_APPROVED": false,
+    "TRAIN_B0_APPROVED": false,
+    "EXPORT_APPROVED": false
+  }
+}

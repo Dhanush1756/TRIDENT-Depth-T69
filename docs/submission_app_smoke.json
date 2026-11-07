@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "type": "synthetic_local_HTTP_smoke_not_scientific_benchmark",
+  "checks": [
+    {
+      "method": "nearest",
+      "protocol": "dense_sr",
+      "status": "PASS"
+    },
+    {
+      "method": "bilinear",
+      "protocol": "dense_sr",
+      "status": "PASS"
+    },
+    {
+      "method": "bicubic",
+      "protocol": "dense_sr",
+      "status": "PASS"
+    },
+    {
+      "method": "guided",
+      "protocol": "dense_sr",
+      "status": "PASS"
+    },
+    {
+      "method": "joint_bilateral",
+      "protocol": "dense_sr",
+      "status": "PASS"
+    },
+    {
+      "method": "classical",
+      "protocol": "dense_sr",
+      "status": "PASS"
+    },
+    {
+      "method": "nearest",
+      "protocol": "sparse_completion",
+      "status": "PASS"
+    },
+    {
+      "method": "bilinear",
+      "protocol": "sparse_completion",
+      "status": "PASS"
+    },
+    {
+      "method": "bicubic",
+      "protocol": "sparse_completion",
+      "status": "PASS"
+    },
+    {
+      "method": "guided",
+      "protocol": "sparse_completion",
+      "status": "PASS"
+    },
+    {
+      "method": "joint_bilateral",
+      "protocol": "sparse_completion",
+      "status": "PASS"
+    },
+    {
+      "method": "classical",
+      "protocol": "sparse_completion",
+      "status": "PASS"
+    }
+  ],
+  "static_routes": 4,
+  "real_extended_checkpoint_tested": false,
+  "public_deployment_verified": false
+}

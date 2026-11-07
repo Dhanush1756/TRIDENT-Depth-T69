@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "url": "https://dhanush1756--trident-depth-t69-web.us-east.modal.run",
+  "checks": {
+    "/static/epoch_012.pt": 404,
+    "/models/extended_v1/epoch_012.pt": 404,
+    "/docs": 200
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "scope": "path-redacted publication copies, not original hash-verification artifacts",
+  "rule": "only machine home prefixes replaced by ${USER_HOME}; JSON numeric/boolean/null values and content hashes retained",
+  "copies": [
+    {
+      "original": "docs/corrective_design/verification.json",
+      "public_copy": "docs/public_evidence/corrective_design/verification.json",
+      "original_sha256": "389083ad7a6ae1e979c2e42d6acab147ab864ec72e2602fee8376a138f030b01",
+      "public_copy_sha256": "ca9decae53ba65b8492d4dd81f0b3afb43749436a355f95dbc8f6cd8f090d0ae"
+    },
+    {
+      "original": "docs/corrective_v1/verification.json",
+      "public_copy": "docs/public_evidence/corrective_v1/verification.json",
+      "original_sha256": "3f0c55f3afce206bac8328c9a72b268be17c96918d47dc31e8c0aa5d8b9862c1",
+      "public_copy_sha256": "2fb85b9db7f9adb75ac00042d268a7400f96f6276c75896c4d324b6cc3fda156"
+    },
+    {
+      "original": "docs/custom_diagnostics/analysis.json",
+      "public_copy": "docs/public_evidence/custom_diagnostics/analysis.json",
+      "original_sha256": "63947bde679a5135714a206c3241bbef4c6d8349d2e0fc1fe533bcdf89589e82",
+      "public_copy_sha256": "4f58eb77470dfebf4edaf2d2c8b417827c0612d8db92df51eeca33a7c3f09a6e"
+    },
+    {
+      "original": "docs/custom_diagnostics/report.md",
+      "public_copy": "docs/public_evidence/custom_diagnostics/report.md",
+      "original_sha256": "49aa00cdbb2790a122edfe3b8d2d68693a9fb802e2fc77c074537284750dea6a",
+      "public_copy_sha256": "b3f49928894a57a20b9d94b83c712b4145a89c3b542f4a76e4ec294a867f7763"
+    },
+    {
+      "original": "docs/hybrid_v1_dense4/implementation.md",
+      "public_copy": "docs/public_evidence/hybrid_v1_dense4/implementation.md",
+      "original_sha256": "52d85920b467919c74b57f9e539c66113ee0d43420d860c3e99fbbe1ab644c86",
+      "public_copy_sha256": "a08be54f9634c2e6b95737c0123b0b3458c63c13e36811c6c673d3202c455e7b"
+    },
+    {
+      "original": "docs/nyu/baseline_results_dense_sr.json",
+      "public_copy": "docs/public_evidence/nyu/baseline_results_dense_sr.json",
+      "original_sha256": "fbb96410607d37bdb11c93e0802f13d288915c7e1c0eb82ef14c716f075c11f1",
+      "public_copy_sha256": "abd60d08db11e05d03d0cf37b51db8fa31d302bcec7aa4d1f7bb77e8854bf678"
+    },
+    {
+      "original": "docs/nyu/baseline_results_sparse_completion.json",
+      "public_copy": "docs/public_evidence/nyu/baseline_results_sparse_completion.json",
+      "original_sha256": "61d2384ba4c66f6d81b0e4932b7ecb6140589c49cad1fb6afc1330ad70260f2f",
+      "public_copy_sha256": "b82be2f3cf2cbacc1a6b371e8498c4f92a9e8cdfd8113a9e97e3ea415056da4e"
+    },
+    {
+      "original": "docs/nyu/source_inspection.json",
+      "public_copy": "docs/public_evidence/nyu/source_inspection.json",
+      "original_sha256": "04518f5efb6bd23152848d42750857eb0510c1699fc79b82fc73c949f1791741",
+      "public_copy_sha256": "7815d0c4ffcbfa1bc8caacc9bdb65a80d3372a7d63b7ded4640ba004f092c25e"
+    },
+    {
+      "original": "docs/pilot_dense4/report.md",
+      "public_copy": "docs/public_evidence/pilot_dense4/report.md",
+      "original_sha256": "08db324f0696640e88e523e449d4558128d09afc3c88b98ea78dc59c1decaf22",
+      "public_copy_sha256": "9aac7a5f17776395aae268e4737eec2aac0b1c3d9b9d7dc81faa577de689ba44"
+    }
+  ]
+}

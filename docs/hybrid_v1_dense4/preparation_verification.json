@@ -1,0 +1,58 @@
+{
+  "status": "IMPLEMENTED_AND_TESTED_BENCHMARK_NOT_RUN",
+  "date_local": "2026-11-07",
+  "timezone": "Asia/Calcutta",
+  "tests": {
+    "focused_passed": 39,
+    "full_suite_passed": 210,
+    "original_tests_retained": 171,
+    "full_suite_seconds": 32.24,
+    "warning": "Existing Starlette/httpx deprecation",
+    "actual_b0_archive_test_executed": true,
+    "actual_checkpoint_test_scope": "Strict load and prediction parity on synthetic inputs; no NYU frames",
+    "full_command": "python -B -m pytest -q -p no:cacheprovider",
+    "focused_command": "python -B -m pytest tests/test_hybrid_v1_dense4.py -q -p no:cacheprovider"
+  },
+  "preservation": {
+    "existing_files_checked": 179,
+    "unchanged": 179,
+    "modified": [],
+    "scope": "All tracked files plus supplied A1/B0 ZIPs and their downloaded verification JSONs"
+  },
+  "files_created": [
+    "trident_depth/hybrid_v1_dense4.py",
+    "trident_depth/evaluation/hybrid_v1_data.py",
+    "trident_depth/evaluation/hybrid_v1_dense4.py",
+    "configs/hybrid_v1_dense4.json",
+    "tests/test_hybrid_v1_dense4.py",
+    "docs/hybrid_v1_dense4/implementation.md",
+    "docs/hybrid_v1_dense4/preparation_verification.json"
+  ],
+  "files_modified": [],
+  "new_file_sha256": {
+    "trident_depth/hybrid_v1_dense4.py": "9dd5519fa57e5299b51825c966e88212535459af385cdabd690f381d58085fb9",
+    "trident_depth/evaluation/hybrid_v1_data.py": "7b987507f27e7683ffac005eeb1b688adac9635f2590c2c0193587c538e2be61",
+    "trident_depth/evaluation/hybrid_v1_dense4.py": "568de1de1436cf126bee5577a5f5f9b46e7eb5192a49e2d25beca18c2a2e02f6",
+    "configs/hybrid_v1_dense4.json": "a2b943d2055af24504a40c1dbcee320f68977908351b6ce297fb84e58aeb4f7c",
+    "tests/test_hybrid_v1_dense4.py": "800894301038442b0c0efd7df8d2f3d1a93e0a6f4fc448579ca57f51fba2fda3",
+    "docs/hybrid_v1_dense4/implementation.md": "52d85920b467919c74b57f9e539c66113ee0d43420d860c3e99fbbe1ab644c86"
+  },
+  "checkpoint_sha256": "a6416c47a16ec78e97c8b734ae7fb23cba4dbbeb5f5564a3e02d61a4a159c1b2",
+  "runtime": {
+    "python": "3.10.8",
+    "torch": "2.14.1+cpu",
+    "device": "cpu",
+    "cuda_available": false
+  },
+  "real_validation_benchmark_run": false,
+  "real_validation_frames_evaluated": 0,
+  "official_test_sample_files_accessed": 0,
+  "training_runs_started": 0,
+  "optimizer_steps": 0,
+  "existing_checkpoints_modified": 0,
+  "existing_manifests_modified": 0,
+  "legacy_inference_modified": false,
+  "gpu_execution_verified": false,
+  "improvement_claimed": false,
+  "benchmark_requires_separate_approval": true
+}

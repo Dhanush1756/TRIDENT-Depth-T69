@@ -1,0 +1,103 @@
+{
+  "version": "trident_extended_v1",
+  "seed": 69,
+  "epochs": 12,
+  "batch_size": 1,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "precision": "fp32",
+  "gradient_clip_norm": 5.0,
+  "optimizer": "Adam",
+  "scheduler": "constant",
+  "initializer": "bicubic_then_nearest_hole_fill",
+  "initial_weights": "verified_B0_epoch002",
+  "training_schedule": "one_task_per_training_frame_rotated_each_epoch",
+  "selection": "equal_task_mean_validation_rmse_m",
+  "loss_weights": {
+    "depth": 1.0,
+    "gradient": 0.2,
+    "edge": 0.1,
+    "measurement": 0.2,
+    "boundary": 0.01,
+    "false_edge": 0.02
+  },
+  "tasks": [
+    {
+      "name": "dense2",
+      "pipeline": {
+        "protocol": "dense_sr",
+        "scale": 2,
+        "density": 1.0,
+        "sampling": "random",
+        "noise_std_m": 0.0,
+        "hole_fraction": 0.0
+      }
+    },
+    {
+      "name": "dense4",
+      "pipeline": {
+        "protocol": "dense_sr",
+        "scale": 4,
+        "density": 1.0,
+        "sampling": "random",
+        "noise_std_m": 0.0,
+        "hole_fraction": 0.0
+      }
+    },
+    {
+      "name": "dense8",
+      "pipeline": {
+        "protocol": "dense_sr",
+        "scale": 8,
+        "density": 1.0,
+        "sampling": "random",
+        "noise_std_m": 0.0,
+        "hole_fraction": 0.0
+      }
+    },
+    {
+      "name": "sparse",
+      "pipeline": {
+        "protocol": "sparse_completion",
+        "scale": 4,
+        "density": 0.05,
+        "sampling": "random",
+        "noise_std_m": 0.0,
+        "hole_fraction": 0.0
+      }
+    },
+    {
+      "name": "noisy",
+      "pipeline": {
+        "protocol": "sparse_completion",
+        "scale": 4,
+        "density": 1.0,
+        "sampling": "random",
+        "noise_std_m": 0.01,
+        "hole_fraction": 0.0
+      }
+    },
+    {
+      "name": "incomplete",
+      "pipeline": {
+        "protocol": "sparse_completion",
+        "scale": 4,
+        "density": 1.0,
+        "sampling": "random",
+        "noise_std_m": 0.0,
+        "hole_fraction": 0.25
+      }
+    },
+    {
+      "name": "sparse_noisy_holes",
+      "pipeline": {
+        "protocol": "sparse_completion",
+        "scale": 4,
+        "density": 0.05,
+        "sampling": "random",
+        "noise_std_m": 0.01,
+        "hole_fraction": 0.25
+      }
+    }
+  ]
+}

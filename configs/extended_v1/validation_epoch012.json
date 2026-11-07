@@ -1,0 +1,17 @@
+{
+  "version": "extended_v1_epoch012_validation_v1",
+  "frames_per_task": 123,
+  "tasks": ["dense2", "dense4", "dense8", "sparse", "noisy", "incomplete", "sparse_noisy_holes"],
+  "seed": 69,
+  "warmup": 1,
+  "repeats": 3,
+  "data_range_m": 10.0,
+  "edge_threshold_m": 0.05,
+  "boundary_tolerance_px": 1,
+  "rmse_mae_replay_tolerance_m": 0.000001,
+  "ssim_boundary_replay_tolerance": 0.00001,
+  "distance_bins_px": [0, 1, 4, 16, 64, 128, 1000000],
+  "panels_representative_scenes": 5,
+  "panels_worst_frames_per_task": 3,
+  "save_predictions": true
+}

@@ -1,0 +1,78 @@
+name: Deploy existing TRIDENT Modal application
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: trident-modal-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # Owner enables this only AFTER publication and first-deployment approval.
+    if: github.ref == 'refs/heads/main' && vars.MODAL_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    environment:
+      name: production
+      url: https://dhanush1756--trident-depth-t69-web.us-east.modal.run
+    steps:
+      - name: Check out approved source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Set up deployment Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.11'
+      - name: Install pinned deployment and HTTP smoke dependencies
+        run: python -m pip install -r requirements-modal.txt -r requirements-app.txt
+      - name: Require authentication secrets
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: |
+          test -n "$MODAL_TOKEN_ID" || { echo "Missing MODAL_TOKEN_ID repository secret"; exit 1; }
+          test -n "$MODAL_TOKEN_SECRET" || { echo "Missing MODAL_TOKEN_SECRET repository secret"; exit 1; }
+      - name: Verify existing app and private checkpoint without modifying either
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: python -m scripts.modal_preflight
+      - name: Deploy current source to existing application
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+        run: python -m modal deploy scripts/modal_deploy.py
+      - name: Verify public exact-checkpoint inference and numeric downloads
+        run: >-
+          python scripts/check_deployment.py
+          https://dhanush1756--trident-depth-t69-web.us-east.modal.run
+          --require-learned --output deployment-verification/http.json
+      - name: Record deployment identity
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          WORKFLOW_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = dict(commit_sha=os.environ['SOURCE_SHA'], workflow_run=os.environ['WORKFLOW_RUN_URL'],
+                        modal_app='trident-depth-t69', url='https://dhanush1756--trident-depth-t69-web.us-east.modal.run',
+                        checkpoint_sha256='09bb8fc5edfff40c7fe27a39d44eb571d02726e0bb22a78c28afcd7f0bd844bd',
+                        synthetic_only=True, scientific_benchmark=False)
+          Path('deployment-verification/identity.json').write_text(json.dumps(report, indent=2))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write('Public synthetic inference checks passed. Scientific evaluation remains 854/861.\n')
+          PY
+      - name: Preserve verification reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: modal-verification-${{ github.run_id }}
+          path: deployment-verification/*.json
+          if-no-files-found: warn
+          retention-days: 14

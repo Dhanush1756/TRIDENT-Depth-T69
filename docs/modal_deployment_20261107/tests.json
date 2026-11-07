@@ -1,0 +1,9 @@
+{
+  "full_suite_passed": 282,
+  "warnings": 1,
+  "warning": "Existing Starlette TestClient/httpx deprecation",
+  "elapsed_seconds": 38.1,
+  "command": "python -B -m pytest -q -p no:cacheprovider",
+  "optional_B0_archive_audit_enabled": true,
+  "official_test_frames_loaded": false
+}

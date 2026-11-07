@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "files": 44229,
+  "bytes": 16022602146,
+  "git_fsck": "PASS",
+  "bundle_verify": "PASS",
+  "bundle_sha256": "0cece32abf53f4c3e0ab355b7a1566855374055af6b4b432e0ef0971c06f9ae1",
+  "manifest_sha256": "55eb79bed74fdd37261566da7e05e686b4f2a4e4a39f45eb188557a2d3015715",
+  "absolute_backup_location": "owner-only record; deliberately omitted from public docs"
+}

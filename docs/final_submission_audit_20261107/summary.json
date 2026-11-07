@@ -1,0 +1,67 @@
+{
+  "status": "ENGINEERING_VERIFIED_PUBLICATION_BLOCKED",
+  "existing_remote_main_sha": "633b55b95c636f6b39ec413cd847b3c3dbd7c8a7",
+  "new_published_commit_sha": null,
+  "github_actions_run": null,
+  "automatic_deployment_verified": false,
+  "workflow": ".github/workflows/modal-deploy.yml",
+  "workflow_validation": {
+    "parser": "PyYAML 6.0.3 BaseLoader",
+    "yaml_parse": "PASS",
+    "triggers_permissions_opt_in_environment_pinned_actions": "PASS",
+    "real_actions_execution": "NOT RUN"
+  },
+  "modal_existing_resources_preflight": {
+    "status": "PASS",
+    "app": "trident-depth-t69",
+    "url": "https://dhanush1756--trident-depth-t69-web.us-east.modal.run",
+    "checkpoint_sha256": "09bb8fc5edfff40c7fe27a39d44eb571d02726e0bb22a78c28afcd7f0bd844bd",
+    "bytes": 5751777,
+    "created_resources": false,
+    "checkpoint_written_to_disk": false
+  },
+  "tests": {
+    "passed": 289,
+    "warnings": 1,
+    "elapsed_seconds": 26.84,
+    "dependency_consistency": "PASS",
+    "javascript_syntax": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "scientific_status": {
+    "saved_task_frame_records": 854,
+    "planned": 861,
+    "sparse_noisy_holes_frames": 116,
+    "complete_task_frames": 123,
+    "missing_records_not_generated": true,
+    "training_performed": false,
+    "test_samples_accessed": false
+  },
+  "docker": {
+    "cli_installed": true,
+    "engine_available": false,
+    "build_attempted": false
+  },
+  "preservation": {
+    "scientific_source_config_notebook_hashes_unchanged": 104,
+    "original_sanitized_evidence_pairs_verified": 9,
+    "original_checkpoint_preserved": true,
+    "production_redeployed": false
+  },
+  "publication": {
+    "staged_files": [],
+    "committed": false,
+    "pushed": false,
+    "credential_signature_findings": 0,
+    "historical_path_blobs": 9,
+    "current_main_path_files": 8,
+    "image_rights_pending": 4,
+    "history_rewritten": false
+  },
+  "proposed_commit_message": "Finalize TRIDENT-Depth T69 submission and deployment",
+  "review_export_checks": "PASS; zero broken relative Markdown links and private-file/hash scans pass",
+  "public_repository_metadata": {
+    "public": true,
+    "default_branch": "main"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PARTIAL_854_OF_861",
+  "originals": {
+    "benchmark_console.log": {
+      "bytes": 24497,
+      "sha256": "f10a6333660faa37ea77d887c44985d11fc0ae5c65f8ff0d82b583318368778e"
+    },
+    "per_frame.jsonl": {
+      "bytes": 15096517,
+      "sha256": "46b0ed6f49ec102ea869b68fcbdd05a9672b5abcaf11ebc3b1cc0422035758ef"
+    },
+    "TRIDENT_partial_benchmark_recovery.md": {
+      "bytes": 4571,
+      "sha256": "680f8e5da5e8525239be9feb0ebf4d4d9a7e6cb93ef55e47aefcf36f30c35691"
+    },
+    "TRIDENT_partial_benchmark_aggregates.csv": {
+      "bytes": 5233,
+      "sha256": "9de355cb6874419541447be8c8868011a3f2dfce34f028bfd7285efede55cae6"
+    }
+  },
+  "original_evaluator_sha256": "c019f9b6ff3d5c05756589452d0f40fca2097895d86d925d98bd042ef2d98dc6",
+  "patch_applied": false,
+  "missing_ids": [
+    "nyu_01300",
+    "nyu_01301",
+    "nyu_01341",
+    "nyu_01342",
+    "nyu_01343",
+    "nyu_01344",
+    "nyu_01345"
+  ],
+  "additional_inference_performed": false,
+  "recovery_blockers": [
+    "Original failed-run provenance.json, source bundle identity and access ledger are not supplied with log/JSONL",
+    "No verified original Tesla T4 execution environment is connected; CPU or deployed app substitution would change the frozen protocol",
+    "Prediction archives and failure-case panels from the failed run were not supplied; JSONL metrics do not establish successful prediction saving"
+  ],
+  "official_test_samples_accessed": false
+}

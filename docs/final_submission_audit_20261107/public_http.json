@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "health": {
+    "status": "ok",
+    "trained_checkpoint_loaded": true,
+    "methods": [
+      "nearest",
+      "bilinear",
+      "bicubic",
+      "guided",
+      "joint_bilateral",
+      "classical",
+      "deep",
+      "hybrid"
+    ],
+    "capabilities": {
+      "nearest": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": false
+      },
+      "bilinear": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": false
+      },
+      "bicubic": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": false
+      },
+      "guided": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": false
+      },
+      "joint_bilateral": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": false
+      },
+      "classical": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": false
+      },
+      "deep": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": true,
+        "max_depth_m": 10,
+        "protocol_scales": {
+          "dense_sr": [
+            2,
+            4,
+            8
+          ],
+          "sparse_completion": [
+            4
+          ]
+        }
+      },
+      "hybrid": {
+        "protocols": [
+          "dense_sr",
+          "sparse_completion"
+        ],
+        "scales": [
+          2,
+          4,
+          8
+        ],
+        "rgb_required": true,
+        "max_depth_m": 10,
+        "protocol_scales": {
+          "dense_sr": [
+            2,
+            4,
+            8
+          ],
+          "sparse_completion": [
+            4
+          ]
+        }
+      }
+    },
+    "max_upload_bytes": 8388608,
+    "max_target_pixels": 1048576,
+    "checkpoint": {
+      "model": "trident_extended_v1",
+      "epoch": 12,
+      "checkpoint_sha256": "09bb8fc5edfff40c7fe27a39d44eb571d02726e0bb22a78c28afcd7f0bd844bd",
+      "precision": "FP32"
+    }
+  },
+  "synthetic_only": true,
+  "datasets_accessed": false,
+  "checks": [
+    {
+      "method": "nearest",
+      "status": "PASS",
+      "latency_ms": 0.6601600000024632,
+      "numeric_download": "finite 32x32 metres NPZ"
+    },
+    {
+      "method": "bilinear",
+      "status": "PASS",
+      "latency_ms": 0.527089999998509,
+      "numeric_download": "finite 32x32 metres NPZ"
+    },
+    {
+      "method": "bicubic",
+      "status": "PASS",
+      "latency_ms": 0.47607999999854655,
+      "numeric_download": "finite 32x32 metres NPZ"
+    },
+    {
+      "method": "guided",
+      "status": "PASS",
+      "latency_ms": 14.487029000001428,
+      "numeric_download": "finite 32x32 metres NPZ"
+    },
+    {
+      "method": "joint_bilateral",
+      "status": "PASS",
+      "latency_ms": 3.35833999999835,
+      "numeric_download": "finite 32x32 metres NPZ"
+    },
+    {
+      "method": "classical",
+      "status": "PASS",
+      "latency_ms": 4.04729000000259,
+      "numeric_download": "finite 32x32 metres NPZ"
+    },
+    {
+      "method": "deep",
+      "status": "PASS",
+      "latency_ms": 29.75089899999972,
+      "numeric_download": "finite 32x32 metres NPZ"
+    },
+    {
+      "method": "hybrid",
+      "status": "PASS",
+      "latency_ms": 13.076830000002815,
+      "numeric_download": "finite 32x32 metres NPZ"
+    }
+  ],
+  "invalid_inputs": "PASS",
+  "frontend_assets": "PASS",
+  "browser_interaction": "separate browser check required on public URL",
+  "url": "https://dhanush1756--trident-depth-t69-web.us-east.modal.run"
+}

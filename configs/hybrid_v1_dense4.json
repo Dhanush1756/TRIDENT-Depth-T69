@@ -1,0 +1,21 @@
+{
+  "version": "hybrid_v1_dense4",
+  "protocol": "dense_sr",
+  "scale": 4,
+  "classical_method": "joint_bilateral",
+  "min_depth_m": 0.000001,
+  "max_depth_m": 10.0,
+  "prior_neural": 0.6,
+  "prior_classical": 0.2,
+  "prior_geometry": 0.2,
+  "measurement_tau_m": 0.02,
+  "local_tau_m": 0.05,
+  "agreement_tau_m": 0.05,
+  "edge_threshold_m": 0.05,
+  "agreement_floor": 0.05,
+  "epsilon": 0.000001,
+  "local_window": 3,
+  "support_window": 5,
+  "projection_iterations": 48,
+  "max_target_pixels": 1048576
+}

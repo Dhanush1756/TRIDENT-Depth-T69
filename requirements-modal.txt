@@ -1,0 +1,2 @@
+# Deployment tools only. Install separately from the training/application environment.
+modal==1.6.3

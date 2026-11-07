@@ -1,0 +1,19 @@
+--- a/trident_depth/extended_v1/evaluation.py
++++ b/trident_depth/extended_v1/evaluation.py
+@@ -33,6 +33,7 @@
+ 
+ 
+ def write_new(path,value):
++    Path(path).parent.mkdir(parents=True,exist_ok=True)
+     with Path(path).open("x",encoding="utf-8") as f:json.dump(value,f,indent=2,allow_nan=False)
+ 
+ 
+@@ -251,7 +252,7 @@
+                         mask_sha256=reference["mask_sha256"],source_files_sha256=reference["source_files_sha256"],
+                         observations_sha256=hashlib.sha256(sample.input_depth.tobytes()).hexdigest(),methods=methods)
+                     frames.append(frame);stream.write(json.dumps(frame,allow_nan=False)+"\n");stream.flush()
+-                    directory=output/"predictions"/task["name"];directory.mkdir(exist_ok=True)
++                    directory=output/"predictions"/task["name"];directory.mkdir(parents=True,exist_ok=True)
+                     with (directory/(row["id"]+".npz")).open("xb") as f:
+                         np.savez_compressed(f,**predictions,target=target,target_valid=valid,rgb=rgb,
+                             observations=sample.input_depth,input_valid=sample.input_valid)

@@ -1,0 +1,24 @@
+{
+  "scope": "Pre-rewrite preparation; no public change authorized",
+  "working_repository_tests": {"passed": 295, "warnings": 1, "seconds": 40.70},
+  "sanitized_release_tests": {"passed": 295, "warnings": 1, "seconds": 41.12},
+  "existing_tests_preserved": 289,
+  "new_privacy_tests": 6,
+  "warning": "Existing Starlette/httpx deprecation",
+  "actual_history_clean": false,
+  "in_memory_projection": {
+    "detected_home_paths": 0,
+    "detected_credential_signatures": 0,
+    "decoded_text_blobs_checked_for_absolute_drive_paths": 270,
+    "remaining_absolute_drive_paths": 0,
+    "held_images": 0,
+    "changed_commits": 1,
+    "signed_initial_commit_preserved": true
+  },
+  "public_branches_requiring_later_cleanup": ["main", "jathin"],
+  "history_rewrite_performed": false,
+  "publication_performed": false,
+  "force_push_performed": false,
+  "Modal_operations_performed": false,
+  "limits": "Pattern scans are not a guarantee against unknown secret formats. Actual rewritten Git history must be verified after separate approval. Host-managed private Codex capture refs rotated during continuation; project branch histories were not changed."
+}

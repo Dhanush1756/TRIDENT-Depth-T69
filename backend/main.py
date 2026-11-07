@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from trident_depth.data.sample import clean_depth
 from trident_depth.evaluation.metrics import evaluate
-from trident_depth.inference import InferenceEngine
+from backend.engine import ApplicationEngine
 
 ROOT = Path(__file__).resolve().parent.parent
 MAX_BYTES = 8 * 1024 * 1024
@@ -26,7 +26,8 @@ gate = threading.Lock()
 @asynccontextmanager
 async def lifespan(app):
     checkpoint = os.environ.get("TRIDENT_CHECKPOINT")
-    app.state.engine = InferenceEngine(checkpoint, os.environ.get("TRIDENT_DEVICE", "cpu"))
+    app.state.engine = ApplicationEngine(checkpoint, os.environ.get("TRIDENT_DEVICE", "cpu"),
+                                         os.environ.get("TRIDENT_MODEL_FORMAT", "legacy"))
     yield
 
 
@@ -86,9 +87,11 @@ def health():
     engine = getattr(app.state, "engine", None)
     trained = engine is not None and engine.model is not None
     return dict(status="ok", trained_checkpoint_loaded=trained,
-                methods=CLASSICAL_METHODS + (["deep", "hybrid"] if trained else []),
+                methods=list(engine.capabilities()) if engine else CLASSICAL_METHODS,
+                capabilities=engine.capabilities() if engine else {},
                 max_upload_bytes=MAX_BYTES, max_target_pixels=MAX_PIXELS,
-                checkpoint=engine.metadata if trained else None)
+                checkpoint=engine.metadata if trained and engine.extended else
+                    ({"model": "legacy", "uncertainty_available": getattr(engine.model,"uncertainty_enabled",True)} if trained else None))
 
 
 @app.post("/api/reconstruct")
@@ -125,6 +128,8 @@ def reconstruct_api(depth: UploadFile = File(...), rgb: UploadFile | None = File
             if target.shape != size or not target_valid.any():
                 raise ValueError("ground truth must match target shape and contain valid measurements")
         engine = app.state.engine
+        if method in {"deep","hybrid"} and engine.extended and max_depth_m != 10:
+            raise ValueError("extended model uses a fixed 10 metre depth range")
         start = time.perf_counter()
         result = engine.run(observed, valid, size, guidance, method=method, scale=scale, protocol=protocol, noisy=noisy)
         elapsed_ms = 1000 * (time.perf_counter() - start)
@@ -135,7 +140,7 @@ def reconstruct_api(depth: UploadFile = File(...), rgb: UploadFile | None = File
         np.savez_compressed(stream, **arrays)
         # 16-bit millimetre PNG is optional; never silently clip range or wrap.
         png16 = None
-        if float(result["depth"].max()) <= 65.535:
+        if float(result["depth"].min()) >= 0 and float(result["depth"].max()) <= 65.535:
             png16 = encode_png(np.rint(result["depth"] * 1000).astype(np.uint16))
         return dict(method=method, protocol=protocol, scale=scale, input_shape=list(observed.shape),
                     output_shape=list(size), units="metres", latency_ms=elapsed_ms, metrics=metrics,
@@ -144,9 +149,9 @@ def reconstruct_api(depth: UploadFile = File(...), rgb: UploadFile | None = File
                     output_preview=preview(result["depth"], result["valid"], max_depth_m),
                     rgb_preview=encode_png(guidance) if guidance is not None else None,
                     output_npz=base64.b64encode(stream.getvalue()).decode("ascii"), output_png16=png16,
-                    checkpoint=result["checkpoint"],
+                    checkpoint=health()["checkpoint"] if method in {"deep","hybrid"} else None,
                     intermediate_previews={k: preview(v, np.isfinite(v) & (v > 0), max_depth_m)
-                                           for k, v in result["maps"].items() if k in {"denoised", "filled", "guided", "joint_bilateral", "neural", "edge_aware"}})
+                                           for k, v in result["maps"].items() if k in {"initial", "classical", "geometry", "denoised", "filled", "guided", "joint_bilateral", "neural", "edge_aware"}})
     except (ValueError, TypeError, OSError, EOFError, UnidentifiedImageError, Image.DecompressionBombError) as exc:
         raise HTTPException(400, str(exc)) from exc
     finally:

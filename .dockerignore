@@ -9,3 +9,16 @@ __pycache__
 .env
 *.pt
 *.pth
+*.zip
+.env.*
+.aws
+.agents
+.codex
+*.pem
+*.key
+release_review
+docs
+notebooks
+tests
+scripts
+configs

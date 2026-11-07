@@ -227,3 +227,19 @@ __marimo__/
 *.pt
 *.pth
 /zip.zip
+
+# Local credentials and agent configuration are not submission sources.
+.env.*
+!.env.example
+/.aws/
+/.codex/
+/.agents/
+*.pem
+*.key
+/release_review/
+
+# Withheld from release until image licensing/privacy approval; history cleanup is separate.
+/docs/nyu/registration_1.png
+/docs/nyu/registration_2.png
+/docs/training_preparation/prediction_review_dense_sr.png
+/docs/training_preparation/prediction_review_sparse_completion.png

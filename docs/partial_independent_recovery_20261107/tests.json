@@ -1,0 +1,10 @@
+{
+  "full_suite_passed": 285,
+  "warnings": 1,
+  "warning": "Existing Starlette/httpx deprecation",
+  "elapsed_seconds": 40.08,
+  "new_audit_tests_passed": 3,
+  "git_diff_check": "PASS",
+  "protected_files_unchanged": 104,
+  "all_four_supplied_originals_and_private_copies_unchanged": true
+}

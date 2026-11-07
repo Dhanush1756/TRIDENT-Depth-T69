@@ -1,0 +1,251 @@
+{
+  "source": "${USER_HOME}\\Downloads\\TRIDENT-Depth-T69\\TRIDENT-Depth-T69\\data\\nyu\\source\\nyu_depth_v2_labeled.mat",
+  "hdf5": {
+    "accelData": {
+      "shape": [
+        4,
+        1449
+      ],
+      "dtype": "float32",
+      "compression": "gzip",
+      "chunks": [
+        4,
+        1449
+      ]
+    },
+    "depths": {
+      "shape": [
+        1449,
+        640,
+        480
+      ],
+      "dtype": "float32",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        33,
+        480
+      ]
+    },
+    "images": {
+      "shape": [
+        1449,
+        3,
+        640,
+        480
+      ],
+      "dtype": "uint8",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        3,
+        42,
+        480
+      ]
+    },
+    "instances": {
+      "shape": [
+        1449,
+        640,
+        480
+      ],
+      "dtype": "uint8",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        128,
+        480
+      ]
+    },
+    "labels": {
+      "shape": [
+        1449,
+        640,
+        480
+      ],
+      "dtype": "uint16",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        64,
+        480
+      ]
+    },
+    "names": {
+      "shape": [
+        1,
+        894
+      ],
+      "dtype": "object",
+      "compression": null,
+      "chunks": null
+    },
+    "namesToIds": {
+      "shape": [
+        1,
+        6
+      ],
+      "dtype": "uint32",
+      "compression": null,
+      "chunks": null
+    },
+    "rawDepthFilenames": {
+      "shape": [
+        1,
+        1449
+      ],
+      "dtype": "object",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        1449
+      ]
+    },
+    "rawDepths": {
+      "shape": [
+        1449,
+        640,
+        480
+      ],
+      "dtype": "float32",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        33,
+        480
+      ]
+    },
+    "rawRgbFilenames": {
+      "shape": [
+        1,
+        1449
+      ],
+      "dtype": "object",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        1449
+      ]
+    },
+    "sceneTypes": {
+      "shape": [
+        1,
+        1449
+      ],
+      "dtype": "object",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        1449
+      ]
+    },
+    "scenes": {
+      "shape": [
+        1,
+        1449
+      ],
+      "dtype": "object",
+      "compression": "gzip",
+      "chunks": [
+        1,
+        1449
+      ]
+    }
+  },
+  "scenes": {
+    "count": 1449,
+    "first": [
+      "kitchen_0004",
+      "kitchen_0004",
+      "office_0003",
+      "office_0003",
+      "office_0004"
+    ]
+  },
+  "sceneTypes": {
+    "count": 1449,
+    "first": [
+      "kitchen",
+      "kitchen",
+      "office",
+      "office",
+      "office"
+    ]
+  },
+  "rawRgbFilenames": {
+    "count": 1449,
+    "first": [
+      "kitchen_0004/r-1294851097.528505-2321469380.ppm",
+      "kitchen_0004/r-1294851106.894265-2883550167.ppm",
+      "office_0003/r-1294851609.500330-2975113445.ppm",
+      "office_0003/r-1294851614.847235-3293159158.ppm",
+      "office_0004/r-1294851494.927741-395092604.ppm"
+    ]
+  },
+  "rawDepthFilenames": {
+    "count": 1449,
+    "first": [
+      "kitchen_0004/d-1294851097.542259-2322437371.pgm",
+      "kitchen_0004/d-1294851106.887887-2881038616.pgm",
+      "office_0003/d-1294851609.507128-2974728309.pgm",
+      "office_0003/d-1294851614.840473-3291068799.pgm",
+      "office_0004/d-1294851494.922008-394295335.pgm"
+    ]
+  },
+  "images": {
+    "first_sample_storage_shape": [
+      3,
+      640,
+      480
+    ],
+    "min_finite": 0.0,
+    "max_finite": 255.0,
+    "nonfinite": 0,
+    "nonpositive": 2663,
+    "positive_fraction": 0.9971104600694445
+  },
+  "depths": {
+    "first_sample_storage_shape": [
+      640,
+      480
+    ],
+    "min_finite": 1.7985953092575073,
+    "max_finite": 3.6156389713287354,
+    "nonfinite": 0,
+    "nonpositive": 0,
+    "positive_fraction": 1.0
+  },
+  "rawDepths": {
+    "first_sample_storage_shape": [
+      640,
+      480
+    ],
+    "min_finite": 0.0,
+    "max_finite": 3.6404144763946533,
+    "nonfinite": 0,
+    "nonpositive": 73446,
+    "positive_fraction": 0.76091796875
+  },
+  "splits": {
+    "trainNdxs": {
+      "shape": [
+        795,
+        1
+      ],
+      "dtype": "uint16",
+      "count": 795,
+      "minimum": 3,
+      "maximum": 1440
+    },
+    "testNdxs": {
+      "shape": [
+        654,
+        1
+      ],
+      "dtype": "uint16",
+      "count": 654,
+      "minimum": 1,
+      "maximum": 1449
+    }
+  }
+}

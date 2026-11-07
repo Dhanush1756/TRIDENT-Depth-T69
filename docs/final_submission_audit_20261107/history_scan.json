@@ -1,0 +1,44 @@
+{
+  "commits": 5,
+  "blobs_scanned": 260,
+  "credential_signature_findings": [],
+  "machine_path_findings": [
+    {
+      "blob": "6f7340b449661e4a08bae1e98b8ed809305b2ada",
+      "path": "docs/corrective_design/verification.json"
+    },
+    {
+      "blob": "f67752abc7d00f3b6ec4be289274c52d6aced85d",
+      "path": "docs/corrective_v1/verification.json"
+    },
+    {
+      "blob": "579cd18aaad84a815a6084c2e4e35204af579546",
+      "path": "docs/custom_diagnostics/analysis.json"
+    },
+    {
+      "blob": "746c46c3ac855eb5830e4b4ba1c2f448990d176e",
+      "path": "docs/custom_diagnostics/report.md"
+    },
+    {
+      "blob": "be2e26913f2bfd67e5a7774eb845745e0bc10d07",
+      "path": "docs/hybrid_v1_dense4/implementation.md"
+    },
+    {
+      "blob": "227a9072a692890da775b733784322dd9c3927ef",
+      "path": "docs/nyu/baseline_results_dense_sr.json"
+    },
+    {
+      "blob": "2ed86acddaa3881e16ce9feebabc50d224d62be4",
+      "path": "docs/nyu/baseline_results_sparse_completion.json"
+    },
+    {
+      "blob": "9ca2757707a392474fcb053713156b26f06768f0",
+      "path": "docs/nyu/source_inspection.json"
+    },
+    {
+      "blob": "43f233bcff3cf8200d10ef816e803763dc5bb271",
+      "path": "docs/pilot_dense4/report.md"
+    }
+  ],
+  "scope": "all locally reachable Git objects; no token values printed; signature scan cannot prove absence of all secrets"
+}

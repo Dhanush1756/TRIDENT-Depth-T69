@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "browser": "isolated headless Chrome",
+  "real_epoch12_checkpoint_loaded": true,
+  "checks": [
+    {
+      "method": "nearest",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": false
+    },
+    {
+      "method": "bilinear",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": false
+    },
+    {
+      "method": "bicubic",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": false
+    },
+    {
+      "method": "guided",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": false
+    },
+    {
+      "method": "joint_bilateral",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": false
+    },
+    {
+      "method": "classical",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": false
+    },
+    {
+      "method": "deep",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": true
+    },
+    {
+      "method": "hybrid",
+      "loading": true,
+      "result_rendered": true,
+      "numeric_download": true,
+      "real_checkpoint": true
+    }
+  ],
+  "server_error_rendered": true,
+  "early_validation_hides_stale_result": true,
+  "completion_scale_locked": true,
+  "layouts": [
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "metrics": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "workspaceColumns": "360px 919px"
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "workspaceColumns": "349px"
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "viewport": [
+        360,
+        800
+      ],
+      "metrics": {
+        "width": 360,
+        "scrollWidth": 360,
+        "workspaceColumns": "322px"
+      },
+      "horizontal_overflow": false
+    }
+  ],
+  "client_missing_rgb_prevented_network": true,
+  "keyboard_focus": {
+    "tag": "A",
+    "outline": "2px"
+  },
+  "accessibility": {
+    "named_controls": 9,
+    "unnamed_controls": [],
+    "scope": "AX names and viewport checks; not a complete WCAG audit"
+  },
+  "official_test_accessed": false,
+  "scientific_benchmark": false
+}
